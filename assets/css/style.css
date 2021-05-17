@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
 
 html, body {
     height: 100%;
@@ -34,7 +34,7 @@ html, body {
 
 .carousel-caption h1 {
     font-size: 500%;
-    text-transform: uppercase;
+  /*  text-transform: uppercase; */
     text-shadow: 1px ipx 15px #000;
 }
 .carousel-caption h3 {
@@ -136,7 +136,7 @@ html, body {
 }
 
 footer {
-    background-color: #3f3f3f;
+    background-color: #3f3f3f; 
     color: #d5d5d5;
     padding-top: 2rem;
 }
