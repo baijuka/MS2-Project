@@ -25,7 +25,19 @@ html, body {
 }
 
 .navbar {
-    padding: .8rem;
+    padding: .5rem;
+}
+
+.navmain {
+    overflow: hidden;
+    background-color: #000;
+}
+
+.fixed-top {
+	position: fixed;
+	padding: 0;
+	z-index: 2;
+	width: auto;
 }
 
 /* menu item ie list item of navbar padding */
