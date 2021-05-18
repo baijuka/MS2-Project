@@ -187,6 +187,113 @@ hr.light-100 {
     margin-bottom: 1rem;
 }
 
+/*---------------Quiz Game Style */
+body{
+    background-color: black;
+    margin:0;
+    padding:0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+*{
+    box-sizing: border-box;
+}
+
+.quizFrame{
+    height: 400px;
+    width: 600px;
+    background-color: white;
+    margin: 30px auto;
+    border-radius: 8px;
+    padding:25px
+}
+
+.quizFrame .question{
+    min-height: 50px;
+    background-color: teal;
+    border-radius: 8px;
+    color: white;
+    padding: 15px;
+    float: left;
+    width: 100%;
+    font-size: 25px;
+}
+
+.quizFrame .options{
+    float: left;
+    width: 100%;
+}
+
+.quizFrame .options ul{
+    list-style: none;
+    padding: 0%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.quizFrame .options ul li{
+    display: inline-block;
+    background-color: #607d8b;
+    width: 46%;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 30px;
+    margin: 10px;
+    color:white;
+    box-shadow: 0px 3px 0px grey;
+    cursor: pointer;
+}
+
+.quizFrame .options ul li.correct{
+    background-color: green;
+    box-shadow: 0px 3px 0px grey;
+}
+
+.quizFrame .options ul li.wrong{
+    background-color: red;
+    box-shadow: 0px 3px 0px grey;
+}
+
+.quizFrame .options ul li:active{
+    box-shadow: 0px 0px 0px  rgb(84, 110, 179);
+}
+
+.quizFrame .score {
+    float: left;
+    width: 100%;
+}
+
+.quizFrame .score .next{
+    width: 40%;
+    float: left;
+}
+
+.quizFrame .score .next button{
+    padding: 10px 70px;
+    color: white;
+    background-color:#ec930d;
+    border: none;
+    border-radius: 8px;
+}
+
+.quizFrame .score .scoreBoard{
+    width: 60%;
+    float: left;
+    line-height: 40px;
+    font-size: 20px;
+}
+
+.quizFrame .score .scoreBoard span{
+    background-color: rgb(12, 88, 29);
+    padding: 5px 20px;
+    border: none;
+    color:white;
+    border-radius: 8px;
+}
+
+
+/* Quiz Game Style End  ----- */
+
 /* Media queries  ---*/
 
 @media (max-width: 992px) {

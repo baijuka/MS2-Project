@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, minimum-scale=1">
-    <title>LatQuiz European Quiz</title>
+    <title>LatQuiz Game Page</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
@@ -64,13 +64,29 @@
 
 
       <!-- Game Section  -->
-      <div class="container-fluid">
-          <div class="row">
-
-          </div>
+      <div class="quizFrame">
+        <div id="question" class="question">
+              Sample Question
+        </div>
+        <div class="options">
+                <ul id="ul-option">
+                    <li id="option1" onclick="button(this)"></li>
+                    <li id="option2" onclick="button(this)"></li>
+                    <li id="option3" onclick="button(this)"></li>
+                    <li id="option4" onclick="button(this)"></li>
+                </ul>
+        </div>
+            <div class="score">
+                    <div class="next">
+                        <button id="btnNext" type="button" onclick="nextQuestion()">Next</button>
+                    </div>
+                    <div class="scoreBoard">
+                        SCORE: <span id="scoreLevel">0</span>
+                    </div>
+            </div>
       </div>
+    <!-- Game Section end -->
 
-      <!-- Game Section end -->
     <!--  Welcome Section   -->
       <div class="container-fluid padding">
           <div class="row welcome text-center">
@@ -87,23 +103,12 @@
 
     <!---  Three Coumn Section  -->
       <div class="container-fluid padding">
-          <div class="row text-center padding">
+        <div class="row text-center padding">
             <div class="col-xs-12 col-sm-6 col-md-4">
-                <i class="fas fa-code"></i>  <!-- add fontawsome icons-->
                 <h3>HTML5</h3>
                 <p>Built with the latest version of HTML, HTML5.</p>
             </div>
-            <div class="col-xs-12 col-sm-6 col-md-4">
-                <i class="fas fa-bold"></i>  <!-- add fontawsome icons-->
-                <h3>BOOTSTRAP</h3>
-                <p>Built with the latest version of Bootstrap Bootstrap 4</p>
-            </div>
-            <div class="col-sm-12 col-md-4">
-                <i class="fab fa-css3"></i>  <!-- add fontawsome icons-->
-                <h3>CSS</h3>
-                <p>Built with the latest version of CSS, CSS3</p>
-            </div>
-          </div>
+        </div>
           <hr class="my-4">  <!-- to add special bootstrap horizontal line-->
       </div>
 
@@ -140,31 +145,7 @@
               </div>
           </div>
       </figure>
-
-    <!-- Emoji Section  -->
-    <div class="container-fluid">
-        <button class="fun" data-toggle="collapse" data-target="#emoji">Click for fun</button>
-        <div id="emoji" class="collapse">
-            <div class="container-fluid padding">
-                <div class="row text-center">
-                      <div class="col-sm-6 col-md-3">
-                          <img class="gif" src="assets/images/emoji1.gif" alt="Emoji">
-                      </div>
-                      <div class="col-sm-6 col-md-3">
-                          <img class="gif" src="assets/images/emoji2.gif" alt="Emoji">
-                      </div>
-                      <div class="col-sm-6 col-md-3">
-                          <img class="gif" src="assets/images/emoji3.gif" alt="Emoji">
-                      </div>
-                      <div class="col-sm-6 col-md-3">
-                          <img class="gif" src="assets/images/emoji4.gif" alt="Emoji">
-                      </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-
+    
       <!-- Meet the Team section -->
       <div class="container-fluid padding">
           <div class="row welcome text-center">
@@ -284,6 +265,6 @@
                 </div>
             </footer>
         </div>
-
+        <script src="/assets/js/script.js"></script>
 </body>
 </html>
