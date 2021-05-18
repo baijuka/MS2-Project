@@ -1,5 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
 
+.body { 
+    overflow: hidden;
+}
+
+.row {
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 0;
+    padding-right: 0;
+}
+.selector-for-some-widget {
+  box-sizing: content-box;
+}
+
+.header {
+    margin: 0;
+}
 html, body {
     height: 100%;
     width: 100%;
@@ -25,7 +42,7 @@ html, body {
     height: 100%;
 }
 
-/* the following code is for moving the carousel caption to align vertically center - but it is not working */
+/* the following code is for moving the carousel caption to align vertically center */
 .carousel-caption {
     position:absolute;
     top: 50%;
