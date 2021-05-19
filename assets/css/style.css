@@ -189,7 +189,7 @@ hr.light-100 {
 
 /*---------------Quiz Game Style */
 body{
-    background-color: black;
+    background-color: rgb(109, 123, 128);
     margin:0;
     padding:0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -199,18 +199,18 @@ body{
 }
 
 .quizFrame{
-    height: 400px;
-    width: 600px;
-    background-color: white;
+    height: 500px;
+    width: 700px;
+    background-color: rgb(255, 255, 255);
     margin: 30px auto;
     border-radius: 8px;
     padding:25px
 }
 
 .quizFrame .question{
-    min-height: 50px;
-    background-color: teal;
-    border-radius: 8px;
+    min-height: 80px;
+    background-color: rgb(5, 129, 129);
+    border-radius: 10px;
     color: white;
     padding: 15px;
     float: left;
