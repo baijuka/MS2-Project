@@ -6,7 +6,7 @@ const questions = [
         option2: "London",
         option3: "Manchester",
         option4: "Scotland",
-        correctOption: "option2"
+        correctAnswer: "option2"
     },
 
     {
@@ -15,7 +15,7 @@ const questions = [
         option2: "British Pound",
         option3: "Denar",
         option4: "Euro",
-        correctOption: "option4"
+        correctAnswer: "option4"
     },
 
     {
@@ -24,7 +24,7 @@ const questions = [
         option2: "German",
         option3: "Dutch",
         option4: "French",
-        correctOption: "option1"
+        correctAnswer: "option1"
     },
 
     {
@@ -33,7 +33,7 @@ const questions = [
         option2: "Catalan",
         option3: "Norwegian",
         option4: "French",
-        correctOption: "option2"
+        correctAnswer: "option2"
     },
 
     {
@@ -42,7 +42,7 @@ const questions = [
         option2: "Italy",
         option3: "Norway",
         option4: "Austria",
-        correctOption: "option4"
+        correctAnswer: "option4"
     },
 
     {
@@ -51,7 +51,7 @@ const questions = [
         option2: "Pristina",
         option3: "Kiev",
         option4: "Bern",
-        correctOption: "option1"
+        correctAnswer: "option1"
     },
 
     {
@@ -60,7 +60,7 @@ const questions = [
         option2: "Denar",
         option3: "Euro",
         option4: "Dollar",
-        correctOption: "option3"
+        correctAnswer: "option3"
     },
 
     {
@@ -69,7 +69,7 @@ const questions = [
         option2: "Swedish",
         option3: "German",
         option4: "Bosnian",
-        correctOption: "option4"
+        correctAnswer: "option4"
     },
 
     {
@@ -78,7 +78,7 @@ const questions = [
         option2: "Jersey",
         option3: "Malta",
         option4: "Croatia",
-        correctOption: "option1"
+        correctAnswer: "option1"
     },
 
     {
@@ -87,7 +87,7 @@ const questions = [
         option2: "Croatian Kuna",
         option3: "Euro",
         option4: "Croatian Ruble",
-        correctOption: "option2"
+        correctAnswer: "option2"
     },
 
     {
@@ -96,7 +96,7 @@ const questions = [
         option2: "Ductch",
         option3: "Greek",
         option4: "Spanish",
-        correctOption: "option3"
+        correctAnswer: "option3"
     },
 
     {
@@ -105,7 +105,7 @@ const questions = [
         option2: "Estonia",
         option3: "Hungary",
         option4: "Latvia",
-        correctOption: "option1"
+        correctAnswer: "option1"
     },
 
     {
@@ -114,7 +114,7 @@ const questions = [
         option2: "Kiev",
         option3: "Bucharest",
         option4: "Copenhagen",
-        correctOption: "option4"
+        correctAnswer: "option4"
     },
 
     {
@@ -123,7 +123,7 @@ const questions = [
         option2: "54",
         option3: "271",
         option4: "974",
-        correctOption: "option1"
+        correctAnswer: "option1"
     },
 
     {
@@ -132,7 +132,7 @@ const questions = [
         option2: "Finland",
         option3: "Malta",
         option4: "Isle of Man",
-        correctOption: "option1"
+        correctAnswer: "option1"
     },
 
     {
@@ -141,7 +141,7 @@ const questions = [
         option2: "Helsinki",
         option3: "Bucharest",
         option4: "Lisbon",
-        correctOption: "option2"
+        correctAnswer: "option2"
     },
 
     {
@@ -150,7 +150,7 @@ const questions = [
         option2: "Paris",
         option3: "Touulouse",
         option4: "Berlin",
-        correctOption: "option2"
+        correctAnswer: "option2"
     },
 
     {
@@ -159,7 +159,7 @@ const questions = [
         option2: "11",
         option3: "44",
         option4: "49",
-        correctOption: "option4"
+        correctAnswer: "option4"
     },
 
     {
@@ -168,7 +168,7 @@ const questions = [
         option2: "Spanish",
         option3: "German",
         option4: "Greek",
-        correctOption: "option1"
+        correctAnswer: "option1"
     },
 
     {
@@ -177,7 +177,7 @@ const questions = [
         option2: "Greek Krone",
         option3: "Euro",
         option4: "Swiss Franc",
-        correctOption: "option3"
+        correctAnswer: "option3"
     },
 
     {
@@ -186,7 +186,7 @@ const questions = [
         option2: "British Pound",
         option3: "Swiss France",
         option4: "Danish Krone",
-        correctOption: "option2"
+        correctAnswer: "option2"
     },
 
     {
@@ -195,7 +195,7 @@ const questions = [
         option2: "Latin",
         option3: "French",
         option4: "English",
-        correctOption: "option2"
+        correctAnswer: "option2"
     },
 
     {
@@ -204,7 +204,7 @@ const questions = [
         option2: "Dutch",
         option3: "French",
         option4: "Hungarian",
-        correctOption: "option4"
+        correctAnswer: "option4"
     },
 
     {
@@ -213,7 +213,7 @@ const questions = [
         option2: "Ljubljana",
         option3: "Chisinau",
         option4: "Budapest",
-        correctOption: "option1"
+        correctAnswer: "option1"
     },
 
     {
@@ -222,7 +222,7 @@ const questions = [
         option2: "253",
         option3: "313",
         option4: "364",
-        correctOption: "option1"
+        correctAnswer: "option1"
     },
 
     {
@@ -231,7 +231,7 @@ const questions = [
         option2: "847215",
         option3: "45871",
         option4: "258741",
-        correctOption: "option1"
+        correctAnswer: "option1"
     },
 
     {
@@ -240,7 +240,7 @@ const questions = [
         option2: "Euro",
         option3: "Italian Krona",
         option4: "Swiss Franc",
-        correctOption: "option2"
+        correctAnswer: "option2"
     },
 
     {
@@ -249,7 +249,7 @@ const questions = [
         option2: "English",
         option3: "Greek",
         option4: "Spanish",
-        correctOption: "option2"
+        correctAnswer: "option2"
     },
 
     {
@@ -258,7 +258,7 @@ const questions = [
         option2: "Monaco",
         option3: "Kiev",
         option4: "Riga",
-        correctOption: "option4"
+        correctAnswer: "option4"
     },
 
     {
@@ -267,7 +267,7 @@ const questions = [
         option2: "Greek",
         option3: "French",
         option4: "Latin",
-        correctOption: "option1"
+        correctAnswer: "option1"
     },
 
     {
@@ -276,7 +276,7 @@ const questions = [
         option2: "345",
         option3: "148",
         option4: "370",
-        correctOption: "option4"
+        correctAnswer: "option4"
     },
 
     {
@@ -285,7 +285,7 @@ const questions = [
         option2: "Jersey",
         option3: "Denmark",
         option4: "Sweden",
-        correctOption: "option1"
+        correctAnswer: "option1"
     },
 
     {
@@ -294,7 +294,7 @@ const questions = [
         option2: "English",
         option3: "Greek",
         option4: "Latin",
-        correctOption: "option1"
+        correctAnswer: "option1"
     },
 
     {
@@ -303,7 +303,7 @@ const questions = [
         option2: "25501",
         option3: "313454",
         option4: "58157",
-        correctOption: "option1"
+        correctAnswer: "option1"
     },
 
     {
@@ -312,7 +312,7 @@ const questions = [
         option2: "Romanian",
         option3: "Bulgarian",
         option4: "Spanish",
-        correctOption: "option2"
+        correctAnswer: "option2"
     },
 
     {
@@ -321,7 +321,7 @@ const questions = [
         option2: "Romanian",
         option3: "Greek",
         option4: "Latin",
-        correctOption: "option1"
+        correctAnswer: "option1"
     },
 
     {
@@ -330,7 +330,7 @@ const questions = [
         option2: "157",
         option3: "382",
         option4: "274",
-        correctOption: "option3"
+        correctAnswer: "option3"
     },
 
     {
@@ -339,7 +339,7 @@ const questions = [
         option2: "Tilburg",
         option3: "Vienna",
         option4: "Amsterdam",
-        correctOption: "option4"
+        correctAnswer: "option4"
     },
 
     {
@@ -348,7 +348,7 @@ const questions = [
         option2: "Haugesund",
         option3: "Oslo",
         option4: "Brussels",
-        correctOption: "option3"
+        correctAnswer: "option3"
     },
 
     {
@@ -357,7 +357,7 @@ const questions = [
         option2: "Polish Mark",
         option3: "Euro",
         option4: "Ruble",
-        correctOption: "option1"
+        correctAnswer: "option1"
     },
 
     {
@@ -366,7 +366,7 @@ const questions = [
         option2: "351",
         option3: "96",
         option4: "387",
-        correctOption: "option2"
+        correctAnswer: "option2"
     },
 
     {
@@ -375,7 +375,7 @@ const questions = [
         option2: "Romanian",
         option3: "Bulgarian",
         option4: "Russian",
-        correctOption: "option1"
+        correctAnswer: "option1"
     },
 
     {
@@ -384,7 +384,7 @@ const questions = [
         option2: "Oradea",
         option3: "Helsinki",
         option4: "Bucharest",
-        correctOption: "option4"
+        correctAnswer: "option4"
     },
 
     {
@@ -393,7 +393,7 @@ const questions = [
         option2: "Moscow",
         option3: "Gerogia",
         option4: "Kiev",
-        correctOption: "option2"
+        correctAnswer: "option2"
     },
 
     {
@@ -402,7 +402,7 @@ const questions = [
         option2: "15055",
         option3: "5827",
         option4: "43250",
-        correctOption: "option1"
+        correctAnswer: "option1"
     },
 
     {
@@ -411,7 +411,7 @@ const questions = [
         option2: "Serbian",
         option3: "Latvian",
         option4: "Latin",
-        correctOption: "option2"
+        correctAnswer: "option2"
     },
 
     {
@@ -420,7 +420,7 @@ const questions = [
         option2: "451",
         option3: "248",
         option4: "432",
-        correctOption: "option1"
+        correctAnswer: "option1"
     },
 
     {
@@ -429,7 +429,7 @@ const questions = [
         option2: "Celje",
         option3: "Ljubljana",
         option4: "Koper",
-        correctOption: "option3"
+        correctAnswer: "option3"
     },
 
     {
@@ -438,7 +438,7 @@ const questions = [
         option2: "Spain",
         option3: "Austria",
         option4: "Finland",
-        correctOption: "option2"
+        correctAnswer: "option2"
     },
 
     {
@@ -447,7 +447,7 @@ const questions = [
         option2: "Swedish",
         option3: "Dutch",
         option4: "Greek",
-        correctOption: "option1"
+        correctAnswer: "option1"
     },
 
     {
@@ -456,7 +456,7 @@ const questions = [
         option2: "Stockholm",
         option3: "Gothenburg",
         option4: "Kronoberg",
-        correctOption: "option2"
+        correctAnswer: "option2"
     },
 
     {
@@ -465,7 +465,7 @@ const questions = [
         option2: "174",
         option3: "81",
         option4: "43",
-        correctOption: "option1"
+        correctAnswer: "option1"
     },
 
     {
@@ -474,7 +474,7 @@ const questions = [
         option2: "Croatian",
         option3: "Ukranian",
         option4: "Latin",
-        correctOption: "option3"
+        correctAnswer: "option3"
     }
 ];
 
@@ -485,7 +485,8 @@ const questions = [
 //  startGame();
 //};
 
-let questionCount, gameQuestions;
+let questionCount, gameQuestions, correctAnswer;
+let score = 0;
 let askedAll = false;
 
 function startGame() {
@@ -519,11 +520,13 @@ function rndQuestions(questArray) {
 
 function askQuestion(qlist) {
     let i = questionCount;
+    correctAnswer ='';
     document.getElementById('question').textContent = qlist[i].question;
     document.getElementById('option1').textContent = qlist[i].option1;
     document.getElementById('option2').textContent = qlist[i].option2;
     document.getElementById('option3').textContent = qlist[i].option3;
     document.getElementById('option4').textContent = qlist[i].option4;
+    correctAnswer = qlist[i].correctAnswer;
     questionCount++;
     checkQuestionCount(questionCount);
 }
@@ -544,10 +547,23 @@ function nextQuestion() {
     askQuestion(gameQuestions);
 }
 
+function button(userAnswer) {
+   checkAnswer(userAnswer);   
+}
+
+function checkAnswer(userAnswer){
+    if (userAnswer == correctAnswer) {
+        score++;
+        alert(score);
+        document.getElementById('scoreLevel').textContent = score + ' / ' + '10';
+    }
+}
+
+
 // Check the answer
 
 //let userAnswer = prompt('Language of Gibralter');  // need to change with correct code
-//if (userAnswer.toLowerCase() === randomQuestions[0].correctOption.toLowerCase()) {
+//if (userAnswer.toLowerCase() === randomQuestions[0].correctAnswer.toLowerCase()) {
 //    console.log("You are right");} else {
  //       console.log("You are wrong");}
 
