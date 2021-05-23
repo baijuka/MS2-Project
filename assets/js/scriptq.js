@@ -478,6 +478,15 @@ const questions = [
     }
 ];
 
+// Event handling
+
+let btnStart1 = document.getElementById("btnStart1");
+btnStart1.addEventListener("click", hello);
+
+function hello() {
+    alert('Hello');
+}
+
 
 // select ten questions randomly
 
@@ -490,6 +499,7 @@ let score = 0;
 let askedAll = false;
 
 function startGame() {
+    
     questionCount = 0;
     gameQuestions = pickQuestions();
  // var questionSet = rndQuestions(gameQuestions);
