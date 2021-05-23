@@ -481,49 +481,150 @@ const questions = [
 // Event handling
 
 let btnStart1 = document.getElementById("btnStart1");
-btnStart1.addEventListener("click", hello);
+btnStart1.addEventListener("click", createQuizroom);
 
-function hello() {
-    alert('Hello');
+function createQuizroom() {
+    //remove the gameintro block
+    document.querySelector('div.gameIntro').remove();
+
+    // create a new div element to use quiz container
+    var quizWrap = document.createElement('div');
+
+    // add class and id
+    quizWrap.className = 'quizContainer';
+    quizWrap.id = 'quizContainer';
+    
+    // create a div for question
+    var newDiv1 = document.createElement('div');
+    newDiv1.className = 'question';
+    
+    // create a h4 element for display question
+    var newh4q = document.createElement('h4');
+    newh4q.textContent = "Sample Question"
+    newh4q.id="question"
+    
+    // add newh4q to newDiv1
+    newDiv1.appendChild(newh4q);
+
+    //add newDiv1 to quizWrap
+
+    quizWrap.appendChild(newDiv1);
+
+     // create a div for options
+     var newDiv2 = document.createElement('div');
+     
+          
+     // create a <ul> element for display question
+     var newulOpt = document.createElement('ul');
+     newulOpt.className = 'ulOption';
+
+     // list items for ul
+
+     var newli1 = document.createElement('li');
+     newli1.className= 'option';
+     newli1.id = 'option1';
+
+     var newli2 = document.createElement('li');
+     newli2.className= 'option';
+     newli2.id = 'option2';
+
+     var newli3 = document.createElement('li');
+     newli3.className= 'option';
+     newli3.id = 'option3';
+     
+     var newli4 = document.createElement('li');
+     newli4.className= 'option';
+     newli4.id = 'option4';
+
+    // add list items to ul
+
+     newulOpt.appendChild(newli1);
+     newulOpt.appendChild(newli2);
+     newulOpt.appendChild(newli3);
+     newulOpt.appendChild(newli4);
+
+    // add ul to newDiv2
+    newDiv2.appendChild(newulOpt);
+
+     
+    // create a div for question
+    var newDiv3 = document.createElement('div');
+    newDiv3.className = 'scorePanel';
+    newDiv3.id ="scorePanel";
+
+    //create a <p> element for score panel
+    var p4score = document.createElement('p');
+ 
+    //create a <span> element for question count
+    var pqcount = document.createElement('span');
+    var pscore = document.createElement('span');
+
+    //add spans to p4score
+    p4score.appendChild(pqcount);
+    p4score.appendChild(pscore);
+    pqcount.textContent ='0/10      ';
+    pscore.textContent = '1/10';
+    p4score.textContent = "QUESTION: "+pqcount.textContent+'    '+'SCORE: '+pscore.textContent;
+
+    //add pr4score to newDiv3
+    newDiv3.appendChild(p4score);
+
+    // create a div for Nex button
+    var newDiv4 = document.createElement('div');
+    newDiv4.className = 'next';
+    newDiv4.id ="next";
+
+    //create a button element for newDiv4
+    var newButton = document.createElement('button');
+    newButton.textContent = 'NEXT';
+
+    //add button to newDiv4
+    newDiv4.appendChild(newButton)
+    
+    
+    //add newDiv1, newDiv2, newDiv3, newDiv4 to quizWrap
+ 
+     quizWrap.appendChild(newDiv1);
+     quizWrap.appendChild(newDiv2);
+     quizWrap.appendChild(newDiv3);
+     quizWrap.appendChild(newDiv4);
+ 
+    // add newly created to the play ground
+    var container = document.querySelector('div.playGround');
+    container.appendChild(quizWrap);
+
+
+    // invoke startGame function
+    startGame();
 }
 
+// initialise variable
+var questionCount, correctAnswer;
+var  gameQuestions = [];
+var score = 0;
+var askedAll = false;
 
-// select ten questions randomly
-
-//window.onload = function() {
-//  startGame();
-//};
-
-let questionCount, gameQuestions, correctAnswer;
-let score = 0;
-let askedAll = false;
+// invoke the startGame function
 
 function startGame() {
-    
+
     questionCount = 0;
-    gameQuestions = pickQuestions();
+    gameQuestions = pickQuestions(questions);
  // var questionSet = rndQuestions(gameQuestions);
   askQuestion(gameQuestions);
 }
 
-let randomQuestions = [] ;
 
-function pickQuestions() { 
+
+function pickQuestions(qarray) { 
+    let randomQuestions = [];
     for (i=0; i<=9; i++) {
-        const selection = questions[Math.floor(Math.random() * questions.length)];
+        const selection = qarray[Math.floor(Math.random() * qarray.length)];
         if (!randomQuestions.includes(selection)) {
             randomQuestions.push(selection);
-        }
-    }
+        };
+    };
   return randomQuestions;
-}
-
-
-
-function rndQuestions(questArray) {
-  for ( x of questArray){
-   //  document.write(x.question+'<br>'+'Options: '+x.option1+'  '+x.option2+'  '+x.option3+'  '+x.option4+'<br><br>');
-}
 }
 
 // Ask the first question from the random questions array

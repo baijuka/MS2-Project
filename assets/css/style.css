@@ -30,12 +30,24 @@ html, body {
     padding-right: 0;
 }
 
-.gameIntro {
+.playGround {
+    position: relative;
+    display: block;
     height: 500px;
     width: 700px;
     background-color: white;
-    margin: 30px auto;
     border: 1px solid blue;
+    margin: 30px auto;
+    border-radius: 10px;
+}
+
+.gameIntro {
+    
+    position: relative;
+    display: inline-block;
+    height: 500px; 
+    width: 700px;
+    background-color: white;
     border-radius: 10px;
     padding:25px;
     background-image: url('/assets/images/europe4.jpg');
