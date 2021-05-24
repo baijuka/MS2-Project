@@ -478,10 +478,16 @@ const questions = [
     }
 ];
 
+var questionCount, correctAnswer;
+var  gameQuestions = [];
+var score = 0;
+var askedAll = false;
+
 // Event handling
 
 let btnStart1 = document.getElementById("btnStart1");
 btnStart1.addEventListener("click", createQuizroom);
+
 
 function createQuizroom() {
     //remove the gameintro block
@@ -577,6 +583,9 @@ function createQuizroom() {
     //create a button element for newDiv4
     var newButton = document.createElement('button');
     newButton.textContent = 'NEXT';
+    newButton.id = 'btnNext';
+    newButton.classList.add('btnNext');
+    newButton.setAttribute('onclick', "nextQuestion()");
 
     //add button to newDiv4
     newDiv4.appendChild(newButton)
@@ -594,20 +603,16 @@ function createQuizroom() {
     container.appendChild(quizWrap);
 
 
-    // invoke startGame function
+      // invoke startGame function
     startGame();
-}
+    }
 
 // initialise variable
-var questionCount, correctAnswer;
-var  gameQuestions = [];
-var score = 0;
-var askedAll = false;
+
 
 // invoke the startGame function
 
 function startGame() {
-
     questionCount = 0;
     gameQuestions = pickQuestions(questions);
  // var questionSet = rndQuestions(gameQuestions);
@@ -640,6 +645,7 @@ function askQuestion(qlist) {
     correctAnswer = qlist[i].correctAnswer;
     questionCount++;
     checkQuestionCount(questionCount);
+
 }
 
 function checkQuestionCount(count) {
@@ -669,6 +675,8 @@ function checkAnswer(userAnswer){
         document.getElementById('scoreLevel').textContent = score + ' / ' + '10';
     }
 }
+
+
 
 
 // Check the answer
