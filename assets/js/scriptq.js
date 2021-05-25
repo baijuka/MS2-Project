@@ -481,6 +481,7 @@ const questions = [
 var questionCount, correctAnswer;
 var  gameQuestions = [];
 var score = 0;
+var qlength = 0;
 var askedAll = false;
 
 // Event handling
@@ -602,15 +603,27 @@ function createQuizroom() {
     newButton.setAttribute('onclick', "nextQuestion()");
 
     //add button to newDiv4
-    newDiv4.appendChild(newButton)
+    newDiv4.appendChild(newButton);
     
+    //create a div for result display (CORRECT OR WRONG)
+    var newDiv5 = document.createElement('div');
+    newDiv5.classList.add('result');
     
-    //add newDiv1, newDiv2, newDiv3, newDiv4 to quizWrap
+    //create an h3 element for display the result
+    var hresult = document.createElement('h3');
+    hresult.id = 'hresult';
+    hresult.innerHTML = 'RESULT';
+
+    //add hresult to newDiv5
+    newDiv5.appendChild(hresult);
+
+    //add newDiv1, newDiv2, newDiv3, newDiv4, newDiv5 to quizWrap
  
      quizWrap.appendChild(newDiv1);
      quizWrap.appendChild(newDiv2);
      quizWrap.appendChild(newDiv3);
      quizWrap.appendChild(newDiv4);
+     quizWrap.appendChild(newDiv5);
  
     // add newly created to the play ground
     var container = document.querySelector('div.playGround');
@@ -629,7 +642,9 @@ function createQuizroom() {
 function startGame() {
     askedAll = false;
     questionCount = 0;
+    score = 0;
     gameQuestions = pickQuestions(questions);
+    qlength = gameQuestions.length;
  // var questionSet = rndQuestions(gameQuestions);
   askQuestion(gameQuestions);
 }
@@ -659,7 +674,6 @@ function askQuestion(qlist) {
     document.getElementById('option3').textContent = qlist[i].option3;
     document.getElementById('option4').textContent = qlist[i].option4;
     document.getElementById('qcount').innerHTML = i+1+' /'+qlist.length;
-    document.getElementById('score').innerHTML = i+1+' /'+qlist.length;
 
     correctAnswer = qlist[i].correctAnswer;
     questionCount++;
@@ -671,13 +685,14 @@ function checkQuestionCount(count, arraySize) {
   if (count === arraySize) {
       document.getElementById('btnNext').style.display ="none";
       askedAll = true;
+  }
       if (askedAll) {
           quizComplete();
       } else {
         document.getElementById('btnNext').style.display ="block";
       }
   } 
-}
+
 
 function nextQuestion() {
     askQuestion(gameQuestions);
@@ -690,13 +705,16 @@ function button(userAnswer) {
 function checkAnswer(userAnswer){
     if (userAnswer == correctAnswer) {
         score++;
-        alert(score);
-        document.getElementById('scoreLevel').textContent = score + ' / ' + '10';
+       // document.getElementById('score').textContent = score + ' / ' + '10';
+        document.getElementById('score').innerHTML = score+' /'+qlength;
+
     }
 }
 
 
-
+function quizComplete() {
+    alert('Well Done');
+}
 
 // Check the answer
 
