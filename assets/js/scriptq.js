@@ -529,18 +529,26 @@ function createQuizroom() {
      var newli1 = document.createElement('li');
      newli1.className= 'option';
      newli1.id = 'option1';
+     newli1.classList.add('option1');
+     newli1.setAttribute('onclick', "checkAnswer('option1')");
 
      var newli2 = document.createElement('li');
      newli2.className= 'option';
      newli2.id = 'option2';
+     newli2.classList.add('option2');
+     newli2.setAttribute('onclick', "checkAnswer('option2')");
 
      var newli3 = document.createElement('li');
      newli3.className= 'option';
      newli3.id = 'option3';
-     
+     newli3.classList.add('option3');
+     newli3.setAttribute('onclick', "checkAnswer('option3')");
+
      var newli4 = document.createElement('li');
      newli4.className= 'option';
      newli4.id = 'option4';
+     newli4.classList.add('option4');
+     newli4.setAttribute('onclick', "checkAnswer('option4')");
 
     // add list items to ul
 
@@ -560,18 +568,24 @@ function createQuizroom() {
 
     //create a <p> element for score panel
     var p4score = document.createElement('p');
- 
-    //create a <span> element for question count
-    var pqcount = document.createElement('span');
-    var pscore = document.createElement('span');
+    p4score.innerHTML="QUESTION: <span id='qcount'>0/0</span> SCORE:    <span id='score'>0/0</span>";
 
+ /*
+    //create a <span> element for question count
+    var pqcount = document.createElement('SPAN');
+    pqcount.id = 'questionCount';
+    var pscore = document.createElement('SPAN');
+    pscore.id = 'score';
+
+    */
+/*
     //add spans to p4score
     p4score.appendChild(pqcount);
     p4score.appendChild(pscore);
-    pqcount.textContent ='0/10      ';
-    pscore.textContent = '1/10';
+    pqcount.innerHTML ='0/10      ';
+    pscore.innerHTML = '1/10';
     p4score.textContent = "QUESTION: "+pqcount.textContent+'    '+'SCORE: '+pscore.textContent;
-
+*/
     //add pr4score to newDiv3
     newDiv3.appendChild(p4score);
 
@@ -613,6 +627,7 @@ function createQuizroom() {
 // invoke the startGame function
 
 function startGame() {
+    askedAll = false;
     questionCount = 0;
     gameQuestions = pickQuestions(questions);
  // var questionSet = rndQuestions(gameQuestions);
@@ -636,20 +651,24 @@ function pickQuestions(qarray) {
 
 function askQuestion(qlist) {
     let i = questionCount;
+    console.log("Array size", qlist.length);
     correctAnswer ='';
     document.getElementById('question').textContent = qlist[i].question;
     document.getElementById('option1').textContent = qlist[i].option1;
     document.getElementById('option2').textContent = qlist[i].option2;
     document.getElementById('option3').textContent = qlist[i].option3;
     document.getElementById('option4').textContent = qlist[i].option4;
+    document.getElementById('qcount').innerHTML = i+1+' /'+qlist.length;
+    document.getElementById('score').innerHTML = i+1+' /'+qlist.length;
+
     correctAnswer = qlist[i].correctAnswer;
     questionCount++;
-    checkQuestionCount(questionCount);
+    checkQuestionCount(questionCount, qlist.length);
 
 }
 
-function checkQuestionCount(count) {
-  if (count === 10) {
+function checkQuestionCount(count, arraySize) {
+  if (count === arraySize) {
       document.getElementById('btnNext').style.display ="none";
       askedAll = true;
       if (askedAll) {
