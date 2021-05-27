@@ -184,7 +184,7 @@ const questions = [
         question: "Whatcurrency is being used in Guernsey?",
         option1: "Euro",
         option2: "British Pound",
-        option3: "Swiss Franc",
+        option3: "Swiss France",
         option4: "Danish Krone",
         correctAnswer: "option2"
     },
@@ -343,7 +343,7 @@ const questions = [
     },
 
     {
-        question: "What is the capital of Norway?",
+        question: "What language is the capital of Norway?",
         option1: "Halden",
         option2: "Haugesund",
         option3: "Oslo",
@@ -600,7 +600,6 @@ function createQuizroom() {
     newButton.textContent = 'NEXT';
     newButton.id = 'btnNext';
     newButton.classList.add('btnNext');
-   // newButton.style.visibility = 'hidden';
     newButton.setAttribute('onclick', "nextQuestion()");
 
     //add button to newDiv4
@@ -613,7 +612,7 @@ function createQuizroom() {
     //create an h3 element for display the result
     var hresult = document.createElement('h3');
     hresult.id = 'hresult';
-    hresult.innerHTML = "Result: <span id='sresult'></span>";
+    hresult.innerHTML = 'RESULT';
 
     //add hresult to newDiv5
     newDiv5.appendChild(hresult);
@@ -644,7 +643,6 @@ function startGame() {
     askedAll = false;
     questionCount = 0;
     score = 0;
-    document.getElementById('btnNext').style.visibility ="hidden";
     gameQuestions = pickQuestions(questions);
     qlength = gameQuestions.length;
  // var questionSet = rndQuestions(gameQuestions);
@@ -653,14 +651,14 @@ function startGame() {
 
 
 
-function pickQuestions(qArray) { 
+function pickQuestions(qarray) { 
     let randomQuestions = [];
-    do {
-        const selection = qArray[Math.floor(Math.random() * qArray.length)];
+    for (i=0; i<=9; i++) {
+        const selection = qarray[Math.floor(Math.random() * qarray.length)];
         if (!randomQuestions.includes(selection)) {
             randomQuestions.push(selection);
-        }
-    } while (randomQuestions.length < 10);
+        };
+    };
   return randomQuestions;
 }
 
@@ -676,7 +674,6 @@ function askQuestion(qlist) {
     document.getElementById('option3').textContent = qlist[i].option3;
     document.getElementById('option4').textContent = qlist[i].option4;
     document.getElementById('qcount').innerHTML = i+1+' /'+qlist.length;
-    document.getElementById('score').innerHTML = score+' /'+qlength;
 
     correctAnswer = qlist[i].correctAnswer;
     questionCount++;
@@ -686,20 +683,18 @@ function askQuestion(qlist) {
 
 function checkQuestionCount(count, arraySize) {
   if (count === arraySize) {
-	 quizComplete();
-	} else {
-           document.getElementById('btnNext').style.visibility ="visible";
-	}
-  } 	
+      document.getElementById('btnNext').style.display ="none";
+      askedAll = true;
+  }
+      if (askedAll) {
+          quizComplete();
+      } else {
+        document.getElementById('btnNext').style.display ="block";
+      }
+  } 
 
 
 function nextQuestion() {
-	document.getElementById('option1').style.pointerEvents = "auto";
-        document.getElementById('option2').style.pointerEvents = "auto";
-        document.getElementById('option3').style.pointerEvents = "auto";
-        document.getElementById('option4').style.pointerEvents = "auto";
-    document.getElementById('score').innerHTML = score+' /'+qlength;
-    document.getElementById('sresult').innerHTML = '';
     askQuestion(gameQuestions);
 }
 
@@ -708,45 +703,17 @@ function button(userAnswer) {
 }
 
 function checkAnswer(userAnswer){
-        document.getElementById('option1').style.pointerEvents = "none";
-        document.getElementById('option2').style.pointerEvents = "none";
-        document.getElementById('option3').style.pointerEvents = "none";
-        document.getElementById('option4').style.pointerEvents = "none";
-        document.getElementById('btnNext').style.visibility = 'visibile';
     if (userAnswer == correctAnswer) {
         score++;
        // document.getElementById('score').textContent = score + ' / ' + '10';
         document.getElementById('score').innerHTML = score+' /'+qlength;
-	document.getElementById('sresult').innerHTML = 'CORRECT';
-	} else {
-           document.getElementById('sresult').innerHTML = 'WRONG';
-	}
 
-    } 
+    }
+}
 
 
 function quizComplete() {
-    document.getElementById('btnNext').style.visibility ="hidden";
-    let replayBox = document.createElement('div');
-    replayBox.id = 'replayBox';    
-    let btnReplay  = document.createElement('button');
-    btnReplay.id = 'btnReplay';
-    btnReplay.textContent = 'Play Again';
-    btnReplay.setAttribute('onclick', 'replayQuiz()');
-
-    //add btnReplay to replayBox
-    replayBox.appendChild(btnReplay);
-
-    // Add replayBox to playGround
-     document.querySelector('div.quizContainer').appendChild(replayBox);
-  
-    let btnExit  = document.createElement('button');
-    btnExit.id = 'btnExit';  
-}
-
-function replayQuiz() {
-  document.getElementById('btnReplay').style.visibility ="hidden";
-  startGame();
+    alert('Well Done');
 }
 
 // Check the answer
