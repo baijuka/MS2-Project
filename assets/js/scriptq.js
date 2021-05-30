@@ -664,11 +664,11 @@ function pickQuestions(qArray) {
   return randomQuestions;
 }
 
-// Ask the first question from the random questions array
+// Start asking questions from the random questions array
 
 function askQuestion(qlist) {
+    checkQuestionCount(questionCount, qlist.length);
     let i = questionCount;
-    console.log("Array size", qlist.length);
     correctAnswer ='';
     document.getElementById('question').textContent = qlist[i].question;
     document.getElementById('option1').textContent = qlist[i].option1;
@@ -680,9 +680,10 @@ function askQuestion(qlist) {
 
     correctAnswer = qlist[i].correctAnswer;
     questionCount++;
-    checkQuestionCount(questionCount, qlist.length);
+
 
 }
+
 
 function checkQuestionCount(count, arraySize) {
   if (count === arraySize) {
@@ -692,6 +693,7 @@ function checkQuestionCount(count, arraySize) {
 	}
   } 	
 
+  
 
 function nextQuestion() {
 	document.getElementById('option1').style.pointerEvents = "auto";
@@ -746,6 +748,8 @@ function quizComplete() {
 
 function replayQuiz() {
   document.getElementById('btnReplay').style.visibility ="hidden";
+  document.getElementById('btnReplay').remove();
+  document.getElementById('replayBox').remove();
   startGame();
 }
 
