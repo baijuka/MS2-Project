@@ -670,6 +670,7 @@ function askQuestion(qlist) {
     checkQuestionCount(questionCount, qlist.length);
     let i = questionCount;
     correctAnswer ='';
+
     document.getElementById('question').textContent = qlist[i].question;
     document.getElementById('option1').textContent = qlist[i].option1;
     document.getElementById('option2').textContent = qlist[i].option2;
@@ -677,10 +678,18 @@ function askQuestion(qlist) {
     document.getElementById('option4').textContent = qlist[i].option4;
     document.getElementById('qcount').innerHTML = i+1+' /'+qlist.length;
     document.getElementById('score').innerHTML = score+' /'+qlength;
+    document.getElementById('btnNext').style.visibility ="visible";
 
     correctAnswer = qlist[i].correctAnswer;
+
     questionCount++;
-}
+    if (questionCount+1 > qlist.length) {
+        askedAll = true;
+    } else {
+        false;
+    }
+    return null;
+    }
 
 
 function checkQuestionCount(count, arraySize) {
@@ -689,16 +698,22 @@ function checkQuestionCount(count, arraySize) {
 	} else {
            document.getElementById('btnNext').style.visibility ="visible";
 	}
+    return null;
   } 	
 
   
 
 function nextQuestion() {
-       
-        document.getElementById('option1').style.backgroundColor = "rgb(255, 187, 0)";
-        document.getElementById('option2').style.backgroundColor = "rgb(255, 187, 0)";
-        document.getElementById('option3').style.backgroundColor = "rgb(255, 187, 0)";
-        document.getElementById('option4').style.backgroundColor = "rgb(255, 187, 0)";
+ 
+    document.getElementById('option1').style.backgroundColor = "rgb(255, 187, 0)";
+    document.getElementById('option2').style.backgroundColor = "rgb(255, 187, 0)";
+    document.getElementById('option3').style.backgroundColor = "rgb(255, 187, 0)";
+    document.getElementById('option4').style.backgroundColor = "rgb(255, 187, 0)";
+
+        if (askedAll) {
+            quizComplete();
+        } else {
+
 
 	    document.getElementById('option1').style.pointerEvents = "auto";
         document.getElementById('option2').style.pointerEvents = "auto";
@@ -707,6 +722,7 @@ function nextQuestion() {
     document.getElementById('score').innerHTML = score+' /'+qlength;
     document.getElementById('sresult').innerHTML = '';
     askQuestion(gameQuestions);
+        }
 }
 
 /*function button(userAnswer) {
@@ -729,6 +745,7 @@ function checkAnswer(userAnswer){
 
 	} else {
            document.getElementById('sresult').innerHTML = 'WRONG';
+           document.getElementById(userAnswer).style.backgroundColor = 'red';
 	}
 
     } 
@@ -757,6 +774,15 @@ function replayQuiz() {
   document.getElementById('btnReplay').style.visibility ="hidden";
   document.getElementById('btnReplay').remove();
   document.getElementById('replayBox').remove();
+  document.getElementById('question').textContent = '';
+  document.getElementById('option1').textContent = '';
+  document.getElementById('option2').textContent = '';
+  document.getElementById('option3').textContent = '';
+  document.getElementById('option4').textContent = '';
+  document.getElementById('qcount').innerHTML = 0+' /'+0;
+  document.getElementById('score').innerHTML = 0 +' /'+0;
+  document.getElementById('sresult').innerHTML = '';
+
   startGame();
 }
 
