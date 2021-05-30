@@ -645,6 +645,10 @@ function startGame() {
     questionCount = 0;
     score = 0;
     document.getElementById('btnNext').style.visibility ="hidden";
+    document.getElementById('option1').style.pointerEvents = "auto";
+    document.getElementById('option2').style.pointerEvents = "auto";
+    document.getElementById('option3').style.pointerEvents = "auto";
+    document.getElementById('option4').style.pointerEvents = "auto";
     gameQuestions = pickQuestions(questions);
     qlength = gameQuestions.length;
  // var questionSet = rndQuestions(gameQuestions);
@@ -713,15 +717,13 @@ function nextQuestion() {
         if (askedAll) {
             quizComplete();
         } else {
-
-
-	    document.getElementById('option1').style.pointerEvents = "auto";
-        document.getElementById('option2').style.pointerEvents = "auto";
-        document.getElementById('option3').style.pointerEvents = "auto";
-        document.getElementById('option4').style.pointerEvents = "auto";
-    document.getElementById('score').innerHTML = score+' /'+qlength;
-    document.getElementById('sresult').innerHTML = '';
-    askQuestion(gameQuestions);
+    	    document.getElementById('option1').style.pointerEvents = "auto";
+            document.getElementById('option2').style.pointerEvents = "auto";
+            document.getElementById('option3').style.pointerEvents = "auto";
+            document.getElementById('option4').style.pointerEvents = "auto";
+            document.getElementById('score').innerHTML = score+' /'+qlength;
+            document.getElementById('sresult').innerHTML = '';
+            askQuestion(gameQuestions);
         }
 }
 
@@ -752,7 +754,16 @@ function checkAnswer(userAnswer){
 
 
 function quizComplete() {
+    document.getElementById('question').textContent = 'Quiz Completed';
+    document.getElementById('option1').textContent = '';
+    document.getElementById('option2').textContent = '';
+    document.getElementById('option3').textContent = '';
+    document.getElementById('option4').textContent = '';
+    document.getElementById('qcount').innerHTML = 0+' /'+0;
+    document.getElementById('score').innerHTML = 0 +' /'+0;
+    document.getElementById('sresult').innerHTML = '';
     document.getElementById('btnNext').style.visibility ="hidden";
+
     let replayBox = document.createElement('div');
     replayBox.id = 'replayBox';    
     let btnReplay  = document.createElement('button');
@@ -771,18 +782,8 @@ function quizComplete() {
 }
 
 function replayQuiz() {
-  document.getElementById('btnReplay').style.visibility ="hidden";
-  document.getElementById('btnReplay').remove();
-  document.getElementById('replayBox').remove();
-  document.getElementById('question').textContent = '';
-  document.getElementById('option1').textContent = '';
-  document.getElementById('option2').textContent = '';
-  document.getElementById('option3').textContent = '';
-  document.getElementById('option4').textContent = '';
-  document.getElementById('qcount').innerHTML = 0+' /'+0;
-  document.getElementById('score').innerHTML = 0 +' /'+0;
-  document.getElementById('sresult').innerHTML = '';
-
-  startGame();
+    document.getElementById('btnReplay').remove();
+    document.getElementById('replayBox').remove();
+    startGame();
 }
 
