@@ -478,7 +478,7 @@ const questions = [
     }
 ];
 
-var questionCount, correctAnswer;
+var questionCount, correctAnswer, userAnswer;
 var  gameQuestions = [];
 var score = 0;
 var qlength = 0;
@@ -680,8 +680,6 @@ function askQuestion(qlist) {
 
     correctAnswer = qlist[i].correctAnswer;
     questionCount++;
-
-
 }
 
 
@@ -696,7 +694,13 @@ function checkQuestionCount(count, arraySize) {
   
 
 function nextQuestion() {
-	document.getElementById('option1').style.pointerEvents = "auto";
+       
+        document.getElementById('option1').style.backgroundColor = "rgb(255, 187, 0)";
+        document.getElementById('option2').style.backgroundColor = "rgb(255, 187, 0)";
+        document.getElementById('option3').style.backgroundColor = "rgb(255, 187, 0)";
+        document.getElementById('option4').style.backgroundColor = "rgb(255, 187, 0)";
+
+	    document.getElementById('option1').style.pointerEvents = "auto";
         document.getElementById('option2').style.pointerEvents = "auto";
         document.getElementById('option3').style.pointerEvents = "auto";
         document.getElementById('option4').style.pointerEvents = "auto";
@@ -705,9 +709,9 @@ function nextQuestion() {
     askQuestion(gameQuestions);
 }
 
-function button(userAnswer) {
+/*function button(userAnswer) {
    checkAnswer(userAnswer);   
-}
+} */
 
 function checkAnswer(userAnswer){
         document.getElementById('option1').style.pointerEvents = "none";
@@ -719,7 +723,10 @@ function checkAnswer(userAnswer){
         score++;
        // document.getElementById('score').textContent = score + ' / ' + '10';
         document.getElementById('score').innerHTML = score+' /'+qlength;
-	document.getElementById('sresult').innerHTML = 'CORRECT';
+	    document.getElementById('sresult').innerHTML = 'CORRECT';
+      //  document.getElementById(userAnswer).classList.add('rightAnswer');
+        document.getElementById(userAnswer).style.backgroundColor = 'green';
+
 	} else {
            document.getElementById('sresult').innerHTML = 'WRONG';
 	}
