@@ -181,7 +181,7 @@ const questions = [
     },
 
     {
-        question: "Whatcurrency is being used in Guernsey?",
+        question: "What currency is being used in Guernsey?",
         option1: "Euro",
         option2: "British Pound",
         option3: "Swiss Franc",
@@ -569,24 +569,8 @@ function createQuizroom() {
 
     //create a <p> element for score panel
     var p4score = document.createElement('p');
-    p4score.innerHTML="QUESTION: <span id='qcount'>0/0</span> SCORE:    <span id='score'>0/0</span>";
+    p4score.innerHTML="<span id='qpanel'>QUESTION: <span id='qcount'>0/0</span></span> <span id='spanel'>SCORE: <span id='score'>0/0</span></span>";
 
- /*
-    //create a <span> element for question count
-    var pqcount = document.createElement('SPAN');
-    pqcount.id = 'questionCount';
-    var pscore = document.createElement('SPAN');
-    pscore.id = 'score';
-
-    */
-/*
-    //add spans to p4score
-    p4score.appendChild(pqcount);
-    p4score.appendChild(pscore);
-    pqcount.innerHTML ='0/10      ';
-    pscore.innerHTML = '1/10';
-    p4score.textContent = "QUESTION: "+pqcount.textContent+'    '+'SCORE: '+pscore.textContent;
-*/
     //add pr4score to newDiv3
     newDiv3.appendChild(p4score);
 
@@ -613,7 +597,7 @@ function createQuizroom() {
     //create an h3 element for display the result
     var hresult = document.createElement('h3');
     hresult.id = 'hresult';
-    hresult.innerHTML = "Result: <span id='sresult'></span>";
+    hresult.innerHTML = "<span id='sresult'></span>";
 
     //add hresult to newDiv5
     newDiv5.appendChild(hresult);
@@ -635,11 +619,6 @@ function createQuizroom() {
     startGame();
     }
 
-// initialise variable
-
-
-// invoke the startGame function
-
 function startGame() {
     askedAll = false;
     questionCount = 0;
@@ -651,11 +630,8 @@ function startGame() {
     document.getElementById('option4').style.pointerEvents = "auto";
     gameQuestions = pickQuestions(questions);
     qlength = gameQuestions.length;
- // var questionSet = rndQuestions(gameQuestions);
-  askQuestion(gameQuestions);
+    askQuestion(gameQuestions);
 }
-
-
 
 function pickQuestions(qArray) { 
     let randomQuestions = [];
@@ -727,29 +703,24 @@ function nextQuestion() {
         }
 }
 
-/*function button(userAnswer) {
-   checkAnswer(userAnswer);   
-} */
-
 function checkAnswer(userAnswer){
-        document.getElementById('option1').style.pointerEvents = "none";
-        document.getElementById('option2').style.pointerEvents = "none";
-        document.getElementById('option3').style.pointerEvents = "none";
-        document.getElementById('option4').style.pointerEvents = "none";
-        document.getElementById('btnNext').style.visibility = 'visibile';
+    document.getElementById('option1').style.pointerEvents = "none";
+    document.getElementById('option2').style.pointerEvents = "none";
+    document.getElementById('option3').style.pointerEvents = "none";
+    document.getElementById('option4').style.pointerEvents = "none";
+    document.getElementById('btnNext').style.visibility = 'visibile';
+
     if (userAnswer == correctAnswer) {
         score++;
-       // document.getElementById('score').textContent = score + ' / ' + '10';
         document.getElementById('score').innerHTML = score+' /'+qlength;
 	    document.getElementById('sresult').innerHTML = 'CORRECT';
-      //  document.getElementById(userAnswer).classList.add('rightAnswer');
+        document.getElementById('sresult').style.color = 'green';
         document.getElementById(userAnswer).style.backgroundColor = 'green';
-
 	} else {
-           document.getElementById('sresult').innerHTML = 'WRONG';
-           document.getElementById(userAnswer).style.backgroundColor = 'red';
-	}
-
+        document.getElementById('sresult').innerHTML = 'WRONG';
+        document.getElementById('sresult').style.color='red';
+        document.getElementById(userAnswer).style.backgroundColor = 'red';
+	    }
     } 
 
 
