@@ -732,8 +732,9 @@ function quizComplete() {
     document.getElementById('option4').textContent = '';
     document.getElementById('qcount').innerHTML = 0+' /'+0;
     document.getElementById('score').innerHTML = 0 +' /'+0;
-    document.getElementById('sresult').innerHTML = '';
-    document.getElementById('btnNext').style.visibility ="hidden";
+    document.getElementById('sresult').innerHTML = "You scored " + <span style="color:orange">score</span> + " out of " + <span style="color:orange">qlength </span>;
+    document.getElementById('sresult').style.color= "blue";
+    document.getElementById('btnNext').style.visibility = 'hidden';
 
     let replayBox = document.createElement('div');
     replayBox.id = 'replayBox';    
@@ -755,6 +756,7 @@ function quizComplete() {
 function replayQuiz() {
     document.getElementById('btnReplay').remove();
     document.getElementById('replayBox').remove();
+    document.getElementById('sresult').innerHTML = '';
     startGame();
 }
 
