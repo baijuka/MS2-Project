@@ -685,10 +685,17 @@ function checkQuestionCount(count, arraySize) {
 
 function nextQuestion() {
  
+
     document.getElementById('option1').style.backgroundColor = "rgb(255, 187, 0)";
     document.getElementById('option2').style.backgroundColor = "rgb(255, 187, 0)";
     document.getElementById('option3').style.backgroundColor = "rgb(255, 187, 0)";
-    document.getElementById('option4').style.backgroundColor = "rgb(255, 187, 0)";
+    document.getElementById('option4').style.backgroundColor = "rgb(255, 187, 0)";  
+
+    document.getElementById('option1').classList.add('option');
+    document.getElementById('option2').classList.add('option');
+    document.getElementById('option3').classList.add('option');
+    document.getElementById('option4').classList.add('option');
+   
 
         if (askedAll) {
             quizComplete();
@@ -713,7 +720,7 @@ function checkAnswer(userAnswer){
     if (userAnswer == correctAnswer) {
         score++;
         document.getElementById('score').innerHTML = score+' /'+qlength;
-	    document.getElementById('sresult').innerHTML = 'CORRECT';
+	document.getElementById('sresult').innerHTML = 'CORRECT';
         document.getElementById('sresult').style.color = 'green';
         document.getElementById(userAnswer).style.backgroundColor = 'green';
 	} else {
@@ -726,6 +733,7 @@ function checkAnswer(userAnswer){
 
 function quizComplete() {
     document.getElementById('question').textContent = 'Quiz Completed';
+    document.getElementById('question').style.color='rgb(255, 247,99)';
     document.getElementById('option1').textContent = '';
     document.getElementById('option2').textContent = '';
     document.getElementById('option3').textContent = '';
@@ -757,6 +765,6 @@ function replayQuiz() {
     document.getElementById('btnReplay').remove();
     document.getElementById('replayBox').remove();
     document.getElementById('sresult').innerHTML = '';
+    document.getElementById('question').style.color='white';
     startGame();
 }
-

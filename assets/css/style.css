@@ -5,7 +5,7 @@
 }
 
 body {
-    background-color: #acacac;
+    background-color: bg-light;
 }
 
 .body { 
@@ -35,11 +35,14 @@ html, body {
     display: block;
     height: 500px;
     width: 700px;
-    background-color: rgb(233, 235, 225);
+    background-color: rgb(225, 238, 215);
     border: 1px solid blue;
-    margin: 30px auto;
+    margin: 120px auto;
     border-radius: 10px;
 }
+
+/* Issue - image was not displaing 'file not found error displayed.  
+Fixed - previously url was (/assets/images.europe4.jpg') changed to ../images/europe4.jpg' -- */
 
 .gameIntro {
     
@@ -50,7 +53,7 @@ html, body {
     background-color: white;
     border-radius: 10px;
     padding:25px;
-    background-image: url('/assets/images/europe4.jpg');
+    background-image: url('../images/europe4.jpg');
 }
 
 .gameIntro h1 {
@@ -93,7 +96,7 @@ html, body {
     flex-wrap: wrap;
 }
 
-.option {
+ .option {
     width: 45%;
     min-height: 70px;
     border-radius: 5px;
@@ -105,9 +108,12 @@ html, body {
     margin-left: 10px;  
 }
 
-li:hover {
-    background-color: rgb(199, 149, 75);
-    transition: 0.5s;
+ /* issue hover was not working from second question onwards, so !important added to the background-color 
+ and issue solved  */
+
+  .option:hover {
+    background-color: rgb(199, 149, 75) !important;
+    transition: 0.5s; 
     cursor: pointer;
 }
 
@@ -118,14 +124,14 @@ li:hover {
 #qpanel {
     float: left;
     margin-left: 20px;
-    color: rgba(28, 74, 226, 0.945);
+    color: rgba(158, 67, 14, 0.945);
     font-weight: bold;
 }
 
 #spanel {
     float: right;
     margin-right: 20px;
-    color: rgba(28, 74, 226, 0.945);
+    color: rgba(158, 67, 14, 0.945);
     font-weight: bold;    
 }
 
@@ -151,3 +157,68 @@ li:hover {
     color: blue;
     text-align: center;
 }
+
+#btnReplay {
+  min-width: 25%;
+  min-height: 25%;
+  background-color: orange;
+  color: red;
+  font-size: 1.3em;
+  display: block;
+  margin: 10px auto;
+  border: 1px solid blue;
+  border-radius: 5px;
+}
+
+/* code for media queries was taken from w3school websit and modified to fit the purpose of the site */
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .playGround {
+        width: 100%;
+    }
+    .option {
+        width: 90%;
+    }
+  }
+  
+  /* Small devices (portrait tablets and large phones, 600px and up) */
+  @media only screen and (min-width: 600px) {
+    .playGround {
+        width: 100%;
+    }
+    .option {
+        width: 90%;
+    }
+  }
+  
+  /* Medium devices (landscape tablets, 768px and up) */
+  @media only screen and (min-width: 768px) {
+    .playGround {
+        width: 80%;
+    }
+    .option {
+        width: 45%;
+    }
+  } 
+  
+  /* Large devices (laptops/desktops, 992px and up) */
+  @media only screen and (min-width: 992px) {
+    .playGround {
+        width: 40%;
+    }
+    .option {
+        width: 45%;
+    }
+  } 
+  
+  /* Extra large devices (large laptops and desktops, 1200px and up) */
+  @media only screen and (min-width: 1200px) {
+    .playGround {
+        width: 40%;
+    }
+    .option {
+        width: 45%;
+    }
+  }
+
+ 

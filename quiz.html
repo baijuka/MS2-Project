@@ -2,31 +2,55 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1 maximum-scale=1, minimum-scale=1">
-    <!-- Bootstrap CSS -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, minimum-scale=1">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous"/>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="/assets/css/style.css">
-    <title>LatQuiz Game Page</title>
+    <title>LatQuiz European Quiz</title>
   </head>
-  <body>
-    <div class="playGround">
+  <body style="background-color: rgb(242, 245, 233);">
+    <header>
+      <!--   Navigation   -->
+      <div class="container-fluid">
+          <div class="row">
+              <div class="col-lg-12 bg">
+                  <nav class="navbar navbar-expand-md navmain navbar-light bg-light fixed-top">
+                      <a class="navbar-brand" href="index.html"><img src="assets/images/logo.png" alt="logo"></a>
+                      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                      </button>
+                      <div class="collapse navbar-collapse" id="navbarResponsive">
+                        <ul class="navbar-nav ml-auto">
+                          <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home <span class="sr-only"></span></a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="#">About</a>
+                          </li>
+                          <li class="nav-item active">
+                            <a class="nav-link" href="quiz.html">Play Quiz</a>
+                          </li>
+                          <li class="nav-item">
+                             <a class="nav-link" href="#">Country Info</a>
+                          </li>
+                          <li class="nav-item">
+                             <a class="nav-link" href="#">Contact</a>
+                          </li>
+                        </ul>
+                      </div>
+                    </nav>
+              </div> 
+          </div>    
+      </div>   
+   </header>
+    <div class="playGround col-sm-12 bg">
       <div class="gameIntro">
         <h1>Welcome to LatQuiz</h1>
         <button id="btnStart1" class="btnStart1">Click To Start</button>
       </div>
     </div>
     
-
-    <section>
-      Quiz Section
-        1. Question section 
-        2. Answer Options 
-        3. Question number (0/0)
-        4. Check button
-        5. Next button
-        6. Result panel (Correct or Wrong)
-    </section>
 
     <section>
       Social Media Connections
