@@ -574,7 +574,7 @@ function createQuizroom() {
     //add pr4score to newDiv3
     newDiv3.appendChild(p4score);
 
-    // create a div for Nex button
+    // create a div for Next button
     var newDiv4 = document.createElement('div');
     newDiv4.className = 'next';
     newDiv4.id ="next";
@@ -607,8 +607,8 @@ function createQuizroom() {
      quizWrap.appendChild(newDiv1);
      quizWrap.appendChild(newDiv2);
      quizWrap.appendChild(newDiv3);
-     quizWrap.appendChild(newDiv4);
      quizWrap.appendChild(newDiv5);
+     quizWrap.appendChild(newDiv4);
  
     // add newly created to the play ground
     var container = document.querySelector('div.playGround');
@@ -720,12 +720,13 @@ function checkAnswer(userAnswer){
     if (userAnswer == correctAnswer) {
         score++;
         document.getElementById('score').innerHTML = score+' /'+qlength;
-	document.getElementById('sresult').innerHTML = 'CORRECT';
         document.getElementById('sresult').style.color = 'green';
+	document.getElementById('sresult').innerHTML = 'CORRECT';
         document.getElementById(userAnswer).style.backgroundColor = 'green';
 	} else {
-        document.getElementById('sresult').innerHTML = 'WRONG';
         document.getElementById('sresult').style.color='red';
+        document.getElementById('sresult').innerHTML = 'WRONG';
+
         document.getElementById(userAnswer).style.backgroundColor = 'red';
 	    }
     } 
