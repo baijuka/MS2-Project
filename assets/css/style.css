@@ -31,6 +31,39 @@ html, body {
     padding-right: 0;
 }
 
+/*------- Home page styling  -----*/
+
+/* .carousel-caption h3 {
+    padding-top: 10px !important;
+    padding-bottom: 20px !important;
+}
+carousel-indicators {
+    margin-top: 10px;
+}
+
+.carousel-caption a {
+    background-color: #1189fa;
+    color: white;
+    font-size: 1.2em;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 5px;
+   }
+   */
+   
+.social {
+    font-size: 2.5rem;
+    display: block;
+}
+
+.social a {
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+/*--------- Quiz page styling ------*/
 .playGround {
     position: relative;
     display: block;
@@ -208,6 +241,7 @@ Fixed - previously url was (/assets/images.europe4.jpg') changed to ../images/eu
     .playGround {
         width: 100%;
 	    height: auto;
+        margin-top: 20px;
     }
 
     .gameIntro .btnStart1 {
@@ -279,6 +313,7 @@ Fixed - previously url was (/assets/images.europe4.jpg') changed to ../images/eu
     .playGround {
 	width: 100%;
 	height: auto;
+    margin-top: 20px;
 	padding-bottom: 10px;
 
     }

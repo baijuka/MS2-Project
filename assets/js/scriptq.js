@@ -55,7 +55,7 @@ const questions = [
     },
 
     {
-        question: "_____ is the currency of Belgium?",
+        question: "What is the currency of Belgium?",
         option1: "Swiss Franc",
         option2: "Denar",
         option3: "Euro",
@@ -73,7 +73,7 @@ const questions = [
     },
 
     {
-        question: "Sofia is the capital of _______ ?",
+        question: "Sofia is the capital of which country?",
         option1: "Bulgaria",
         option2: "Jersey",
         option3: "Malta",
@@ -91,7 +91,7 @@ const questions = [
     },
 
     {
-        question: "What is language is being spoken in Cyprus?",
+        question: "What language is being spoken in Cyprus?",
         option1: "German",
         option2: "Ductch",
         option3: "Greek",
@@ -145,7 +145,7 @@ const questions = [
     },
 
     {
-        question: "____ is the capital of France?",
+        question: "From the following list which is the capital of France?",
         option1: "Lyon",
         option2: "Paris",
         option3: "Touulouse",
@@ -190,7 +190,7 @@ const questions = [
     },
 
     {
-        question: "_________ is the language of Holy See?",
+        question: "What is the language of Holy See?",
         option1: "Greek",
         option2: "Latin",
         option3: "French",
@@ -424,7 +424,7 @@ const questions = [
     },
 
     {
-        question: "Waht is the capital of Slovenia?",
+        question: "What is the capital of Slovenia?",
         option1: "Maribor",
         option2: "Celje",
         option3: "Ljubljana",
