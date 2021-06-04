@@ -31,6 +31,15 @@ html, body {
     padding-right: 0;
 }
 
+.container-fluid{
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.btn-primary {
+  background-color: #4260f5;
+}
+
 /*------- Home page styling  -----*/
 
 .jumbotron h1, p {
@@ -59,6 +68,8 @@ html, body {
     border: 1px solid blue;
     margin: 120px auto;
     border-radius: 10px;
+    padding-left: 0;
+    padding-right: 0;
 }
 
 /* Issue - image was not displaing 'file not found error displayed.  
@@ -89,12 +100,12 @@ Fixed - previously url was (/assets/images.europe4.jpg') changed to ../images/eu
 .gameIntro .btnStart1 {
     position: static;
     width: auto !important;
-    height: 12%;
-    border: 1px solid rgb(255, 174, 0);
+    height: 40px;
+    border: 1px solid #4290f5;
     border-radius: 5px;
     font-size:1.2em !important;
-    color: rgb(248, 66, 34); 
-    background-color: #fbffb8;
+    color: white; 
+    background-color: #4260f5;
     display: block;
     margin: 0 auto;
    }
@@ -135,11 +146,16 @@ Fixed - previously url was (/assets/images.europe4.jpg') changed to ../images/eu
  /* issue hover was not working from second question onwards, so !important added to the background-color 
  and issue solved  */
 
+/*  INCLUDE THIS SECTION IN README.MD IN ISSES IDENTIFIED SECTION
+-- this section was moved inside mediq query as hover effect was not working on mobile phones and tablets 
+and the issue solved.  
+Reason - Mobile phones and tablets do not support css hover as these are touch devices----
   .option:hover {
     background-color: rgb(199, 149, 75) !important;
     transition: 0.5s; 
     cursor: pointer;
 }
+-----*/
 
 .rightAnswer {
     background-color: green;
@@ -200,8 +216,18 @@ Fixed - previously url was (/assets/images.europe4.jpg') changed to ../images/eu
   font-size: 1.3em;
   display: block;
   margin: 10px auto;
-  border: 1px solid blue;
+  border: 1px solid orange;
   border-radius: 5px;
+}
+
+/* to remove outline border of the button with focus on  */
+
+button:focus {
+   outline: none !important;
+}
+
+.social .fab {
+    color: rgb(99, 82, 51);
 }
 
 /* code for media queries was taken from w3school websit and modified to fit the purpose of the site */
@@ -428,6 +454,10 @@ Fixed - previously url was (/assets/images.europe4.jpg') changed to ../images/eu
     font-size: x-large;
 }
 
+.option:hover {
+    background-color: rgb(199, 149, 75) !important;
+    transition: 0.5s; 
+    cursor: pointer;
   } 
   
   /* Extra large devices (large laptops and desktops, 1200px and up) */
@@ -463,5 +493,8 @@ Fixed - previously url was (/assets/images.europe4.jpg') changed to ../images/eu
     font-size: x-large;
 }
 
+.option:hover {
+    background-color: rgb(199, 149, 75) !important;
+    transition: 0.5s; 
+    cursor: pointer;
   }
-
