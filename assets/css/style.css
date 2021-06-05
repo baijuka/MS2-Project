@@ -57,6 +57,23 @@ html, body {
     padding-left: 30px;
     padding-right: 30px;
 }
+.social .fab {
+    color: rgb(223, 222, 166);
+}
+
+
+#countryList {
+    display: block;
+    margin: 0 auto;
+}
+
+footer {
+    background-color: rgb(99, 99, 99);
+}
+footer h3, h5 {
+    padding-top: 10px;
+    color: whitesmoke;
+}
 
 /*--------- Quiz page styling ------*/
 .playGround {
@@ -224,10 +241,6 @@ Reason - Mobile phones and tablets do not support css hover as these are touch d
 
 button:focus {
    outline: none !important;
-}
-
-.social .fab {
-    color: rgb(99, 82, 51);
 }
 
 /* code for media queries was taken from w3school websit and modified to fit the purpose of the site */

@@ -71,7 +71,7 @@
                       <div class="carousel-caption">
                           <h1 class="display-2" style="color:#e9e3e3">LatQuiz</h1>
                           <h3>Second smallest continent in size but the third largest in population</h3>
-                          <a href="quiz.html"><button type="button" class="btn btn-primary btn-lg">Learn More</button></a>
+                          <a href="quiz.html"><button type="button" class="btn btn-primary btn-lg">Play Quiz</button></a>
                       </div>
                   </div>
                   <div class="carousel-item">
@@ -101,19 +101,20 @@
                   <h2> Freshen Up Your Knowledge</h2>  
               </div>
               <hr>  <!-- it wont show horizontal line on the page, needs some styling-->
-              <div class="col-12">
-                  <p class="lead">Choose a country from the list to know more about it.</p>
+              <div class="col-12"  style="margin-bottom: 3%;">
+                  <p class="lead">Select a country from the list to know more about it.</p>
               </div>
           </div>
       </div>
 
       <div> 
-          <select name="countryList" id="countryList"></select>
+         
    
     <!--  Two column Section   -->
       <div class="container-fluid">
           <div class="row padding">
-              <div class="col-md-12 col-lg-6">
+              <div class="col-md-12 col-lg-6" id="countryData">
+                <select name="countryList" id="countryList"></select>
                 <h2>If you buld it.....</h2>
                 <p>The column will automatically stack on top of each other when the screen 
                       is less than 576px wide</p>
@@ -124,8 +125,8 @@
                 <br>
                 <a href="#" class="btn btn-primary">Learn more</a>
               </div>
-              <div class="col-md-6 col-lg-6">
-                  <img src="assets/images/josh.JPG" alt="image" class="image-fluid">
+              <div class="col-md-6 col-lg-6" id="mapSection">
+                  <img src="assets/images/europe-map.jpg" alt="image" class="image-fluid" width="100%">
               </div>
 
           </div>
@@ -155,53 +156,24 @@
             <hr class="my-4">
         </div>
 
-        <!-- Connect section  -->
-        <div class="container-fluid padding">
-            <div class="row text-center padding">
-                <div class="col-12">
-                    <h2>Connect</h2>
-                </div>
-                <div class="col-12 social padding">
-                    <a href="#"><i class="fab fa-facebook"></i></a>
-                    <a href="#"><i class="fab fa-twitter"></i></a>
-                    <a href="#"><i class="fab fa-instagram"></i></a>
-                    <a href="#"><i class="fab fa-youtube"></i></a>
-                </div>
-            </div>
-        </div>
-
         <!-- Footer section -->
         <div class="container-fluid">
             <footer>
                 <div class="container-fluid padding">
-                    <div class="row text-center">
-                        <div class="col-md-4">
-                            <img src="assets/images/logo.png" alt="logo">
-                            <hr class="light">
-                            <p>555-555-5555</p>
-                            <p>email@myemail.com</p>
-                            <p>100 Street Name</p>
-                            <p>City, State, 00000</p>
-                        </div>
-                        <div class="col-md-4">
-                            <hr class="light">
-                            <h5>Our Hours</h5>
-                            <hr class="light">
-                            <p>Monday: 9am - 5pm</p>
-                            <p>SaturdaY: 10am - 4pm</p>
-                            <p>Sunday: closed</p>
-                        </div>
-                        <div class="col-md-4">
-                            <hr class="light">
-                            <h5>Service Area</h5>
-                            <hr class="light">
-                            <p>MyCity, State, 00000</p>
-                            <p>City, State, 00000</p>
-                            <p>City, State, 00000</p>
-                        </div>
+                    <div class="row text-center padding">
                         <div class="col-12">
+                            <h3>Connect</h3>
+                        </div>
+                        <div class="col-12 social padding">
+                            <a href="#"><i class="fab fa-facebook"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-youtube"></i></a>
+                        </div>
+                        <br><br>
+                        <div class="col-12" style="margin-top: 15px;">
+                            <h5 style="font-size: small;">&copy; LatQuiz Developers</h5>
                             <hr class="light-100">
-                            <h5>&copy; Euroquiz Developers</h5>
                         </div>
                     </div>
                 </div>
