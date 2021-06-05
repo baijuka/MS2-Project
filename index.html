@@ -112,16 +112,16 @@
    
     <!--  Two column Section   -->
       <div class="container-fluid">
-          <div class="row padding">
+          <div class="row paddin">
               <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6" id="countryData">
-                <select name="countryList" id="countryList"></select>
-                <h2>Country Data</h2>
+                <select name="countryList" id="countryList" onchange ="displayData(this.value)"></select>
+                <h2 id ="countryHead" style="margin-left: 5px;">Country Data</h2>
                 <table>
                     <tr>
                         <th>
                             Country Name
                         </th>
-                        <td>
+                        <td id="c_name">
                             Aland Islands
                         </td>
                     </tr>
@@ -129,7 +129,7 @@
                         <th>
                             Capital
                         </th>
-                        <td>
+                        <td id="c_cap">
                             Mariehamn
                         </td>
                     </tr>
@@ -137,7 +137,7 @@
                         <th>
                             Population
                         </th>
-                        <td>
+                        <td id="c_pop">
                             28875
                         </td>
                     </tr>
@@ -145,7 +145,7 @@
                         <th>
                             Area
                         </th>
-                        <td>
+                        <td id="c_area">
                             1580.0
                         </td>
                     </tr>
@@ -153,7 +153,7 @@
                         <th>
                             Currency
                         </th>
-                        <td>
+                        <td id="c_currency">
                             Euro
                         </td>
                     </tr>
@@ -161,7 +161,7 @@
                         <th>
                             Language
                         </th>
-                        <td>
+                        <td id="c_language">
                             Swedish
                         </td>
                     </tr>
@@ -169,7 +169,7 @@
                         <th>
                             Region
                         </th>
-                        <td>
+                        <td id="c_region">
                             Europe
                         </td>
                     </tr>
@@ -177,7 +177,7 @@
                         <th>
                             Dialing Code
                         </th>
-                        <td>
+                        <td id="c_dial">
                             358
                         </td>
                     </tr>
@@ -185,7 +185,7 @@
                         <th>
                             Latitude,Longitude
                         </th>
-                        <td>
+                        <td id="c_lat">
                             60.116667,19.9
                         </td>
                     </tr>
@@ -193,7 +193,7 @@
                         <th>
                             Time Zone
                         </th>
-                        <td>
+                        <td  id="c_time">
                             UTC+02:00
                         </td>
                     </tr>
@@ -201,7 +201,7 @@
                         <th>
                             Native Name
                         </th>
-                        <td>
+                        <td id="c_native">
                             Aland
                         </td>
                     </tr>
@@ -209,8 +209,8 @@
                         <th>
                             Flag
                         </th>
-                        <td>
-                            Falg 
+                        <td id="c_flag">
+                            <img id="flag_img" src="" alt="Flag" width="50px;" height="30px;">
                         </td>
                     </tr>
                 </table>

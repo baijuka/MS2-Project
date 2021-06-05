@@ -61,11 +61,12 @@ html, body {
     color: rgb(223, 222, 166);
 }
 
-
 #countryList {
     display: block;
-    margin: 0 auto;
+    margin-left: 5px;
+    margin-bottom: 20px;
 }
+
 
 #countryData {
     padding-top: 10px;
@@ -75,6 +76,7 @@ html, body {
 table {
     border-collapse: collapse;
     width: 100%;
+    margin-left: 5px;
   }
   
   td, th {
@@ -97,7 +99,7 @@ footer {
 }
 footer h3, h5 {
     padding-top: 10px;
-    color: whitesmoke;
+    color: rgba(248, 248, 239, 0.979);
 }
 
 /*--------- Quiz page styling ------*/
@@ -352,9 +354,17 @@ button:focus {
     width: 100%;
 }
 
+#countryHead {
+    font-size: 1.2em;
+    }
+
+table {
+    font-size: 15.2px;
+  }
+}
 
   /* Small devices (portrait tablets and large phones, 600px and up) */
-  @media only screen and (min-width: 600px) {
+  @media only screen and (min-width: 600x) {
     .carousel {
         display: none;
     }
@@ -429,8 +439,11 @@ button:focus {
     padding-left: 1px;
   }
 
-  #countryList {
+#countryList {
     width: 100%;
+}
+#countryHead {
+    font-size: 1.2em;
     }
 
 }
