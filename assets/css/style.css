@@ -67,6 +67,31 @@ html, body {
     margin: 0 auto;
 }
 
+#countryData {
+    padding-top: 10px;
+    box-shadow: 0 5px 7px 0 rgba(0, 0.1, 0, 0.18), 0 6px 20px 0 rgba(0, 0.1, 0, 0.21);
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  td, th {
+    border: 1px solid #c0bcbc;
+    text-align: left;
+    padding: 10px;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #e9e1e1;
+  }
+
+#mapSection img {
+    box-shadow: 0 5px 7px 0 rgba(0, 0.1, 0, 0.18), 0 6px 20px 0 rgba(0, 0.1, 0, 0.21);
+    height: 100%;
+}
+
 footer {
     background-color: rgb(99, 99, 99);
 }
@@ -317,8 +342,16 @@ button:focus {
     font-size: large;
 }
 
+#countryData {
+    padding-top: 10px;
+    box-shadow: none;
+    padding-left: 1px;
   }
-  
+
+#countryList {
+    width: 100%;
+}
+
 
   /* Small devices (portrait tablets and large phones, 600px and up) */
   @media only screen and (min-width: 600px) {
@@ -390,7 +423,17 @@ button:focus {
     font-size: large;
 }
 
+#countryData {
+    padding-top: 10px;
+    box-shadow: none;
+    padding-left: 1px;
   }
+
+  #countryList {
+    width: 100%;
+    }
+
+}
   
   /* Medium devices (landscape tablets, 768px and up) */
   @media only screen and (min-width: 768px) {
