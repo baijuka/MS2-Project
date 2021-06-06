@@ -102,6 +102,14 @@ footer h3, h5 {
     color: rgba(248, 248, 239, 0.979);
 }
 
+#about p {
+    text-align: left;
+}
+
+#about_img img {
+    display: block;
+    margin: 0 auto;
+}
 /*--------- Quiz page styling ------*/
 .playGround {
     position: relative;
@@ -273,6 +281,13 @@ button:focus {
 /* code for media queries was taken from w3school websit and modified to fit the purpose of the site */
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
+    h2 {
+        font-size: medium;
+    }
+
+    p {
+        font-size: small !important;
+    }
     .carousel {
         display: none;
     }
@@ -361,10 +376,37 @@ button:focus {
 table {
     font-size: 15.2px;
   }
+
+  footer h3 {
+      font-size: small;
+  }
+
+  footer .social {
+    font-size: large;
+    display: flex;
+    justify-content: center;
+ }
+
+ footer .social a {
+    padding-left: 25px;
+    padding-right: 25px;
+
+}
+#about_img img {
+    width: 50%;
+}
 }
 
   /* Small devices (portrait tablets and large phones, 600px and up) */
   @media only screen and (min-width: 600x) {
+    h2 {
+        font-size: medium;
+    }
+
+    p {
+        font-size: small !important;
+    }
+
     .carousel {
         display: none;
     }
@@ -446,6 +488,24 @@ table {
     font-size: 1.2em;
     }
 
+footer h3 {
+        font-size: small;
+    }
+
+footer .social {
+    font-size: large;
+    display: flex;
+}
+
+footer .social a {
+    padding-left: 30px;
+    padding-right: 30px;
+    justify-content: center;
+}
+
+#about_img img {
+    width: 50%;
+}
 }
   
   /* Medium devices (landscape tablets, 768px and up) */

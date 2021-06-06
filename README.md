@@ -4,7 +4,7 @@
 
 People are always enthusiastic about knowing about their own as well as other countries.  To gather knwoledge they approach various mediums and resources.
 This website was developed with an intention to provide any one wanting know about countries have fun playing onling quize game as at the same time gain 
-knowledge about countries. The quize game provided by this website at the moment focuses only on European countries.  However, the deveoper aims to include
+knowledge about countries. The quiz game provided by this website at the moment focuses only on European countries.  However, the deveoper aims to include
 whole world countries in future versions. 
 
 
