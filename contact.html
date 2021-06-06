@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, minimum-scale=1">
+    <title>LatQuiz European Quiz</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+ <header>
+    <!--   Navigation   -->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-12 bg">
+                <nav class="navbar navbar-expand-md navmain navbar-light bg-light fixed-top">
+                    <a class="navbar-brand" href="index.html"><img src="assets/images/logo.png" alt="logo"></a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarResponsive">
+                      <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                          <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="index.html#about">About</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="quiz.html">Play Quiz</a>
+                        </li>
+                        <li class="nav-item">
+                           <a class="nav-link" href="index.html#countryInfo">Country Info</a>
+                        </li>
+                        <li class="nav-item">
+                           <a class="nav-link active" href="#">Contact</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </nav>
+            </div> 
+        </div>    
+    </div>   
+ </header>
+    
+    <div class="jumbotron jumbotron-fluid" id="contact-jumbo"">
+         <div class="col-12">
+            <h4>Fill the form send it to us </h4>
+        </div>
+      </div>
+    
+    <!--Credit: Form layout in this section was created by following Bootstrap Form layout code (https://getbootstrap.com/docs/4.0/components/forms/) and has modified to fit the purpose of the project -->
+
+    <section id="contac-section" class="container">
+        <div class="row">
+            <div class="col">
+                <div class="center-form">
+                    <form id= "contact-form">
+                        <input type="text" name="contact_name" id="contact_name" class="form-control" placeholder="Name" required style="margin-top: 20px;">
+                        <input type="email" name="contact_email" id="contact_email" class="form-control" placeholder="Email" required style="margin-top: 20px; margin-bottom: 20px;">
+                        <textarea name="message" id="message" cols="30" rows="6" class="form-control" placeholder="Your message" required></textarea>
+                        <div class="form-row text-center">
+                            <div class="col">
+                                <input type="submit" value="Send Message" style="margin-top: 20px;">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+        <!-- Footer section -->
+        <div class="container-fluid">
+            <footer style="margin-top: 60px;">
+                <div class="container-fluid padding">
+                    <div class="row text-center padding">
+                        <div class="col-12">
+                            <h3>Connect</h3>
+                        </div>
+                        <div class="col-12 social padding">
+                            <a href="#"><i class="fab fa-facebook"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-youtube"></i></a>
+                        </div>
+                        <br><br>
+                        <div class="col-12" style="margin-top: 15px;">
+                            <h5 style="font-size: small;">&copy; LatQuiz Developers</h5>
+                            <hr class="light-100">
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+         <!--Credit: Script for form submission was created by following emailjs guide (https://www.emailjs.com/docs/tutorial/creating-contact-form/) and modified to fit the purpose of the project -->
+
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+        <script type="text/javascript">
+            (function() {
+                // https://dashboard.emailjs.com/admin/integration
+                emailjs.init('user_rmGr9ee2uNPlf3SON7x7c');
+            })();
+        </script>
+   
+        <script type="text/javascript">
+            window.onload = function() {
+                document.getElementById('contact-form').addEventListener('submit', function(event) {
+                    event.preventDefault();
+                    emailjs.sendForm('latquiz_contact', 'latquiz_form', this)
+                        .then(function() {
+                            console.log('SUCCESS!');
+                        }, function(error) {
+                            console.log('FAILED...', error);
+                        });
+                });
+            }
+        </script>
+
+</body>
+</html>

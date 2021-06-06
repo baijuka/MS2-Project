@@ -278,6 +278,14 @@ button:focus {
    outline: none !important;
 }
 
+/* Contact page styling ------ */
+
+#contact-jumbo {
+    margin-top: 60px;
+    text-align: center;
+}
+
+
 /* code for media queries was taken from w3school websit and modified to fit the purpose of the site */
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
@@ -309,7 +317,8 @@ button:focus {
         margin-top: 40px;
         font-size: large;
     }
-    .playGround {
+
+   .playGround {
         width: 100%;
 	    height: auto;
         margin-top: 20px;
@@ -394,6 +403,16 @@ table {
 }
 #about_img img {
     width: 50%;
+}
+
+#contact-jumbo {
+    margin-top: 50px;
+    text-align: center;
+}
+
+#contact-jumbo h4 {
+    margin-top: 20%;
+    font-size: larger;
 }
 }
 
@@ -505,6 +524,17 @@ footer .social a {
 
 #about_img img {
     width: 50%;
+}
+
+#contact-jumbo {
+    margin-top: 50px;
+    text-align: center;
+    font-size: large;
+}
+
+#contact-jumbo h4 {
+    margin-top: 20%;
+    font-size: large;
 }
 }
   
