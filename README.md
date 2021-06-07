@@ -108,7 +108,7 @@ under construction
 	. Quiz  Page:- Added with a game board where quiz questions, answer options, scores, questions asked, questions remaining,
 	  correct/wrong notification label, next question button, play again button and the final result.
 	. Cont:- This section features with Name text filed, Email field and comment box text area 
-    	by which users can communicate with the business. Also has given the contact telephone number and address of the business in the header and footer section.
+    	by which users can communicate with the business. 
 
 ### Features Left to Implement
 
@@ -121,8 +121,8 @@ under construction
 
 ### Languages Used
 
--   [HTML5](https://en.wikipedia.org/wiki/HTML5)
--   [CSS3](https://en.wikipedia.org/wiki/Cascading_Style_Sheets)
+-  [HTML5](https://en.wikipedia.org/wiki/HTML5)
+-  [CSS3](https://en.wikipedia.org/wiki/Cascading_Style_Sheets)
 -  [JavaScript](https://www.javascript.com/)
 -  [JSON](https://www.json.org/json-en.html)
 -  [AJAX](https://www.w3schools.com/xml/ajax_intro.asp)
@@ -130,13 +130,13 @@ under construction
 
 ### Frameworks, Libraries & Programs Used
 
-1.	[Bootstrap Framework](https://getbootstrap.com/)
+1. [Bootstrap Framework](https://getbootstrap.com/)
     -   Bootstrap was used to assist with the responsiveness and styling of the website
-1.   [Google Fonts:](https://fonts.google.com/)
+1. [Google Fonts:](https://fonts.google.com/)
     - Google fonts were used to import 'Roboto' and 'Arimo' fonts into the style.css file which is used on all pages throughout the project
-1.   [Font Awesome:](https://fontawesome.com/)
+1. [Font Awesome:](https://fontawesome.com/)
         - Font Awesome was used on all pages throughout the website to add icons for aesthetic and UX purposes
-1.  [Git](https://git-scm.com/)
+1. [Git](https://git-scm.com/)
     - Git was used for version control by utilizing the Gitpod terminal to commit to Git and Push to GitHub
 1. [GitHub:](https://github.com/)
     - GitHub is used to store the projects code after being pushed from Git
@@ -149,60 +149,121 @@ under construction
 
 ------------------------
 
-Welcome baijuka,
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use.
+## Wireframes
 
-## Gitpod Reminders
+Wireframes were created using Balsamiq Desktop App.
+-   Home Page Wireframe -<a href="./assets/wireframes/home.pdf" target="_blank" >Home</a>
+-   Services Page - <a href="./assets/wireframes/services.pdf" target="_blank" >Services</a>
+-   Testimonials Page - <a href="./assets/wireframes/testimonials.pdf" target="_blank" >Testimonials</a>
+-   Contat Page - <a href="./assets/wireframes/contact.pdf" target="_blank" >Contact</a>
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+### Mock-ups for Mobile and Tabs
+-   Home Page - <a href="./assets/wireframes/mockup.pdf" target="_blank" >Home</a>
 
-`python3 -m http.server`
 
-A blue button should appear to click: _Make Public_,
 
-Another blue button should appear to click: _Open Browser_.
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+## Testing
 
-A blue button should appear to click: _Make Public_,
+The W3C Markup Validator and W3C CSS Validator Services were used to validate every page of the project to ensure there were no syntax errors in the project.
+-   [W3C Markup Validator](https://validator.w3.org/) - [Results](https://github.com/)
+-   [W3C CSS Validator](https://jigsaw.w3.org/css-validator/#validate_by_input) - [Results](https://github.com/)
+-   The Website was tested on Google Chrome, Internet Explorer, Microsoft Edge, FireFox, Opera and Safari web browsers
+-   The website was viewed on a variety of devices such as Desktop, Laptop, Moto G4, iPad Mini, Galaxy S5, Pixel 2, 
+    Pixel 2 XL, iPhone 5/SE, iPhone 6/7/8, iPhone 6/7/8 Plus, iPhone X, iPad, iPad Pro, Surface Duo and Galaxy Fold.
+-   A large amount of testing was done to ensure that all pages were linking correctly
+-   Friends, colleagues and family members were asked to review the site and documentation to point out any bugs and/or user experience issues
 
-Another blue button should appear to click: _Open Browser_.
+### Known Bugs
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+-   Isuue - Viewport for IPAD not Responsive
+    . Fixed - Added the meta tag to tell devices like the iPad to set the device width to the size of its viewport.
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-To log into the Heroku toolbelt CLI:
 
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidently make it public then you can create a new one with _Regenerate API Key_.
+## Deployment
 
-## Updates Since The Instructional Video
+### GitHub Pages
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
+The project was deployed to GitHub Pages using the following steps...
 
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
+1. Log in to GitHub and locate the [GitHub Repository](https://github.com/)
+2. At the top of the Repository (not top of page), locate the "Settings" Button on the menu.
+    - Alternatively Click [Here](https://raw.githubusercontent.com/) for a GIF demonstrating the process starting from Step 2.
+3. Scroll down the Settings page until you locate the "GitHub Pages" Section.
+4. Under "Source", click the dropdown called "None" and select "Master Branch".
+5. The page will automatically refresh.
+6. Scroll back down through the page to locate the now published site [link](https://github.com) in the "GitHub Pages" section.
 
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
+### Forking the GitHub Repository
 
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
+By forking the GitHub Repository we make a copy of the original repository on our GitHub account to view and/or make changes without affecting the original repository by using the following steps...
 
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
+1. Log in to GitHub and locate the [GitHub Repository](https://github.com/)
+2. At the top of the Repository (not top of page) just above the "Settings" Button on the menu, locate the "Fork" Button.
+3. You should now have a copy of the original repository in your GitHub account.
 
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
+### Making a Local Clone
 
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
+1. Log in to GitHub and locate the [GitHub Repository](https://github.com/)
+2. Under the repository name, click "Clone or download".
+3. To clone the repository using HTTPS, under "Clone with HTTPS", copy the link.
+4. Open Git Bash
+5. Change the current working directory to the location where you want the cloned directory to be made.
+6. Type 'git clone', and then paste the URL you copied in Step 3.
 
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
+    $ git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY
 
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
+7. Press Enter. Your local clone will be created.
 
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
+    $ git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY
 
----
+> Cloning into 'CI-Clone'
+> remote: Counting objects: 10, done.
+> remote: Compressing objects: 100% (8/8), done.
+> remove: Total 10 (delta 1), reused 10 (delta 1)
+> Unpacking objects: 100% (10/10), done.
 
-Happy coding!
+Click [Here](https://help.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository#cloning-a-repository-to-github-desktop) to retrieve pictures for some of the buttons and more detailed explanations of the above process.
+
+
+## Credits
+
+### Content
+
+-  Text content about european countries was generated using the information available on the website
+   [Kids World Travel Guide](https://www.kids-world-travel-guide.com/)
+
+-  Quiz questions and country data were prepared using [Rest Countries](https://restcountries.eu/rest/v2/region/europe) API.
+
+### Media
+
+The images used in the site were obtained from
+-   [Spray Nozzles](https://www.spray.com)
+-   [Goldstar Multi](https://goldstarmulti.co.uk)
+-   [Autoguide](https://www.autoguide.com)
+-   [Adobe Stock](https://stock.adobe.com/si/search?k=carwash+background)
+-   [Psychology Today](https://cdn.psychologytoday.com)
+-   [The Conversation](https://images.theconversation.com)
+-   [Istock Photo](https://media.istockphoto.com)
+
+### Layout
+
+Following sites were consulted to design the layout of the site pages:
+- [BBC Quizzes](https://www.bbc.co.uk/cbbc/quizzes)
+- [Web Dev Simplified](https://www.youtube.com/watch?v=riDzcEQbX6k)
+- [Kindson The Tech Pro](https://www.youtube.com/watch?v=2Bpiluefkh8)
+
+### JS Coding
+
+Following sites were consulted to develop coding strategy for the site:
+- [Web Dev Simplified](https://www.youtube.com/watch?v=riDzcEQbX6k)
+- [Kindson The Tech Pro](https://www.youtube.com/watch?v=2Bpiluefkh8)
+- [Code Institute Course Module](https://codeinstitute.net/)
+
+
+### Acknowledgement
+
+-   Mr. Antonio Rodriguez(Mentor) for support and advice.

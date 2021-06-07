@@ -6,12 +6,9 @@
 
 body {
     background-color: bg-light;
+    overflow: auto;
+    min-height: 100%;
 }
-
-.body { 
-    overflow: hidden;
-}
-
 
 .header {
     margin: 0;
@@ -97,6 +94,7 @@ table {
 footer {
     background-color: rgb(99, 99, 99);
 }
+
 footer h3, h5 {
     padding-top: 10px;
     color: rgba(248, 248, 239, 0.979);
@@ -285,6 +283,17 @@ button:focus {
     text-align: center;
 }
 
+#contFooter {
+   margin-top: 200px;
+}
+
+.contTxt {
+   background-color: lightyellow;
+}
+
+select {
+  size: 10;
+}
 
 /* code for media queries was taken from w3school websit and modified to fit the purpose of the site */
 /* Extra small devices (phones, 600px and down) */
@@ -310,7 +319,7 @@ button:focus {
         }
 
     div .col-lg-12 {
-            padding: 0;
+         padding: 0;
         }
 
     .jumbotron h1 {
@@ -320,7 +329,7 @@ button:focus {
 
    .playGround {
         width: 100%;
-	    height: auto;
+	height: auto;
         margin-top: 20px;
     }
 
@@ -503,6 +512,7 @@ table {
 #countryList {
     width: 100%;
 }
+
 #countryHead {
     font-size: 1.2em;
     }
@@ -578,6 +588,7 @@ footer .social a {
     display: block;
     font-size: x-large;
 }
+
   } 
   
   /* Large devices (laptops/desktops, 992px and up) */
@@ -586,13 +597,17 @@ footer .social a {
         display: block;
     }
     
+    header {
+	width: 100%;
+  }
+
     .pageDiv {
-        width: 60%;
+        width: 100%;
         height: auto;
     }
 
     .playGround {
-        width: 80%;
+        width: 50%;
         height: 50%;
 	padding: 0;
     }
@@ -625,13 +640,16 @@ footer .social a {
         display: block;
     }
     
+   header {
+	width: 100%;
+    }
     .pageDiv {
-        width: 60%;
+        width: 100%;
         height: auto;
     }
 
     .playGround {
-        width: 80%;
+        width: 50%;
         height: 50%;
 	padding: 0;
     }

@@ -44,38 +44,3 @@ function selectCountry(obj) {
      }
 
 
-/* ------- Populate the array with country names -----------
-var globalData= []; 
-var ourRequest = new XMLHttpRequest();
-  ourRequest.open('GET', 'https://restcountries.eu/rest/v2/region/europe/');
-  ourRequest.onload = function() {
-    if (ourRequest.status >= 200 && ourRequest.status < 400) {
-       ourData = ourRequest.responseText;
-       globalData  = JSON.parse(ourData);
-      selectCountry(globalData)
-       } else {
-      console.log("We connected to the server, but it returned an error.");
-    }
-    
-  };
-
-  ourRequest.onerror = function() {
-    console.log("Connection error");
-  };
-
-  ourRequest.send();
-
-function selectCountry(options) {
-     var select = document.getElementById("countryList"); 
-     for(var i = 0; i < options.length; i++) {
-    var opt = options[i].name;
-    var el = document.createElement("option");
-    el.textContent = opt;
-    el.value = opt;
-    select.appendChild(el);
-    }
-   return '';
-     }
-
-     ----------------- */
-
