@@ -1,6 +1,8 @@
 var xhr = new XMLHttpRequest();
 var data;
 var userChoice;
+var latitude = 0;
+var longtitude = 0;
 xhr.onreadystatechange = function() {
     if (this.readyState == 4 && this.status == 200) {
        // document.getElementById("data").innerHTML = JSON.parse(this.responseText);
@@ -40,7 +42,6 @@ function selectCountry(obj) {
       document.getElementById("c_native").innerHTML = dataReturn[0].nativeName;
       document.getElementById("c_name").innerHTML = dataReturn[0].name;
       document.getElementById("flag_img").src = dataReturn[0].flag;
-
-     }
+      }
 
 

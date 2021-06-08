@@ -114,7 +114,7 @@
       <div class="container-fluid">
           <div class="row paddin">
               <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6" id="countryData">
-                <select name="countryList" id="countryList" onfocus='this.size=10;' onblur='this.size=1;' onchange ="displayData(this.value); this.size=1; this.blur()"></select>
+                <select name="countryList" id="countryList" onfocus='this.size=10;' onblur='this.size=1;' onchange ="displayData(this.value); this.size=1; this.blur();"></select>
                 <h2 id ="countryHead" style="margin-left: 5px;">Country Data</h2>
                 <table>
                     <tr>
@@ -217,8 +217,8 @@
                 <br>
                 
               </div>
-              <div class="col-md-6 col-lg-6" id="mapSection">
-                  <img src="assets/images/europe-map.jpg" alt="image" class="image-fluid" width="100%">
+              <div class="col-md-6 col-lg-6" id="map">
+                 <!--  <img src="" alt="image" class="image-fluid" width="100%">  -->
               </div>
 
           </div>
@@ -272,5 +272,20 @@
             </footer>
         </div>
     <script src="assets/js/script.js"></script>
+    <script>
+       // Google Map API - Credit:- Google Maps Platform sample code was used and modified to display map dynamically 
+
+    function initMap() {
+        var map = new google.maps.Map(document.getElementById("map"), {
+        zoom: 4,
+        center: {
+            lat: 53.0000,
+            lng: 9.0000
+        }
+    });
+    }
+    </script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBysis8AzOca7KkOciKyOldQB3cg3c9D_o&callback=initMap&libraries=&v=weekly">
+    </script>
 </body>
 </html>
