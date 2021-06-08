@@ -122,11 +122,7 @@ footer h3, h5 {
     padding-right: 0;
 }
 
-/* Issue - image was not displaing 'file not found error displayed.  
-Fixed - previously url was (/assets/images.europe4.jpg') changed to ../images/europe4.jpg' -- */
-
 .gameIntro {
-    
     position: relative;
     display: inline-block;
     height: 100%; 
@@ -192,20 +188,6 @@ Fixed - previously url was (/assets/images.europe4.jpg') changed to ../images/eu
     margin-top: 20px;
     margin-left: 10px;  
 }
-
- /* issue hover was not working from second question onwards, so !important added to the background-color 
- and issue solved  */
-
-/*  INCLUDE THIS SECTION IN README.MD IN ISSES IDENTIFIED SECTION
--- this section was moved inside mediq query as hover effect was not working on mobile phones and tablets 
-and the issue solved.  
-Reason - Mobile phones and tablets do not support css hover as these are touch devices----
-  .option:hover {
-    background-color: rgb(199, 149, 75) !important;
-    transition: 0.5s; 
-    cursor: pointer;
-}
------*/
 
 .rightAnswer {
     background-color: green;
@@ -295,7 +277,7 @@ select {
   size: 10;
 }
 
-/* code for media queries was taken from w3school websit and modified to fit the purpose of the site */
+/* Code for media queries was taken from w3school websit and modified to fit the purpose of the site */
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
     h2 {

@@ -177,10 +177,51 @@ The W3C Markup Validator and W3C CSS Validator Services were used to validate ev
 
 ### Known Bugs
 
--   Isuue - Viewport for IPAD not Responsive
-    . Fixed - Added the meta tag to tell devices like the iPad to set the device width to the size of its viewport.
+-   Isuue:- Viewport for IPAD not Responsive
+    . Fixed:- Added the meta tag to tell devices like the iPad to set the device width to the size of its viewport.
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
+-   Issue:- GameIntro (Quiz page) div was not fitting inside the parent div playGround, was sticking out at bottom
+    . Fixed:- Removed margin attribute from gameIntro div.
+
+-   Issue:- Eventlistener not working with the button created using javaScript 
+    Fixed:- Used setattribute method to add onclick event to button.
+
+    var newButton = document.createElement('button');
+    newButton.textContent = 'NEXT';
+    newButton.id = 'btnNext';
+    newButton.classList.add('btnNext');
+    newButton.setAttribute('onclick', "nextQuestion()");
+
+
+-   Issue:- Clicking on correct answer option of same question keeps incrementing the score.
+    Fixed:- Disabled focus from all option elements
+
+-   Issue:- Play button kept added completion of each game
+    Fixed:- Deleted play again div each time pressed play again button
+
+-   Issue:- Hover was not working from second question onwards
+    Fixed;- !important added to the background-color 
+ 
+    .option:hover {
+        background-color: rgb(199, 149, 75) !important;
+        transition: 0.5s; 
+        cursor: pointer;
+        }
+
+-   Issue:- Image was not displaing 'file not found error displayed.  
+    Fixed:- URL (/assets/images.europe4.jpg') was changed to ../images/europe4.jpg'
+
+    .gameIntro {
+        position: relative;
+        display: inline-block;
+        height: 500px; 
+        width: 700px;
+        background-color: white;
+        border-radius: 10px;
+        padding:25px;
+        background-image: url('../images/europe4.jpg');
+    }
 
 
 ## Deployment
@@ -241,20 +282,17 @@ Click [Here](https://help.github.com/en/github/creating-cloning-and-archiving-re
 ### Media
 
 The images used in the site were obtained from
--   [Spray Nozzles](https://www.spray.com)
--   [Goldstar Multi](https://goldstarmulti.co.uk)
--   [Autoguide](https://www.autoguide.com)
--   [Adobe Stock](https://stock.adobe.com/si/search?k=carwash+background)
--   [Psychology Today](https://cdn.psychologytoday.com)
--   [The Conversation](https://images.theconversation.com)
--   [Istock Photo](https://media.istockphoto.com)
+-   [National Geographic](https://i.natgeofe.com/n/0c71f0bd-d255-43a3-85a4-62e296914493/europe-cathedrals-notre-dame.jpg)
+-   [Smarter Travel](https://www.smartertravel.com/)
+-   [Google Maps](https://www.google.co.uk/maps/)
 
-### Layout
+### Layout & Style
 
 Following sites were consulted to design the layout of the site pages:
 - [BBC Quizzes](https://www.bbc.co.uk/cbbc/quizzes)
 - [Web Dev Simplified](https://www.youtube.com/watch?v=riDzcEQbX6k)
 - [Kindson The Tech Pro](https://www.youtube.com/watch?v=2Bpiluefkh8)
+- [W3Schools](https://www.w3schools.com/)
 
 ### JS Coding
 
@@ -262,6 +300,7 @@ Following sites were consulted to develop coding strategy for the site:
 - [Web Dev Simplified](https://www.youtube.com/watch?v=riDzcEQbX6k)
 - [Kindson The Tech Pro](https://www.youtube.com/watch?v=2Bpiluefkh8)
 - [Code Institute Course Module](https://codeinstitute.net/)
+- [W3Schools](https://www.w3schools.com/)
 
 
 ### Acknowledgement
