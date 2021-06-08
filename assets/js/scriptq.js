@@ -13,7 +13,7 @@ request.onreadystatechange = function() {
     }
 };
 
-request.open("GET", '../json/country.json', true);
+request.open("GET", 'assets/json/country.json', true);
 
 request.send();
 
@@ -30,17 +30,35 @@ btnStart1.addEventListener("click", createQuizroom);
 
 
 function createQuizroom() {
-    //remove the gameintro block
+    
+    var quizWrap;
+
+    qFrame();
+    qQuestion();
+    qOptions();        
+    qScore();
+    qResult();
+    qNext();
+    qRoom();
+
+    // invoke startGame function
+    startGame();
+    }
+
+function qFrame() {
+   //remove the gameintro block
     document.querySelector('div.gameIntro').remove();
 
     // create a new div element to use quiz container
-    var quizWrap = document.createElement('div');
+     quizWrap = document.createElement('div');
 
     // add class and id
     quizWrap.className = 'quizContainer';
     quizWrap.id = 'quizContainer';
-    
-    // create a div for question
+}
+
+function qQuestion() {
+       // create a div for question
     var newDiv1 = document.createElement('div');
     newDiv1.className = 'question';
     
@@ -55,8 +73,10 @@ function createQuizroom() {
     //add newDiv1 to quizWrap
 
     quizWrap.appendChild(newDiv1);
+}
 
-     // create a div for options
+function qOptions() {
+        // create a div for options
      var newDiv2 = document.createElement('div');
      
           
@@ -99,9 +119,12 @@ function createQuizroom() {
 
     // add ul to newDiv2
     newDiv2.appendChild(newulOpt);
+    quizWrap.appendChild(newDiv2);
+}
 
-     
-    // create a div for question
+
+function qScore() {
+    // create a div for Score Panel
     var newDiv3 = document.createElement('div');
     newDiv3.className = 'scorePanel';
     newDiv3.id ="scorePanel";
@@ -112,8 +135,11 @@ function createQuizroom() {
 
     //add pr4score to newDiv3
     newDiv3.appendChild(p4score);
+    quizWrap.appendChild(newDiv3);
+}
 
-    // create a div for Next button
+function qNext() {
+   // create a div for Next button
     var newDiv4 = document.createElement('div');
     newDiv4.className = 'next';
     newDiv4.id ="next";
@@ -128,7 +154,11 @@ function createQuizroom() {
 
     //add button to newDiv4
     newDiv4.appendChild(newButton);
-    
+    quizWrap.appendChild(newDiv4);
+}
+
+function qResult() {
+           
     //create a div for result display (CORRECT OR WRONG)
     var newDiv5 = document.createElement('div');
     newDiv5.classList.add('result');
@@ -140,23 +170,14 @@ function createQuizroom() {
 
     //add hresult to newDiv5
     newDiv5.appendChild(hresult);
+    quizWrap.appendChild(newDiv5);
+}
 
-    //add newDiv1, newDiv2, newDiv3, newDiv4, newDiv5 to quizWrap
- 
-     quizWrap.appendChild(newDiv1);
-     quizWrap.appendChild(newDiv2);
-     quizWrap.appendChild(newDiv3);
-     quizWrap.appendChild(newDiv5);
-     quizWrap.appendChild(newDiv4);
- 
-    // add newly created to the play ground
+function qRoom() {
+    // add newly created elements to the play ground
     var container = document.querySelector('div.playGround');
     container.appendChild(quizWrap);
-
-
-      // invoke startGame function
-    startGame();
-    }
+}
 
 function startGame() {
     askedAll = false;
