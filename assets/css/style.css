@@ -367,6 +367,7 @@ select {
 
 #countryList {
     width: 100%;
+    margin-left: 5px;
 }
 
 #countryHead {
@@ -374,7 +375,8 @@ select {
     }
 
 table {
-    font-size: 15.2px;
+    font-size: 15px;
+    margin-left: 3px; 
   }
 
   footer h3 {
@@ -493,14 +495,18 @@ table {
 
 #countryList {
     width: 100%;
+    margin-left: 5px;
 }
 
 #countryHead {
     font-size: 1.2em;
     }
 
+table {
+    margin-left: 2px;
+    }
 footer h3 {
-        font-size: small;
+    font-size: small;
     }
 
 footer .social {

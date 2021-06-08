@@ -2,11 +2,10 @@
 
 [View the live project here.](https://baijuka.github.io/MS2-Project/)
 
-People are always enthusiastic about knowing about their own as well as other countries.  To gather knwoledge they approach various mediums and resources.
+People are always curious about knowing about their own as well as other countries.  To gather knwoledge they approach various mediums and resources.
 This website was developed with an intention to provide any one wanting know about countries have fun playing onling quize game as at the same time gain 
 knowledge about countries. The quiz game provided by this website at the moment focuses only on European countries.  However, the deveoper aims to include
 whole world countries in future versions. 
-
 
 ## UX
 
@@ -54,7 +53,7 @@ LatQuiz has incorporated all these user goals in its website and it:
 - has provided all required information about services and business
 - is intuitive, learnable and easy to navigate
 - has arranged its patterns, navigation and order of menu items in a way that any one can identify it easily
-- is, above all, responsive to various devices such as mobile, tablets and larger screens
+- is, above all, responsive to various devices such as mobile phones, tablets and larger screens
 
 ### Developer and Business Goals
 
@@ -68,12 +67,12 @@ This website was designed using user centric approach and for that special atten
 
 ### Fonts
 
--	Primary font: Roboto – simple and allowing letters to be settled into their natural width
--	Secondary font: Arimo – Arimo offers improved on-screen readability characteristics and the pan-European WGL character 
-    set and solves the needs of developers looking for width-compatible fonts to address document portability across platforms
+-  Primary font: Roboto – simple and allowing letters to be settled into their natural width
+-  Secondary font: Arimo – Arimo offers improved on-screen readability characteristics and the pan-European WGL character 
+   set and solves the needs of developers looking for width-compatible fonts to address document portability across platforms
 
 ### Icons 
--	All icons used are relevant to the subject to make navigation easy
+-  All icons used are relevant to the subject to make navigation easy
 
 ### Colors
 
@@ -81,14 +80,14 @@ The main colours used are white, off light-yellow, and off ligt-green (Quiz game
 
 ### Styling
 
--	Tried to keep consistency in design in order to maintain a feeling of relationship between items  
--	Boxes, images, containers and buttons were given round corners to look smooth
--	Both header and footer were given different color patterns to make it more appealing
--	All icons used were given same color to maintain the consistency
+-  Tried to keep consistency in design in order to maintain a feeling of relationship between items  
+-  Boxes, images, containers and buttons were given round corners to look smooth
+-  Both header and footer were given different color patterns to make it more appealing
+-  All icons used were given same color to maintain the consistency
 
 ### Background
 
--	Carousal: Images of various attractions from different parts of europe were used to resemble the nature of the business.
+-  Carousal: Images of various attractions from different parts of europe were used to resemble the nature of the business.
 
 ## Wireframes
 
@@ -283,8 +282,11 @@ Click [Here](https://help.github.com/en/github/creating-cloning-and-archiving-re
 
 The images used in the site were obtained from
 -   [National Geographic](https://i.natgeofe.com/n/0c71f0bd-d255-43a3-85a4-62e296914493/europe-cathedrals-notre-dame.jpg)
--   [Smarter Travel](https://www.smartertravel.com/)
+-   [Shutter Stock](https://image.shutterstock.com/)
+-   [Wikipedia](https://fr.wikipedia.org/)
+-   [Photo Travelllers](https://phototravellers.de/)
 -   [Google Maps](https://www.google.co.uk/maps/)
+-   [Gfycat](https://thumbs.gfycat.com/)
 
 ### Layout & Style
 
