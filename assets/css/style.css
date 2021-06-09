@@ -8,6 +8,7 @@ body {
     background-color: bg-light;
     overflow: auto;
     min-height: 100%;
+    color: rgb(66, 68, 71) !important;
 }
 
 .header {
@@ -260,6 +261,20 @@ button:focus {
    outline: none !important;
 }
 
+.instruction {
+    height: auto;
+    display: block;
+    margin : 0 auto;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: #fdfdfd;
+    border-radius: 10px;
+}
+
+.instruction h3, p {
+    text-align: left;
+}
+
 /* Contact page styling ------ */
 
 #contact-jumbo {
@@ -313,8 +328,8 @@ select {
 
    .playGround {
         width: 100%;
-	height: auto;
-        margin-top: 20px;
+	    height: auto;
+        margin-top: 100px;
     }
 
     .gameIntro .btnStart1 {
@@ -409,6 +424,10 @@ table {
     margin-top: 20%;
     font-size: larger;
 }
+
+.instruction {
+    width: 100%;
+}
 }
 
   /* Small devices (portrait tablets and large phones, 600px and up) */
@@ -441,7 +460,7 @@ table {
     .playGround {
 	width: 100%;
 	height: auto;
-    margin-top: 20px;
+    margin-top: 100px;
 	padding-bottom: 10px;
 
     }
@@ -465,9 +484,9 @@ table {
 
     .option {
         width: 90%;
-	height: auto;
+	    height: auto;
         display: block;
-	margin-top: 10px;
+	    margin-top: 10px;
     }
 
     .scorePanel {
@@ -536,6 +555,10 @@ footer .social a {
     margin-top: 20%;
     font-size: large;
 }
+
+.instruction {
+    width: 100%;
+}
 }
   
   /* Medium devices (landscape tablets, 768px and up) */
@@ -579,6 +602,10 @@ footer .social a {
     font-size: x-large;
 }
 
+.instruction {
+    width: 95%;
+}
+
   } 
   
   /* Large devices (laptops/desktops, 992px and up) */
@@ -599,7 +626,7 @@ footer .social a {
     .playGround {
         width: 50%;
         height: 50%;
-	padding: 0;
+	    padding: 0;
     }
     .option {
         width: 45%;
@@ -623,6 +650,7 @@ footer .social a {
     transition: 0.5s; 
     cursor: pointer;
   } 
+}
   
   /* Extra large devices (large laptops and desktops, 1200px and up) */
   @media only screen and (min-width: 1200px) {
@@ -664,4 +692,9 @@ footer .social a {
     background-color: rgb(199, 149, 75) !important;
     transition: 0.5s; 
     cursor: pointer;
+  }
+
+.instruction {
+    width: 50%;
+}
   }
