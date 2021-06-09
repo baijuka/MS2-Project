@@ -8,7 +8,6 @@ var request = new XMLHttpRequest();
 
 request.onreadystatechange = function() {
     if (this.readyState == 4 && this.status == 200) {
-       // document.getElementById("data").innerHTML = JSON.parse(this.responseText);
        questions = JSON.parse(this.responseText);
     }
 };
@@ -23,7 +22,6 @@ var score = 0;
 var qlength = 0;
 var askedAll = false;
 
-// Event handling
 
 let btnStart1 = document.getElementById("btnStart1");
 btnStart1.addEventListener("click", createQuizroom);
@@ -41,7 +39,6 @@ function createQuizroom() {
     qNext();
     qRoom();
 
-    // invoke startGame function
     startGame();
     }
 
@@ -76,46 +73,45 @@ function qQuestion() {
 }
 
 function qOptions() {
-        // create a div for options
-     var newDiv2 = document.createElement('div');
-     
-          
-     // create a <ul> element for display question
-     var newulOpt = document.createElement('ul');
-     newulOpt.className = 'ulOption';
+    // create a div for options
+    var newDiv2 = document.createElement('div');
+            
+    // create a <ul> element for display question
+    var newulOpt = document.createElement('ul');
+    newulOpt.className = 'ulOption';
 
-     // list items for ul
+    // list items for ul
 
-     var newli1 = document.createElement('li');
-     newli1.className= 'option';
-     newli1.id = 'option1';
-     newli1.classList.add('option1');
-     newli1.setAttribute('onclick', "checkAnswer('option1')");
+    var newli1 = document.createElement('li');
+    newli1.className= 'option';
+    newli1.id = 'option1';
+    newli1.classList.add('option1');
+    newli1.setAttribute('onclick', "checkAnswer('option1')");
 
-     var newli2 = document.createElement('li');
-     newli2.className= 'option';
-     newli2.id = 'option2';
-     newli2.classList.add('option2');
-     newli2.setAttribute('onclick', "checkAnswer('option2')");
+    var newli2 = document.createElement('li');
+    newli2.className= 'option';
+    newli2.id = 'option2';
+    newli2.classList.add('option2');
+    newli2.setAttribute('onclick', "checkAnswer('option2')");
 
-     var newli3 = document.createElement('li');
-     newli3.className= 'option';
-     newli3.id = 'option3';
-     newli3.classList.add('option3');
-     newli3.setAttribute('onclick', "checkAnswer('option3')");
+    var newli3 = document.createElement('li');
+    newli3.className= 'option';
+    newli3.id = 'option3';
+    newli3.classList.add('option3');
+    newli3.setAttribute('onclick', "checkAnswer('option3')");
 
-     var newli4 = document.createElement('li');
-     newli4.className= 'option';
-     newli4.id = 'option4';
-     newli4.classList.add('option4');
-     newli4.setAttribute('onclick', "checkAnswer('option4')");
+    var newli4 = document.createElement('li');
+    newli4.className= 'option';
+    newli4.id = 'option4';
+    newli4.classList.add('option4');
+    newli4.setAttribute('onclick', "checkAnswer('option4')");
 
     // add list items to ul
 
-     newulOpt.appendChild(newli1);
-     newulOpt.appendChild(newli2);
-     newulOpt.appendChild(newli3);
-     newulOpt.appendChild(newli4);
+    newulOpt.appendChild(newli1);
+    newulOpt.appendChild(newli2);
+    newulOpt.appendChild(newli3);
+    newulOpt.appendChild(newli4);
 
     // add ul to newDiv2
     newDiv2.appendChild(newulOpt);
@@ -244,7 +240,6 @@ function checkQuestionCount(count, arraySize) {
   
 
 function nextQuestion() {
- 
 
     document.getElementById('option1').style.backgroundColor = "rgb(255, 187, 0)";
     document.getElementById('option2').style.backgroundColor = "rgb(255, 187, 0)";
@@ -257,16 +252,16 @@ function nextQuestion() {
     document.getElementById('option4').classList.add('option');
    
 
-        if (askedAll) {
-            quizComplete();
-        } else {
-    	    document.getElementById('option1').style.pointerEvents = "auto";
-            document.getElementById('option2').style.pointerEvents = "auto";
-            document.getElementById('option3').style.pointerEvents = "auto";
-            document.getElementById('option4').style.pointerEvents = "auto";
-            document.getElementById('score').innerHTML = score+' /'+qlength;
-            document.getElementById('sresult').innerHTML = '';
-            askQuestion(gameQuestions);
+    if (askedAll) {
+        quizComplete();
+    } else {
+    	document.getElementById('option1').style.pointerEvents = "auto";
+        document.getElementById('option2').style.pointerEvents = "auto";
+        document.getElementById('option3').style.pointerEvents = "auto";
+        document.getElementById('option4').style.pointerEvents = "auto";
+        document.getElementById('score').innerHTML = score+' /'+qlength;
+        document.getElementById('sresult').innerHTML = '';
+        askQuestion(gameQuestions);
         }
 }
 
@@ -281,16 +276,14 @@ function checkAnswer(userAnswer){
         score++;
         document.getElementById('score').innerHTML = score+' /'+qlength;
         document.getElementById('sresult').style.color = 'green';
-	document.getElementById('sresult').innerHTML = 'CORRECT';
+	    document.getElementById('sresult').innerHTML = 'CORRECT';
         document.getElementById(userAnswer).style.backgroundColor = 'green';
 	} else {
         document.getElementById('sresult').style.color='red';
         document.getElementById('sresult').innerHTML = 'WRONG';
-
         document.getElementById(userAnswer).style.backgroundColor = 'red';
 	    }
     } 
-
 
 function quizComplete() {
     document.getElementById('question').textContent = 'Quiz Completed';

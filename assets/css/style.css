@@ -30,12 +30,12 @@ html, body {
 }
 
 .container-fluid{
-  padding-left: 0;
-  padding-right: 0;
+    padding-left: 0;
+    padding-right: 0;
 }
 
 .btn-primary {
-  background-color: #4260f5;
+    background-color: #4260f5;
 }
 
 /*------- Home page styling  -----*/
@@ -43,9 +43,7 @@ html, body {
 .jumbotron h1, p {
     text-align: center;
 }
-.lead {
 
-}
 .social {
     font-size: 2.5rem;
     display: block;
@@ -55,6 +53,7 @@ html, body {
     padding-left: 30px;
     padding-right: 30px;
 }
+
 .social .fab {
     color: rgb(223, 222, 166);
 }
@@ -64,7 +63,6 @@ html, body {
     margin-left: 5px;
     margin-bottom: 20px;
 }
-
 
 #countryData {
     padding-top: 10px;
@@ -77,18 +75,17 @@ table {
     margin-left: 5px;
   }
   
-  td, th {
+td, th {
     border: 1px solid #c0bcbc;
     text-align: left;
     padding: 10px;
   }
   
-  tr:nth-child(even) {
+tr:nth-child(even) {
     background-color: #e9e1e1;
   }
 
-#map  {
-   /* background-image: url("./assets/images/europe-map.jpg");*/
+#map {
     box-shadow: 0 5px 7px 0 rgba(0, 0.1, 0, 0.18), 0 6px 20px 0 rgba(0, 0.1, 0, 0.21);
     width: 100%;
     height: 100%;
@@ -111,6 +108,7 @@ footer h3, h5 {
     display: block;
     margin: 0 auto;
 }
+
 /*--------- Quiz page styling ------*/
 .playGround {
     position: relative;
@@ -159,20 +157,20 @@ footer h3, h5 {
     margin: 0 auto;
    }
 
-   .gameIntro .btnStart1:hover {
-       background-color: rgb(245, 234, 209);
+.gameIntro .btnStart1:hover {
+    background-color: rgb(245, 234, 209);
    }
 
-   .question {
-       padding: 10px;
-       margin-top: 20px;
-       background-color: rgb(63, 100, 20);
-       color:#fbfbfb;
-       text-align: center;
+.question {
+    padding: 10px;
+    margin-top: 20px;
+    background-color: rgb(63, 100, 20);
+    color:#fbfbfb;
+    text-align: center;
    }
 
    .ulOption {
-	list-style: none;
+	    list-style: none;
     	padding: 0%;
     	margin-top: 30px;
     	display: flex;
@@ -180,9 +178,8 @@ footer h3, h5 {
     	flex-wrap: wrap;
 }
 
- .option {
+.option {
     width: 45%;
-   /* height: 60px !important; */
     border-radius: 5px;
     background-color: rgb(255, 187, 0);
     padding:10px;
@@ -244,18 +241,16 @@ footer h3, h5 {
 }
 
 #btnReplay {
-  min-width: 25%;
-  min-height: 25%;
-  background-color: orange;
-  color: red;
-  font-size: 1.3em;
-  display: block;
-  margin: 10px auto;
-  border: 1px solid orange;
-  border-radius: 5px;
+    min-width: 25%;
+    min-height: 25%;
+    background-color: orange;
+    color: red;
+    font-size: 1.3em;
+    display: block;
+    margin: 10px auto;
+    border: 1px solid orange;
+    border-radius: 5px;
 }
-
-/* to remove outline border of the button with focus on  */
 
 button:focus {
    outline: none !important;
@@ -294,45 +289,46 @@ select {
   size: 10;
 }
 
-/* Code for media queries was taken from w3school websit and modified to fit the purpose of the site */
+/* Credit: Code for media queries was taken from w3school websit and modified to fit the purpose of the site */
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
-    h2 {
-        font-size: medium;
+h2 {
+    font-size: medium;
     }
 
-    p {
-        font-size: small !important;
-    }
-    .carousel {
-        display: none;
+p {
+    font-size: small !important;
     }
 
-    .pageDiv {
-        width: 100%;
-        height: auto;
+.carousel {
+    display: none;
     }
 
-    div .container {
-            padding: 0;
-        }
-
-    div .col-lg-12 {
-         padding: 0;
-        }
-
-    .jumbotron h1 {
-        margin-top: 40px;
-        font-size: large;
+.pageDiv {
+    width: 100%;
+    height: auto;
     }
 
-   .playGround {
-        width: 100%;
-	    height: auto;
-        margin-top: 100px;
+div .container {
+    padding: 0;
     }
 
-    .gameIntro .btnStart1 {
+div .col-lg-12 {
+    padding: 0;
+    }
+
+.jumbotron h1 {
+    margin-top: 40px;
+    font-size: large;
+    }
+
+.playGround {
+    width: 100%;
+	height: auto;
+    margin-top: 100px;
+    }
+
+.gameIntro .btnStart1 {
 	display: block;
 	width: 50%;
 	font-size: 0.8em;
@@ -340,24 +336,23 @@ select {
 	margin: 0 auto;
     }
 
-  .playGround .quizContainer  {
-      	height: auto;
+.playGround .quizContainer  {
+    height: auto;
   	width: 100%;
     }
 
-    .ulOption {
+.ulOption {
 	padding-bottom: 10px;
-
     }
 
-    .option {
-        width: 90%;
+.option {
+    width: 90%;
 	height: auto;
 	display: block;
 	margin-top: 10px;
     }
 
-    .scorePanel {
+.scorePanel {
 	display: grid;
 	font-size: small;
     }
@@ -366,7 +361,7 @@ select {
 	margin-top: 20%;
 }
 
-    .btnNext {
+.btnNext {
 	display: flex;
 }
 
@@ -396,100 +391,98 @@ table {
     margin-left: 3px; 
   }
 
-  footer h3 {
-      font-size: small;
+footer h3 {
+    font-size: small;
   }
 
-  footer .social {
+footer .social {
     font-size: large;
     display: flex;
     justify-content: center;
- }
+    }
 
- footer .social a {
+footer .social a {
     padding-left: 25px;
     padding-right: 25px;
+    }
 
-}
 #about_img img {
     width: 50%;
-}
+    }
 
 #contact-jumbo {
     margin-top: 50px;
     text-align: center;
-}
+    }
 
 #contact-jumbo h4 {
     margin-top: 20%;
     font-size: larger;
-}
+    }
 
 .instruction {
     width: 100%;
-}
+    }
 }
 
-  /* Small devices (portrait tablets and large phones, 600px and up) */
-  @media only screen and (min-width: 600x) {
-    h2 {
-        font-size: medium;
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600x) {
+h2 {
+    font-size: medium;
     }
 
-    p {
-        font-size: small !important;
+p {
+    font-size: small !important;
     }
 
-    .carousel {
-        display: none;
+.carousel {
+    display: none;
     }
  
-    .pageDiv {
-        width: 100%;
-        height: auto;
+.pageDiv {
+    width: 100%;
+    height: auto;
     }
    
-    div .container {
-        padding: 0;
+div .container {
+    padding: 0;
     }
 
-    div .col-lg-12 {
-        padding: 0;
+div .col-lg-12 {
+    padding: 0;
     }
 
-    .playGround {
+.playGround {
 	width: 100%;
 	height: auto;
     margin-top: 100px;
 	padding-bottom: 10px;
-
     }
 
-    .gameIntro .btnStart1 {
+.gameIntro .btnStart1 {
    	width: 50%;
 	font-size: 0.8em;
 	font-weight: bold;
 	margin: 0 auto;
     }
 
-    .playGround .quizContainer {
+.playGround .quizContainer {
 	height: auto;
   	width: 100%;
     }
 
-    .ulOption {
+.ulOption {
 	padding-bottom: 10px;
-
     }
 
-    .option {
-        width: 90%;
-	    height: auto;
-        display: block;
-	    margin-top: 10px;
+.option {
+    width: 90%;
+    height: auto;
+    display: block;
+	margin-top: 10px;
     }
 
-    .scorePanel {
+.scorePanel {
 	display: grid;
 	font-size: small;
     }
@@ -498,7 +491,7 @@ table {
 	margin-top: 20%;
 }
 
-    .btnNext {
+.btnNext {
 	display: flex;
     }
 
@@ -558,35 +551,37 @@ footer .social a {
 
 .instruction {
     width: 100%;
-}
+    }
 }
   
-  /* Medium devices (landscape tablets, 768px and up) */
-  @media only screen and (min-width: 768px) {
-    .carousel {
-        display: block;
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+.carousel {
+    display: block;
     }
 
-    .carousel .carousel-item img {
-        width:100%;
-        height: 100%;
-        margin-left: 0;
-        margin-right: 0;
-        padding-left: 0;
-        padding-right: 0;
-    }
-    .pageDiv {
-        width: 90%;
-        height: auto;
+.carousel .carousel-item img {
+    width:100%;
+    height: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 0;
+    padding-right: 0;
     }
 
-    .playGround {
-        width: 95%;
-        height: 50%;
+.pageDiv {
+    width: 90%;
+    height: auto;
+    }
+
+.playGround {
+    width: 95%;
+    height: 50%;
 	padding: 0;
     }
-    .option {
-        width: 45%;
+
+.option {
+    width: 45%;
 	height: 60px;
     }
 
@@ -600,36 +595,36 @@ footer .social a {
     margin-top: 20px;
     display: block;
     font-size: x-large;
-}
+    }
 
 .instruction {
     width: 95%;
-}
-
-  } 
+    }
+} 
   
-  /* Large devices (laptops/desktops, 992px and up) */
-  @media only screen and (min-width: 992px) {
-    .carousel {
-        display: block;
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+.carousel {
+    display: block;
     }
     
-    header {
+header {
 	width: 100%;
   }
 
-    .pageDiv {
-        width: 100%;
-        height: auto;
+.pageDiv {
+    width: 100%;
+    height: auto;
     }
 
-    .playGround {
-        width: 50%;
-        height: 50%;
-	    padding: 0;
+.playGround {
+    width: 50%;
+    height: 50%;
+    padding: 0;
     }
-    .option {
-        width: 45%;
+
+.option {
+    width: 45%;
 	height: 60px;
     }
 
@@ -652,8 +647,8 @@ footer .social a {
   } 
 }
   
-  /* Extra large devices (large laptops and desktops, 1200px and up) */
-  @media only screen and (min-width: 1200px) {
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
     .carousel {
         display: block;
     }
@@ -661,18 +656,20 @@ footer .social a {
    header {
 	width: 100%;
     }
-    .pageDiv {
-        width: 100%;
-        height: auto;
+
+.pageDiv {
+    width: 100%;
+    height: auto;
     }
 
-    .playGround {
-        width: 50%;
-        height: 50%;
+.playGround {
+    width: 50%;
+    height: 50%;
 	padding: 0;
     }
-    .option {
-        width: 45%;
+
+.option {
+    width: 45%;
 	height: 60px;
     }
 
@@ -696,5 +693,5 @@ footer .social a {
 
 .instruction {
     width: 50%;
+    }
 }
-  }
