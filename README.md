@@ -2,21 +2,21 @@
 
 [View the live project here.](https://baijuka.github.io/MS2-Project/)
 
-People are always curious about knowing about their own as well as other countries.  To gather knwoledge they approach various mediums and resources.
-This website was developed with an intention to provide any one wanting know about countries have fun playing onling quize game as at the same time gain 
-knowledge about countries. The quiz game provided by this website at the moment focuses only on European countries.  However, the deveoper aims to include
+People are always curious about knowing about other countries.  To gather knwoledge they approach various mediums and resources.
+This website was developed with an intention to provide any one wanting to know about different countries and have fun playing onling quize game at the same time to 
+gain knowledge about countries. The quiz game provided by this website currently focuses only on European countries.  However, the deveoper aims to include
 whole world countries in future versions. 
 
 ## UX
 
 The primary objective of LatQuiz is to provide its users a user-friendly, intuitive website capable of providing all required information about how to use 
-the website and play the quiz with a user-friendly approach.
+the website and play the quiz within a user-friendly platform.
 
 ### Project Goals
 
 This website focuses mainly two types of users:
-. Young children
-. Grown Ups
+    - Young children
+    - Grown Ups
 
 ### User objectives as a young child
 
@@ -34,14 +34,23 @@ This website focuses mainly two types of users:
 
 ### User stories
 
-As a child :
+As a child:
 - I want to learn about countries
-- I want a medium to where I can play the quiz and test my knowledge about contries 
-- I want to know about how to play the quiz
+- I want a platform where I can play the quiz and test my knowledge about contries 
+- I want to know how to play the quiz
 - I want to offer my suggestions and advice about the game
 - I want to use the site easily
 - I want to use a site that is attractive 
-- I wnat to use site on various devices
+- I wnat to play the quiz on various devices
+
+As a growun up:
+- I want to learn about countries
+- I want a platform where I can play the quiz and test my knowledge about contries 
+- I want to know how to play the quiz
+- I want to offer my suggestions and advice about the game
+- I want to use the site easily
+- I want to use a site that is attractive 
+- I wnat to play the quiz on various devices
 
 LatQuiz has incorporated all these user goals in its website and it:
 
@@ -50,7 +59,7 @@ LatQuiz has incorporated all these user goals in its website and it:
 - has made its website is easy to use
 - is structured by adding interaction features
 - has categorised its content so that users can easily access it depending on their need
-- has provided all required information about services and business
+- has provided all required information about the nature and purpose of the website
 - is intuitive, learnable and easy to navigate
 - has arranged its patterns, navigation and order of menu items in a way that any one can identify it easily
 - is, above all, responsive to various devices such as mobile phones, tablets and larger screens
@@ -68,15 +77,16 @@ This website was designed using user centric approach and for that special atten
 ### Fonts
 
 -  Primary font: Roboto – simple and allowing letters to be settled into their natural width
--  Secondary font: Arimo – Arimo offers improved on-screen readability characteristics and the pan-European WGL character 
-   set and solves the needs of developers looking for width-compatible fonts to address document portability across platforms
+-  Secondary font: Lato – The semi-rounded details of the letters give Lato a feeling of warmth, while the strong structure provides 
+   stability and seriousness
 
 ### Icons 
 -  All icons used are relevant to the subject to make navigation easy
 
 ### Colors
 
-The main colours used are white, off light-yellow, and off ligt-green (Quiz game board).  Dark background has been applied to navigation bar and footer.
+The main colours used are white, off light-yellow, and off ligt-green (Quiz game board).  Light background has been applied to navigation bar and and 
+dark background to footer.
 
 ### Styling
 
@@ -89,24 +99,16 @@ The main colours used are white, off light-yellow, and off ligt-green (Quiz game
 
 -  Carousal: Images of various attractions from different parts of europe were used to resemble the nature of the business.
 
-## Wireframes
-
-under construction
-
-### Mock-ups for Mobile and Tabs
-
-under construction
-
 ## Features
 
 ### Existing Features
 
 -   Responsive on all device sizes
 -   Interactive elements
-	. Home page:– Logo, navbar, header and footer
-	. Quiz  Page:- Added with a game board where quiz questions, answer options, scores, questions asked, questions remaining,
+	- Home page:– Logo, navbar, header and footer
+	- Quiz  Page:- Added with a game board where quiz questions, answer options, scores, questions asked, questions remaining,
 	  correct/wrong notification label, next question button, play again button and the final result.
-	. Cont:- This section features with Name text filed, Email field and comment box text area 
+	- Contact:- This section features with Name text filed, Email field and comment box text area 
     	by which users can communicate with the business. 
 
 ### Features Left to Implement
@@ -153,8 +155,7 @@ under construction
 
 Wireframes were created using Balsamiq Desktop App.
 -   Home Page Wireframe -<a href="./assets/wireframes/home.pdf" target="_blank" >Home</a>
--   Services Page - <a href="./assets/wireframes/services.pdf" target="_blank" >Services</a>
--   Testimonials Page - <a href="./assets/wireframes/testimonials.pdf" target="_blank" >Testimonials</a>
+-   Quiz Page - <a href="./assets/wireframes/services.pdf" target="_blank" >Services</a>
 -   Contat Page - <a href="./assets/wireframes/contact.pdf" target="_blank" >Contact</a>
 
 ### Mock-ups for Mobile and Tabs
@@ -191,7 +192,6 @@ The W3C Markup Validator and W3C CSS Validator Services were used to validate ev
     newButton.id = 'btnNext';
     newButton.classList.add('btnNext');
     newButton.setAttribute('onclick', "nextQuestion()");
-
 
 -   Issue:- Clicking on correct answer option of same question keeps incrementing the score.
     Fixed:- Disabled focus from all option elements
