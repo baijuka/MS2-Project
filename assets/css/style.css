@@ -66,7 +66,7 @@ html, body {
 
 #countryData {
     padding-top: 10px;
-    box-shadow: 0 5px 7px 0 rgba(0, 0.1, 0, 0.18), 0 6px 20px 0 rgba(0, 0.1, 0, 0.21);
+   /* box-shadow: 0 5px 7px 0 rgba(0, 0.1, 0, 0.18), 0 6px 20px 0 rgba(0, 0.1, 0, 0.21); */
     position: relative;
     display: block;
     border-radius: 10px;
@@ -106,6 +106,8 @@ footer h3, h5 {
     display: block;
     margin: 0 auto;
 }
+
+
 
 /*--------- Quiz page styling ------*/
 .playGround {
@@ -283,13 +285,165 @@ button:focus {
    background-color: lightyellow;
 }
 
-select {
-  size: 10;
-}
-
-/* Credit: Code for media queries was taken from w3school websit and modified to fit the purpose of the site */
+/* Extra Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 320px) {
+    h2 {
+        font-size: medium;
+        }
+    
+    p {
+        font-size: small !important;
+        }
+    
+    .carousel {
+        display: none;
+        }
+    
+    .pageDiv {
+        width: 100%;
+        height: auto;
+        }
+    
+    div .container {
+        padding: 0;
+        }
+    
+    div .col-lg-12 {
+        padding: 0;
+        }
+    
+    .jumbotron h1 {
+        margin-top: 40px;
+        font-size: large;
+        }
+    
+    .playGround {
+        width: 100%;
+        height: auto;
+        margin-top: 100px;
+        }
+    
+    .gameIntro .btnStart1 {
+        display: block;
+        width: 50%;
+        font-size: 0.8em;
+        font-weight: bold;
+        margin: 0 auto;
+        }
+    
+    .playGround .quizContainer  {
+        height: auto;
+          width: 100%;
+        }
+    
+    .ulOption {
+        padding-bottom: 10px;
+        }
+    
+    .option {
+        width: 90%;
+        height: auto;
+        display: block;
+        margin-top: 10px;
+        }
+    
+    .scorePanel {
+        display: grid;
+        font-size: small;
+        }
+    
+    .next {
+        margin-top: 20%;
+    }
+    
+    .btnNext {
+        display: flex;
+    }
+    
+    #hresult {
+        margin-top: 20px;
+        display: block;
+        font-size: large;
+    }
+    
+    #countryData {
+        padding-top: 10px;
+        box-shadow: none;
+        padding-left: 1px;
+      }
+    
+    #countryList {
+        width: 100%;
+        margin-left: 5px;
+    }
+    
+    #countryHead {
+        font-size: 1.2em;
+        }
+    
+    table {
+        font-size: 15px;
+        margin-left: 3px; 
+      }
+    
+    footer h3 {
+        font-size: small;
+      }
+    
+    footer .social {
+        font-size: large;
+        display: flex;
+        justify-content: center;
+        }
+    
+    footer .social a {
+        padding-left: 25px;
+        padding-right: 25px;
+        }
+    
+    #about_img img {
+        width: 50%;
+        }
+    
+    #contact-jumbo {
+        margin-top: 50px;
+        text-align: center;
+        }
+    
+    #contact-jumbo h4 {
+        margin-top: 20%;
+        font-size: larger;
+        }
+    
+    .instruction {
+        width: 100%;
+        }
+    
+    .right img {
+        width: 100%;
+        margin: 20px 1px;
+        }
+    
+    .left {
+        float: left;
+        width: 100%;
+        padding-top: 1px;
+        padding-bottom: 1px;
+        padding-left: 0px;
+        padding-right: 5px;
+        }
+          
+    .right {
+        float: left;
+        width: 100%;
+        padding-left: 2px;
+        padding-right: 3px;
+        margin-top: 7px;
+        }   
+    }
+    
 /* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
+@media only screen and (min-width: 320px) {
 h2 {
     font-size: medium;
     }
@@ -421,10 +575,337 @@ footer .social a {
 .instruction {
     width: 100%;
     }
+
+.right img {
+    width: 100%;
+    margin: 20px 10px;
+    }
+
+.left {
+    float: left;
+    width: 100%;
+    padding: 0 20px;
+    }
+      
+.right {
+    float: left;
+    width: 100%;
+    padding-left: 10px;
+    padding-right: 25px;
+    margin-top: 7px;
+    }   
 }
 
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600x) {
+/* Small phones */
+@media only screen and (min-width: 481px) {
+    h2 {
+        font-size: medium;
+        }
+    
+    p {
+        font-size: small !important;
+        }
+    
+    .carousel {
+        display: none;
+        }
+    
+    .pageDiv {
+        width: 100%;
+        height: auto;
+        }
+    
+    div .container {
+        padding: 0;
+        }
+    
+    div .col-lg-12 {
+        padding: 0;
+        }
+    
+    .jumbotron h1 {
+        margin-top: 40px;
+        font-size: large;
+        }
+    
+    .playGround {
+        width: 100%;
+        height: auto;
+        margin-top: 100px;
+        }
+    
+    .gameIntro .btnStart1 {
+        display: block;
+        width: 50%;
+        font-size: 0.8em;
+        font-weight: bold;
+        margin: 0 auto;
+        }
+    
+    .playGround .quizContainer  {
+        height: auto;
+          width: 100%;
+        }
+    
+    .ulOption {
+        padding-bottom: 10px;
+        }
+    
+    .option {
+        width: 90%;
+        height: auto;
+        display: block;
+        margin-top: 10px;
+        }
+    
+    .scorePanel {
+        display: grid;
+        font-size: small;
+        }
+    
+    .next {
+        margin-top: 20%;
+    }
+    
+    .btnNext {
+        display: flex;
+    }
+    
+    #hresult {
+        margin-top: 20px;
+        display: block;
+        font-size: large;
+    }
+    
+    #countryData {
+        padding-top: 10px;
+        box-shadow: none;
+        padding-left: 1px;
+      }
+    
+    #countryList {
+        width: 100%;
+        margin-left: 5px;
+    }
+    
+    #countryHead {
+        font-size: 1.2em;
+        }
+    
+    table {
+        font-size: 15px;
+        margin-left: 3px; 
+      }
+    
+    footer h3 {
+        font-size: small;
+      }
+    
+    footer .social {
+        font-size: large;
+        display: flex;
+        justify-content: center;
+        }
+    
+    footer .social a {
+        padding-left: 25px;
+        padding-right: 25px;
+        }
+    
+    #about_img img {
+        width: 50%;
+        }
+    
+    #contact-jumbo {
+        margin-top: 50px;
+        text-align: center;
+        }
+    
+    #contact-jumbo h4 {
+        margin-top: 20%;
+        font-size: larger;
+        }
+    
+    .instruction {
+        width: 100%;
+        }
+           
+    .right img {
+        width: 100%;
+        margin: 20px 10px;
+        }
+    
+    .left {
+        float: left;
+        width: 100%;
+        padding: 0 20px;
+        }
+          
+    .right {
+        float: left;
+        width: 100%;
+        padding-left: 10px;
+        padding-right: 25px;
+        margin-top: 7px;
+        }   
+    }
+
+/* Big phones */
+@media only screen and (min-width: 641px) {
+    h2 {
+        font-size: medium;
+        }
+    
+    p {
+        font-size: small !important;
+        }
+    
+    .carousel {
+        display: none;
+        }
+    
+    .pageDiv {
+        width: 100%;
+        height: auto;
+        }
+    
+    div .container {
+        padding: 0;
+        }
+    
+    div .col-lg-12 {
+        padding: 0;
+        }
+    
+    .jumbotron h1 {
+        margin-top: 40px;
+        font-size: large;
+        }
+    
+    .playGround {
+        width: 100%;
+        height: auto;
+        margin-top: 100px;
+        }
+    
+    .gameIntro .btnStart1 {
+        display: block;
+        width: 50%;
+        font-size: 0.8em;
+        font-weight: bold;
+        margin: 0 auto;
+        }
+    
+    .playGround .quizContainer  {
+        height: auto;
+          width: 100%;
+        }
+    
+    .ulOption {
+        padding-bottom: 10px;
+        }
+    
+    .option {
+        width: 90%;
+        height: auto;
+        display: block;
+        margin-top: 10px;
+        }
+    
+    .scorePanel {
+        display: grid;
+        font-size: small;
+        }
+    
+    .next {
+        margin-top: 20%;
+    }
+    
+    .btnNext {
+        display: flex;
+    }
+    
+    #hresult {
+        margin-top: 20px;
+        display: block;
+        font-size: large;
+    }
+    
+    #countryData {
+        padding-top: 10px;
+        box-shadow: none;
+        padding-left: 1px;
+      }
+    
+    #countryList {
+        width: 100%;
+        margin-left: 5px;
+    }
+    
+    #countryHead {
+        font-size: 1.2em;
+        }
+    
+    table {
+        font-size: 15px;
+        margin-left: 3px; 
+      }
+    
+    footer h3 {
+        font-size: small;
+      }
+    
+    footer .social {
+        font-size: large;
+        display: flex;
+        justify-content: center;
+        }
+    
+    footer .social a {
+        padding-left: 25px;
+        padding-right: 25px;
+        }
+    
+    #about_img img {
+        width: 50%;
+        }
+    
+    #contact-jumbo {
+        margin-top: 50px;
+        text-align: center;
+        }
+    
+    #contact-jumbo h4 {
+        margin-top: 20%;
+        font-size: larger;
+        }
+    
+    .instruction {
+        width: 100%;
+        }
+    
+    .right img {
+        width: 100%;
+        margin: 20px 10px;
+        }
+    
+    .left {
+        float: left;
+        width: 100%;
+        padding: 0 20px;
+        }
+          
+    .right {
+        float: left;
+        width: 100%;
+        padding-left: 10px;
+        padding-right: 25px;
+        margin-top: 7px;
+        }   
+    }
+    
+/* Portrait tablets  */
+@media only screen and (min-width: 961px) {
 h2 {
     font-size: medium;
     }
@@ -550,10 +1031,30 @@ footer .social a {
 .instruction {
     width: 100%;
     }
+       
+.right img {
+    width: 100%;
+    margin: 20px 10px;
+    }
+
+.left {
+    float: left;
+    width: 100%;
+    padding: 0 20px;
+    }
+          
+.right {
+    float: left;
+    width: 100%;
+    padding-left: 10px;
+    padding-right: 25px;
+    margin-top: 7px;
+    }
 }
+
   
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
+/* desktops */
+@media only screen and (min-width: 1025px) {
 .carousel {
     display: block;
     }
@@ -601,18 +1102,38 @@ footer .social a {
 
 div#map {
     min-height: 360px !important;
-   /* box-shadow: 0 5px 7px 0 rgba(0, 0.1, 0, 0.18), 0 6px 20px 0 rgba(0, 0.1, 0, 0.21); */
+   /* box-shadow: 0 5px 7px 0 rgba(0, 0.1, 0, 0.18), 0 6px 20px 0 rgba(0, 0.1, 0, 0.21); 
     position: relative !important;
     overflow: hidden;
     max-width: 95% !important;
     margin-left: 20px !important;
     margin-right: 10px !important;
-    margin-top: 20px !important;
+    margin-top: 20px !important; */
     }
+           
+    .right img {
+        width: 100%;
+        margin: 20px 10px;
+        }
+    
+    .left {
+        float: left;
+        width: 50%;
+        padding: 0 20px;
+        }
+              
+    .right {
+        float: left;
+        width: 50%;
+        padding-left: 10px;
+        padding-right: 25px;
+        margin-top: 7px;
+        }
+    
 } 
   
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {
+/* Xtra Large devices desktops */
+@media only screen and (min-width: 1281px) {
 .carousel {
     display: block;
     }
@@ -657,60 +1178,24 @@ header {
 
 div#map {
     min-height: 360px;
-    box-shadow: 0 5px 7px 0 rgba(0, 0.1, 0, 0.18), 0 6px 20px 0 rgba(0, 0.1, 0, 0.21);
+    /* box-shadow: 0 5px 7px 0 rgba(0, 0.1, 0, 0.18), 0 6px 20px 0 rgba(0, 0.1, 0, 0.21);*/
     }
-}
-  
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {
-    .carousel {
-        display: block;
-    }
+
+    .right img {
+        width: 100%;
+        margin: 20px 10px;
+        }
     
-   header {
-	width: 100%;
-    }
-
-.pageDiv {
-    width: 100%;
-    height: auto;
-    }
-
-.playGround {
-    width: 50%;
-    height: 50%;
-	padding: 0;
-    }
-
-.option {
-    width: 45%;
-	height: 60px;
-    }
-
-.scorePanel {
-	padding-block: 10px;
-	display: grid;
-	font-size: large;
-    }
-
-#hresult {
-    margin-top: 20px;
-    display: block;
-    font-size: x-large;
-}
-
-.option:hover {
-    background-color: rgb(199, 149, 75) !important;
-    transition: 0.5s; 
-    cursor: pointer;
-  }
-
-.instruction {
-    width: 50%;
-    }
-
-div#map {
-    min-height: 360px;
-    box-shadow: 0 5px 7px 0 rgba(0, 0.1, 0, 0.18), 0 6px 20px 0 rgba(0, 0.1, 0, 0.21);
-    }
+    .left {
+        float: left;
+        width: 50%;
+        padding: 0 20px;
+        }
+              
+    .right {
+        float: left;
+        width: 50%;
+        padding: 15px;
+        margin-top: 7px;
+        }
 }

@@ -105,124 +105,118 @@
                 </div>
             </div>
         </div>
-        <!-- country data and map section -->
+
+        <div>          
         <div class="container-fluid">
             <div class="row paddin">
-                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6" >
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6" id="countryData">
                     <select name="countryList" id="countryList" onfocus='this.size=10;' onblur='this.size=1;' onchange ="displayData(this.value); this.size=1; this.blur();"></select>
+                    <h2 id ="countryHead" style="margin-left: 5px;">Country Data</h2>
+                    <table>
+                        <tr>
+                            <th>
+                                Country Name
+                            </th>
+                            <td id="c_name">
+                                Aland Islands
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>
+                                Capital
+                            </th>
+                            <td id="c_cap">
+                                Mariehamn
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>
+                                Population
+                            </th>
+                            <td id="c_pop">
+                                28875
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>
+                                Area
+                            </th>
+                            <td id="c_area">
+                                1580.0
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>
+                                Currency
+                            </th>
+                            <td id="c_currency">
+                                Euro
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>
+                                Language
+                            </th>
+                            <td id="c_language">
+                                Swedish
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>
+                                Region
+                            </th>
+                            <td id="c_region">
+                                Europe
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>
+                                Dialing Code
+                            </th>
+                            <td id="c_dial">
+                                358
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>
+                                Latitude,Longitude
+                            </th>
+                            <td id="c_lat">
+                                60.116667,19.9
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>
+                                Time Zone
+                            </th>
+                            <td  id="c_time">
+                                UTC+02:00
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>
+                                Native Name
+                            </th>
+                            <td id="c_native">
+                                Aland
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>
+                                Flag
+                            </th>
+                            <td id="c_flag">
+                                <img id="flag_img" src="https://restcountries.eu/data/ala.svg" alt="Flag" width="50px;" height="30px;">
+                            </td>
+                        </tr>
+                    </table>
+                  
+                </div>
+                <div class="col-md-6 col-lg-6" id="map">
+        
                 </div>
             </div>
         </div>
-        <div>
-            <h2 id ="countryHead" style="margin-left: 15px;">Country Data</h2>
-        </div>   
-        <div style="overflow:auto; display: block;">
-            <div class="left">
-                <table>
-                    <tr>
-                        <th>
-                            Country Name
-                        </th>
-                        <td id="c_name">
-                            Aland Islands
-                        </td>
-                    </tr>
-                    <tr>
-                        <th>
-                            Capital
-                        </th>
-                        <td id="c_cap">
-                            Mariehamn
-                        </td>
-                    </tr>
-                    <tr>
-                        <th>
-                            Population
-                        </th>
-                        <td id="c_pop">
-                            28875
-                        </td>
-                    </tr>
-                    <tr>
-                        <th>
-                            Area
-                        </th>
-                        <td id="c_area">
-                            1580.0
-                        </td>
-                    </tr>
-                    <tr>
-                        <th>
-                            Currency
-                        </th>
-                        <td id="c_currency">
-                            Euro
-                        </td>
-                    </tr>
-                    <tr>
-                        <th>
-                            Language
-                        </th>
-                        <td id="c_language">
-                            Swedish
-                        </td>
-                    </tr>
-                    <tr>
-                        <th>
-                            Region
-                        </th>
-                        <td id="c_region">
-                            Europe
-                        </td>
-                    </tr>
-                    <tr>
-                        <th>
-                            Dialing Code
-                        </th>
-                        <td id="c_dial">
-                            358
-                        </td>
-                    </tr>
-                    <tr>
-                        <th>
-                            Latitude,Longitude
-                        </th>
-                        <td id="c_lat">
-                            60.116667,19.9
-                        </td>
-                    </tr>
-                    <tr>
-                        <th>
-                            Time Zone
-                        </th>
-                        <td  id="c_time">
-                            UTC+02:00
-                        </td>
-                    </tr>
-                    <tr>
-                        <th>
-                            Native Name
-                        </th>
-                        <td id="c_native">
-                            Aland
-                        </td>
-                    </tr>
-                    <tr>
-                        <th>
-                            Flag
-                        </th>
-                        <td id="c_flag">
-                            <img id="flag_img" src="https://restcountries.eu/data/ala.svg" alt="Flag" width="50px;" height="30px;">
-                        </td>
-                    </tr>
-                </table>
-            </div>
-          
-            <div class="right" id="map"">
-              <img src="/assets/images/europe-map.jpg">
-            </div>
-        </div>
-               
         <div class="container-fluid">
             <hr class="my-4">
         </div>
@@ -269,8 +263,7 @@
             </footer>
         </div>
         <script src="assets/js/script.js"></script>
-
-    <!--    <script>
+           <script>
         // Google Map API - Credit:- Google Maps Platform sample code has been used and modified to display map dynamically 
 
         function initMap() {
@@ -287,6 +280,6 @@
         }
         </script>
         <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBysis8AzOca7KkOciKyOldQB3cg3c9D_o&callback=initMap&libraries=&v=weekly" async>
-        </script>   -->
+        </script>
     </body>
 </html>
