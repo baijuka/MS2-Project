@@ -11,6 +11,10 @@ body {
     color: rgb(66, 68, 71) !important;
 }
 
+p {
+    font-weight: 400;
+    font-size: 16px;
+}
 .header {
     margin: 0;
 }
@@ -35,12 +39,23 @@ html, body {
 }
 
 .btn-primary {
-    background-color: #4260f5;
+    background-color: #888a88;
+}
+
+#welcome {
+    background-color: #e4e7ed;
+    text-align: center;
 }
 
 /*------- Home page styling  -----*/
 
-.jumbotron h1, p {
+.jumbotron h1 {
+    text-align: center;
+    font-weight: 700;
+    font-size: 1.5rem !important;
+}
+
+.jumbotron p {
     text-align: center;
 }
 
@@ -311,7 +326,11 @@ button:focus {
     div .col-lg-12 {
         padding: 0;
         }
-    
+
+    .jumbotron {
+        margin-top: 40px;
+        }
+        
     .jumbotron h1 {
         margin-top: 40px;
         font-size: large;
@@ -444,12 +463,17 @@ button:focus {
     
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (min-width: 320px) {
+
+h1 {
+    font-size: large
+}
+
 h2 {
     font-size: medium;
     }
 
 p {
-    font-size: small !important;
+    font-size: large !important;
     }
 
 .carousel {
@@ -467,6 +491,10 @@ div .container {
 
 div .col-lg-12 {
     padding: 0;
+    }
+
+.jumbotron {
+    margin-top: 40px;
     }
 
 .jumbotron h1 {
@@ -603,7 +631,7 @@ footer .social a {
         }
     
     p {
-        font-size: small !important;
+        font-size: large !important;
         }
     
     .carousel {
@@ -621,6 +649,10 @@ footer .social a {
     
     div .col-lg-12 {
         padding: 0;
+        }
+    
+    .jumbotron {
+        margin-top: 40px;
         }
     
     .jumbotron h1 {
@@ -757,7 +789,7 @@ footer .social a {
         }
     
     p {
-        font-size: small !important;
+        font-size: large !important;
         }
     
     .carousel {
@@ -776,6 +808,10 @@ footer .social a {
     div .col-lg-12 {
         padding: 0;
         }
+    
+.jumbotron {
+    margin-top: 40px;
+    }
     
     .jumbotron h1 {
         margin-top: 40px;
@@ -911,7 +947,7 @@ h2 {
     }
 
 p {
-    font-size: small !important;
+    font-size: large !important;
     }
 
 .carousel {
@@ -929,6 +965,11 @@ div .container {
 
 div .col-lg-12 {
     padding: 0;
+    }
+
+.jumbotron h1 {
+    margin-top: 40px;
+    font: size 1.3em;
     }
 
 .playGround {
@@ -1055,6 +1096,19 @@ footer .social a {
   
 /* desktops */
 @media only screen and (min-width: 1025px) {
+
+h1 {
+    font-size: 2em;
+    }
+
+h2 {
+    font-size: 1.3em;
+        }
+    
+p {
+    font-size: large !important;
+    }
+
 .carousel {
     display: block;
     }
@@ -1073,6 +1127,11 @@ footer .social a {
     height: auto;
     }
 
+.jumbotron h1 {
+    margin-top: 40px;
+    font: size 1.4em;
+    }
+    
 .playGround {
     width: 95%;
     height: 50%;
@@ -1134,6 +1193,19 @@ div#map {
   
 /* Xtra Large devices desktops */
 @media only screen and (min-width: 1281px) {
+
+h1 {
+    font-size: 2em;
+    }
+    
+h2 {
+    font-size:1.3em
+    }
+    
+p {
+    font-size: large !important;
+    }
+
 .carousel {
     display: block;
     }
@@ -1151,6 +1223,11 @@ header {
     width: 50%;
     height: 50%;
     padding: 0;
+    }
+
+.jumbotron h1 {
+    margin-top: 40px;
+    font: size 1.3em;
     }
 
 .option {
