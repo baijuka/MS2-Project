@@ -52,7 +52,6 @@ html, body {
 .jumbotron h1 {
     text-align: center;
     font-weight: 700;
-    font-size: 1.5rem !important;
 }
 
 .jumbotron p {
@@ -122,7 +121,12 @@ footer h3, h5 {
     margin: 0 auto;
 }
 
+.right {
+    position: relative;
+    top: 0px;
+    bottom: 0px;
 
+}
 
 /*--------- Quiz page styling ------*/
 .playGround {
@@ -302,164 +306,168 @@ button:focus {
 
 /* Extra Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 320px) {
-    h2 {
-        font-size: medium;
-        }
-    
-    p {
-        font-size: small !important;
-        }
-    
-    .carousel {
-        display: none;
-        }
-    
-    .pageDiv {
-        width: 100%;
-        height: auto;
-        }
-    
-    div .container {
-        padding: 0;
-        }
-    
-    div .col-lg-12 {
-        padding: 0;
-        }
+h2 {
+    font-size: medium;
+    }
 
-    .jumbotron {
-        margin-top: 40px;
-        }
+p {
+    font-size: small !important;
+    }
+
+.carousel {
+    display: none;
+    }
+
+.pageDiv {
+    width: 100%;
+    height: auto;
+    }
+
+div .container {
+    padding: 0;
+    }
+
+div .col-lg-12 {
+    padding: 0;
+    }
+
+.jumbotron {
+    margin-top: 40px;
+    }
+    
+.jumbotron h1 {
+    margin-top: 40px;
+    font-size: large;
+    }
+
+.playGround {
+    width: 100%;
+    height: auto;
+    margin-top: 100px;
+    }
+
+.gameIntro .btnStart1 {
+    display: block;
+    width: 50%;
+    font-size: 0.8em;
+    font-weight: bold;
+    margin: 0 auto;
+    }
+
+.playGround .quizContainer  {
+    height: auto;
+        width: 100%;
+    }
+
+.ulOption {
+    padding-bottom: 10px;
+    }
+
+.option {
+    width: 90%;
+    height: auto;
+    display: block;
+    margin-top: 10px;
+    }
+
+.scorePanel {
+    display: grid;
+    font-size: small;
+    }
+
+.next {
+    margin-top: 20%;
+}
+
+.btnNext {
+    display: flex;
+}
+
+#hresult {
+    margin-top: 20px;
+    display: block;
+    font-size: large;
+}
+
+#countryData {
+    padding-top: 10px;
+    box-shadow: none;
+    padding-left: 1px;
+    }
+
+#countryList {
+    width: 100%;
+    margin-left: 5px;
+}
+
+#countryHead {
+    font-size: 1.2em;
+    }
+
+table {
+    font-size: 15px;
+    margin-left: 3px; 
+    }
+
+footer h3 {
+    font-size: small;
+    }
+
+footer .social {
+    font-size: large;
+    display: flex;
+    justify-content: center;
+    }
+
+footer .social a {
+    padding-left: 25px;
+    padding-right: 25px;
+    }
+
+#about_img img {
+    width: 50%;
+    }
+
+#contact-jumbo {
+    margin-top: 50px;
+    text-align: center;
+    }
+
+#contact-jumbo h4 {
+    margin-top: 20%;
+    font-size: larger;
+    }
+
+.instruction {
+    width: 100%;
+    }
+
+.right img {
+    width: 100%;
+    margin: 20px 1px;
+    }
+
+.left {
+    float: left;
+    width: 100%;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    padding-left: 0px;
+    padding-right: 5px;
+    }
         
-    .jumbotron h1 {
-        margin-top: 40px;
-        font-size: large;
-        }
-    
-    .playGround {
-        width: 100%;
-        height: auto;
-        margin-top: 100px;
-        }
-    
-    .gameIntro .btnStart1 {
-        display: block;
-        width: 50%;
-        font-size: 0.8em;
-        font-weight: bold;
-        margin: 0 auto;
-        }
-    
-    .playGround .quizContainer  {
-        height: auto;
-          width: 100%;
-        }
-    
-    .ulOption {
-        padding-bottom: 10px;
-        }
-    
-    .option {
-        width: 90%;
-        height: auto;
-        display: block;
-        margin-top: 10px;
-        }
-    
-    .scorePanel {
-        display: grid;
-        font-size: small;
-        }
-    
-    .next {
-        margin-top: 20%;
+.right {
+    float: left;
+    width: 100%;
+    padding-left: 2px;
+    padding-right: 3px;
+    margin-top: 7px;
     }
-    
-    .btnNext {
-        display: flex;
-    }
-    
-    #hresult {
-        margin-top: 20px;
-        display: block;
-        font-size: large;
-    }
-    
-    #countryData {
-        padding-top: 10px;
-        box-shadow: none;
-        padding-left: 1px;
-      }
-    
-    #countryList {
-        width: 100%;
-        margin-left: 5px;
-    }
-    
-    #countryHead {
-        font-size: 1.2em;
-        }
-    
-    table {
-        font-size: 15px;
-        margin-left: 3px; 
-      }
-    
-    footer h3 {
-        font-size: small;
-      }
-    
-    footer .social {
-        font-size: large;
-        display: flex;
-        justify-content: center;
-        }
-    
-    footer .social a {
-        padding-left: 25px;
-        padding-right: 25px;
-        }
-    
-    #about_img img {
-        width: 50%;
-        }
-    
-    #contact-jumbo {
-        margin-top: 50px;
-        text-align: center;
-        }
-    
-    #contact-jumbo h4 {
-        margin-top: 20%;
-        font-size: larger;
-        }
-    
-    .instruction {
-        width: 100%;
-        }
-    
-    .right img {
-        width: 100%;
-        margin: 20px 1px;
-        }
-    
-    .left {
-        float: left;
-        width: 100%;
-        padding-top: 1px;
-        padding-bottom: 1px;
-        padding-left: 0px;
-        padding-right: 5px;
-        }
-          
-    .right {
-        float: left;
-        width: 100%;
-        padding-left: 2px;
-        padding-right: 3px;
-        margin-top: 7px;
-        }   
-    }
+
+#map {
+    min-height: 360px;
+}
+}
     
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (min-width: 320px) {
@@ -499,7 +507,6 @@ div .col-lg-12 {
 
 .jumbotron h1 {
     margin-top: 40px;
-    font-size: large;
     }
 
 .playGround {
@@ -621,324 +628,339 @@ footer .social a {
     padding-left: 10px;
     padding-right: 25px;
     margin-top: 7px;
-    }   
+    }
+
+#map {
+    min-height: 360px;
+}
 }
 
 /* Small phones */
 @media only screen and (min-width: 481px) {
-    h2 {
-        font-size: medium;
-        }
-    
-    p {
-        font-size: large !important;
-        }
-    
-    .carousel {
-        display: none;
-        }
-    
-    .pageDiv {
-        width: 100%;
-        height: auto;
-        }
-    
-    div .container {
-        padding: 0;
-        }
-    
-    div .col-lg-12 {
-        padding: 0;
-        }
-    
-    .jumbotron {
-        margin-top: 40px;
-        }
-    
-    .jumbotron h1 {
-        margin-top: 40px;
-        font-size: large;
-        }
-    
-    .playGround {
-        width: 100%;
-        height: auto;
-        margin-top: 100px;
-        }
-    
-    .gameIntro .btnStart1 {
-        display: block;
-        width: 50%;
-        font-size: 0.8em;
-        font-weight: bold;
-        margin: 0 auto;
-        }
-    
-    .playGround .quizContainer  {
-        height: auto;
-          width: 100%;
-        }
-    
-    .ulOption {
-        padding-bottom: 10px;
-        }
-    
-    .option {
-        width: 90%;
-        height: auto;
-        display: block;
-        margin-top: 10px;
-        }
-    
-    .scorePanel {
-        display: grid;
-        font-size: small;
-        }
-    
-    .next {
-        margin-top: 20%;
+h2 {
+    font-size: medium;
     }
-    
-    .btnNext {
-        display: flex;
+
+p {
+    font-size: large !important;
     }
-    
-    #hresult {
-        margin-top: 20px;
-        display: block;
-        font-size: large;
+
+.carousel {
+    display: none;
     }
-    
-    #countryData {
-        padding-top: 10px;
-        box-shadow: none;
-        padding-left: 1px;
-      }
-    
-    #countryList {
-        width: 100%;
-        margin-left: 5px;
+
+.pageDiv {
+    width: 100%;
+    height: auto;
     }
-    
-    #countryHead {
-        font-size: 1.2em;
-        }
-    
-    table {
-        font-size: 15px;
-        margin-left: 3px; 
-      }
-    
-    footer h3 {
-        font-size: small;
-      }
-    
-    footer .social {
-        font-size: large;
-        display: flex;
-        justify-content: center;
-        }
-    
-    footer .social a {
-        padding-left: 25px;
-        padding-right: 25px;
-        }
-    
-    #about_img img {
-        width: 50%;
-        }
-    
-    #contact-jumbo {
-        margin-top: 50px;
-        text-align: center;
-        }
-    
-    #contact-jumbo h4 {
-        margin-top: 20%;
-        font-size: larger;
-        }
-    
-    .instruction {
-        width: 100%;
-        }
-           
-    .right img {
-        width: 100%;
-        margin: 20px 10px;
-        }
-    
-    .left {
-        float: left;
-        width: 100%;
-        padding: 0 20px;
-        }
-          
-    .right {
-        float: left;
-        width: 100%;
-        padding-left: 10px;
-        padding-right: 25px;
-        margin-top: 7px;
-        }   
+
+div .container {
+    padding: 0;
     }
+
+div .col-lg-12 {
+    padding: 0;
+    }
+
+.jumbotron {
+    margin-top: 40px;
+    }
+
+.jumbotron h1 {
+    margin-top: 40px;
+    font-size: large;
+    }
+
+.playGround {
+    width: 100%;
+    height: auto;
+    margin-top: 100px;
+    }
+
+.gameIntro .btnStart1 {
+    display: block;
+    width: 50%;
+    font-size: 0.8em;
+    font-weight: bold;
+    margin: 0 auto;
+    }
+
+.playGround .quizContainer  {
+    height: auto;
+        width: 100%;
+    }
+
+.ulOption {
+    padding-bottom: 10px;
+    }
+
+.option {
+    width: 90%;
+    height: auto;
+    display: block;
+    margin-top: 10px;
+    }
+
+.scorePanel {
+    display: grid;
+    font-size: small;
+    }
+
+.next {
+    margin-top: 20%;
+}
+
+.btnNext {
+    display: flex;
+}
+
+#hresult {
+    margin-top: 20px;
+    display: block;
+    font-size: large;
+}
+
+#countryData {
+    padding-top: 10px;
+    box-shadow: none;
+    padding-left: 1px;
+    }
+
+#countryList {
+    width: 100%;
+    margin-left: 5px;
+}
+
+#countryHead {
+    font-size: 1.2em;
+    }
+
+table {
+    font-size: 15px;
+    margin-left: 3px; 
+    }
+
+footer h3 {
+    font-size: small;
+    }
+
+footer .social {
+    font-size: large;
+    display: flex;
+    justify-content: center;
+    }
+
+footer .social a {
+    padding-left: 25px;
+    padding-right: 25px;
+    }
+
+#about_img img {
+    width: 50%;
+    }
+
+#contact-jumbo {
+    margin-top: 50px;
+    text-align: center;
+    }
+
+#contact-jumbo h4 {
+    margin-top: 20%;
+    font-size: larger;
+    }
+
+.instruction {
+    width: 100%;
+    }
+        
+.right img {
+    width: 100%;
+    margin: 20px 10px;
+    }
+
+.left {
+    float: left;
+    width: 100%;
+    padding: 0 20px;
+    }
+        
+.right {
+    float: left;
+    width: 100%;
+    padding-left: 10px;
+    padding-right: 25px;
+    margin-top: 7px;
+    }
+
+#map {
+    min-height: 360px;
+}
+}
 
 /* Big phones */
 @media only screen and (min-width: 641px) {
-    h2 {
-        font-size: medium;
-        }
-    
-    p {
-        font-size: large !important;
-        }
-    
-    .carousel {
-        display: none;
-        }
-    
-    .pageDiv {
-        width: 100%;
-        height: auto;
-        }
-    
-    div .container {
-        padding: 0;
-        }
-    
-    div .col-lg-12 {
-        padding: 0;
-        }
+
+h1 {
+    font-size: x-large !important;
+}
+h2 {
+    font-size: medium;
+    }
+
+p {
+    font-size: large !important;
+    }
+
+.carousel {
+    display: none;
+    }
+
+.pageDiv {
+    width: 100%;
+    height: auto;
+    }
+
+div .container {
+    padding: 0;
+    }
+
+div .col-lg-12 {
+    padding: 0;
+    }
     
 .jumbotron {
     margin-top: 40px;
     }
     
-    .jumbotron h1 {
-        margin-top: 40px;
-        font-size: large;
-        }
-    
-    .playGround {
-        width: 100%;
-        height: auto;
-        margin-top: 100px;
-        }
-    
-    .gameIntro .btnStart1 {
-        display: block;
-        width: 50%;
-        font-size: 0.8em;
-        font-weight: bold;
-        margin: 0 auto;
-        }
-    
-    .playGround .quizContainer  {
-        height: auto;
-          width: 100%;
-        }
-    
-    .ulOption {
-        padding-bottom: 10px;
-        }
-    
-    .option {
-        width: 90%;
-        height: auto;
-        display: block;
-        margin-top: 10px;
-        }
-    
-    .scorePanel {
-        display: grid;
-        font-size: small;
-        }
-    
-    .next {
-        margin-top: 20%;
+.jumbotron h1 {
+    margin-top: 40px;
     }
     
-    .btnNext {
-        display: flex;
+.playGround {
+    width: 100%;
+    height: auto;
+    margin-top: 100px;
+    }
+
+.gameIntro .btnStart1 {
+    display: block;
+    width: 50%;
+    font-size: 0.8em;
+    font-weight: bold;
+    margin: 0 auto;
     }
     
-    #hresult {
-        margin-top: 20px;
-        display: block;
-        font-size: large;
+.playGround .quizContainer  {
+    height: auto;
+        width: 100%;
     }
-    
-    #countryData {
-        padding-top: 10px;
-        box-shadow: none;
-        padding-left: 1px;
-      }
-    
-    #countryList {
-        width: 100%;
-        margin-left: 5px;
+
+.ulOption {
+    padding-bottom: 10px;
     }
-    
-    #countryHead {
-        font-size: 1.2em;
-        }
-    
-    table {
-        font-size: 15px;
-        margin-left: 3px; 
-      }
-    
-    footer h3 {
-        font-size: small;
-      }
-    
-    footer .social {
-        font-size: large;
-        display: flex;
-        justify-content: center;
-        }
-    
-    footer .social a {
-        padding-left: 25px;
-        padding-right: 25px;
-        }
-    
-    #about_img img {
-        width: 50%;
-        }
-    
-    #contact-jumbo {
-        margin-top: 50px;
-        text-align: center;
-        }
-    
-    #contact-jumbo h4 {
-        margin-top: 20%;
-        font-size: larger;
-        }
-    
-    .instruction {
-        width: 100%;
-        }
-    
-    .right img {
-        width: 100%;
-        margin: 20px 10px;
-        }
-    
-    .left {
-        float: left;
-        width: 100%;
-        padding: 0 20px;
-        }
-          
-    .right {
-        float: left;
-        width: 100%;
-        padding-left: 10px;
-        padding-right: 25px;
-        margin-top: 7px;
-        }   
+
+.option {
+    width: 90%;
+    height: auto;
+    display: block;
+    margin-top: 10px;
     }
+
+.scorePanel {
+    display: grid;
+    font-size: small;
+    }
+
+.next {
+    margin-top: 20%;
+}
+
+.btnNext {
+    display: flex;
+}
+
+#hresult {
+    margin-top: 20px;
+    display: block;
+    font-size: large;
+}
+
+#countryData {
+    padding-top: 10px;
+    box-shadow: none;
+    padding-left: 1px;
+    }
+
+#countryList {
+    width: 100%;
+    margin-left: 5px;
+}
+
+#countryHead {
+    font-size: 1.2em;
+    }
+
+table {
+    font-size: 15px;
+    margin-left: 3px; 
+    }
+
+footer h3 {
+    font-size: small;
+    }
+
+footer .social {
+    font-size: large;
+    display: flex;
+    justify-content: center;
+    }
+
+footer .social a {
+    padding-left: 25px;
+    padding-right: 25px;
+    }
+
+#about_img img {
+    width: 50%;
+    }
+
+#contact-jumbo {
+    margin-top: 50px;
+    text-align: center;
+    }
+
+#contact-jumbo h4 {
+    margin-top: 20%;
+    font-size: larger;
+    }
+
+.instruction {
+    width: 100%;
+    }
+
+.right img {
+    width: 100%;
+    margin: 20px 10px;
+    }
+
+.left {
+    float: left;
+    width: 100%;
+    padding: 0 20px;
+    }
+        
+.right {
+    float: left;
+    width: 100%;
+    padding-left: 10px;
+    padding-right: 25px;
+    margin-top: 7px;
+    }
+
+#map {
+    min-height: 360px;
+}
+}
     
 /* Portrait tablets  */
 @media only screen and (min-width: 961px) {
@@ -1091,6 +1113,10 @@ footer .social a {
     padding-right: 25px;
     margin-top: 7px;
     }
+
+#map {
+    min-height: 360px;
+}
 }
 
   
@@ -1098,7 +1124,7 @@ footer .social a {
 @media only screen and (min-width: 1025px) {
 
 h1 {
-    font-size: 2em;
+    font-size: 2.5em !important;
     }
 
 h2 {
@@ -1129,7 +1155,6 @@ p {
 
 .jumbotron h1 {
     margin-top: 40px;
-    font: size 1.4em;
     }
     
 .playGround {
@@ -1159,43 +1184,35 @@ p {
     width: 95%;
     }
 
-div#map {
-    min-height: 360px !important;
-   /* box-shadow: 0 5px 7px 0 rgba(0, 0.1, 0, 0.18), 0 6px 20px 0 rgba(0, 0.1, 0, 0.21); 
-    position: relative !important;
-    overflow: hidden;
-    max-width: 95% !important;
-    margin-left: 20px !important;
-    margin-right: 10px !important;
-    margin-top: 20px !important; */
-    }
            
-    .right img {
-        width: 100%;
-        margin: 20px 10px;
-        }
-    
-    .left {
-        float: left;
-        width: 50%;
-        padding: 0 20px;
-        }
-              
-    .right {
-        float: left;
-        width: 50%;
-        padding-left: 10px;
-        padding-right: 25px;
-        margin-top: 7px;
-        }
-    
+.right img {
+    width: 100%;
+    margin: 0px 10px 20px 10px;
+    }
+
+.left {
+    float: left;
+    width: 50%;
+    padding: 0 20px;
+    }
+            
+.right {
+    float: left;
+    width: 50%;
+    padding: 0 20px;
+    margin-top: 7px;
+    }
+
+#map {
+    height: 530px;
+}
 } 
   
 /* Xtra Large devices desktops */
 @media only screen and (min-width: 1281px) {
 
 h1 {
-    font-size: 2em;
+    font-size: 2.5em !important;
     }
     
 h2 {
@@ -1227,7 +1244,6 @@ header {
 
 .jumbotron h1 {
     margin-top: 40px;
-    font: size 1.3em;
     }
 
 .option {
@@ -1258,21 +1274,25 @@ div#map {
     /* box-shadow: 0 5px 7px 0 rgba(0, 0.1, 0, 0.18), 0 6px 20px 0 rgba(0, 0.1, 0, 0.21);*/
     }
 
-    .right img {
-        width: 100%;
-        margin: 20px 10px;
-        }
-    
-    .left {
-        float: left;
-        width: 50%;
-        padding: 0 20px;
-        }
-              
-    .right {
-        float: left;
-        width: 50%;
-        padding: 15px;
-        margin-top: 7px;
-        }
+.right img {
+    width: 100%;
+    margin: 0px 10px 20px 10px;
+    }
+
+.left {
+    float: left;
+    width: 50%;
+    padding: 0 20px;
+    }
+            
+.right {
+    float: left;
+    width: 50%;
+    padding: 0px 20px;
+    margin-top: 7px;
+    }
+
+#map {
+    height: 530px;
+}
 }
