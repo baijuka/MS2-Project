@@ -276,6 +276,7 @@ button:focus {
 }
 
 .instruction {
+    width: 60%;
     height: auto;
     display: block;
     margin : 0 auto;
@@ -1180,11 +1181,7 @@ p {
     font-size: x-large;
     }
 
-.instruction {
-    width: 95%;
-    }
-
-           
+          
 .right img {
     width: 100%;
     margin: 0px 10px 20px 10px;
@@ -1206,6 +1203,10 @@ p {
 #map {
     height: 530px;
 }
+
+.instruction {
+    width: 50%;
+    }
 } 
   
 /* Xtra Large devices desktops */
@@ -1295,4 +1296,8 @@ div#map {
 #map {
     height: 530px;
 }
+
+.instruction {
+    width: 50%;
+    }
 }
