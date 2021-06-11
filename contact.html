@@ -50,7 +50,7 @@
         
         <div class="jumbotron jumbotron-fluid" id="contact-jumbo"">
             <div class="col-12">
-                <h4>Have something to say?</h4>
+                <h4 style="margin-top: 30px;">Tell us what you think</h4>
             </div>
         </div>
         
@@ -116,10 +116,11 @@
                     emailjs.sendForm('latquiz_contact', 'latquiz_form', this)
                         .then(function() {
                             console.log('SUCCESS!');
+                            document.getElementById('contact-form').reset();
                             }, function(error) {
                                 console.log('FAILED...', error);
                             });
-                    });
+                    }); 
                 }
         </script>
     </body>

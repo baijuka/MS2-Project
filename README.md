@@ -148,14 +148,11 @@ dark background to footer.
 1. Google Chrome
     - Google Chrome was used to browse the pages
 
-------------------------
-
-
 ## Wireframes
 
 Wireframes were created using Balsamiq Desktop App.
 -   Home Page Wireframe -<a href="./assets/wireframes/home.pdf" target="_blank" >Home</a>
--   Quiz Page - <a href="./assets/wireframes/services.pdf" target="_blank" >Services</a>
+-   Quiz Page - <a href="./assets/wireframes/quiz.pdf" target="_blank" >Services</a>
 -   Contat Page - <a href="./assets/wireframes/contact.pdf" target="_blank" >Contact</a>
 
 ### Mock-ups for Mobile and Tabs
@@ -303,6 +300,8 @@ Following sites were consulted to develop coding strategy for the site:
 - [Kindson The Tech Pro](https://www.youtube.com/watch?v=2Bpiluefkh8)
 - [Code Institute Course Module](https://codeinstitute.net/)
 - [W3Schools](https://www.w3schools.com/)
+- [Google Maps Platform](https://cloud.google.com/blog/products/maps-platform)
+- [EmailJS](Shttps://www.emailjs.com)
 
 
 ### Acknowledgement
