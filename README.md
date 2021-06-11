@@ -152,11 +152,11 @@ dark background to footer.
 
 Wireframes were created using Balsamiq Desktop App.
 -   Home Page Wireframe -<a href="./assets/wireframes/home.pdf" target="_blank" >Home</a>
--   Quiz Page - <a href="./assets/wireframes/quiz.pdf" target="_blank" >Services</a>
+-   Quiz Page - <a href="./assets/wireframes/quiz.pdf" target="_blank" >Quiz</a>
 -   Contat Page - <a href="./assets/wireframes/contact.pdf" target="_blank" >Contact</a>
 
 ### Mock-ups for Mobile and Tabs
--   Home Page - <a href="./assets/wireframes/mockup.pdf" target="_blank" >Home</a>
+-   <a href="./assets/wireframes/mockup.pdf" target="_blank" >Mock-Up</a>
 
 
 
