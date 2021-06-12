@@ -34,35 +34,27 @@ This website focuses mainly two types of users:
 
 ### User stories
 
-As a child:
-- I want to learn about countries
-- I want a platform where I can play the quiz and test my knowledge about contries 
-- I want to know how to play the quiz
-- I want to offer my suggestions and advice about the game
-- I want to use the site easily
-- I want to use a site that is attractive 
-- I wnat to play the quiz on various devices
+#### First Time Visitor Goals
+     As a First Time Visitor,
+        ..* I want to easily understand the main purpose of the site.
+        ..* I want to be able to easily navigate throughout the site to find content.
+        ..* I want to learn about countries
+        ..* I want to know how to play the quiz
+        ..* I want to offer my suggestions and advice about the game
+        ..* I wnat to play the quiz on various devices
+        ..* I want to connect with the business throgh their social media links
 
-As a growun up:
-- I want to learn about countries
-- I want a platform where I can play the quiz and test my knowledge about contries 
-- I want to know how to play the quiz
-- I want to offer my suggestions and advice about the game
-- I want to use the site easily
-- I want to use a site that is attractive 
-- I wnat to play the quiz on various devices
+#### Returning Visitor Goals
+     As a Returning Visitor
+        ..* I want to see more options in the game
+        ..* I want more questions on various aspects and areas
+        ..* I want information about attractions and opportunities in different countries
+        ..* I want to know how to travel to other countries
 
-LatQuiz has incorporated all these user goals in its website and it:
-
-- has made a custom website to its users according to their need
-- has implemented a user centric front-end development approach using five planes
-- has made its website is easy to use
-- is structured by adding interaction features
-- has categorised its content so that users can easily access it depending on their need
-- has provided all required information about the nature and purpose of the website
-- is intuitive, learnable and easy to navigate
-- has arranged its patterns, navigation and order of menu items in a way that any one can identify it easily
-- is, above all, responsive to various devices such as mobile phones, tablets and larger screens
+#### Frequent User Goals
+     As a Frequent Visitor
+    ..* I want to see any new options or games added
+    ..* I want to see the user feedback and their rating of the site
 
 ### Developer and Business Goals
 
@@ -109,7 +101,7 @@ dark background to footer.
 	- Quiz  Page:- Added with a game board where quiz questions, answer options, scores, questions asked, questions remaining,
 	  correct/wrong notification label, next question button, play again button and the final result.
 	- Contact:- This section features with Name text filed, Email field and comment box text area 
-    	by which users can communicate with the business. 
+      by which users can communicate with the business. 
 
 ### Features Left to Implement
 
@@ -179,64 +171,31 @@ The W3C Markup Validator and W3C CSS Validator Services were used to validate ev
 -   A large amount of testing was done to ensure that all pages were linking correctly
 -   Friends, mentor, colleagues and family members were asked to review the site and documentation to point out any bugs and/or user experience issues
 
+### Testing User Stories from User Experience (UX) Section
+
+-   First Time Visitor Goals
+    ..* The Home page greets every user with a warm and attractive carousal with images from different parts of Europe.
+    ..* The Navigation Bar at the top right clearly added with menu items to navigate to different sections and pages.
+    ..* The Logo on the top left corner mentions the name of the business .
+    ..* Country Data and Map section displays the information the selected country in the combo box.
+    ..* About section at the bottom of the home page describes about the nature and purpose of the site.
+    ..* Connect section in the footer embedded with businesse's social media link icons.
+    ..* About Game section in the Quiz page explains about how to play the game and its outcome.
+    ..* Contact page has the feature to send messages to the business. This section is provided with Name field, Email field, Message field and Send button.
+    ..* The site has implemented various media queries to work on numerous devices including mobile phones, tablets and desktops.
+        
+-   Returning Visitor Goals
+    
+        ..* More questions, attractions and opportunities in various countries and travel information to be implemented in the next version of the site.
+
+-   Frequent User Goals
+
+        ..* To be implemented in the next version of the site.
+    
 ### Known Bugs
 
--   Isuue:- Viewport for IPAD not Responsive
-    . Fixed:- Added the meta tag to tell devices like the iPad to set the device width to the size of its viewport.
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-
--   Issue:- GameIntro (Quiz page) div was not fitting inside the parent div playGround, was sticking out at bottom
-    . Fixed:- Removed margin attribute from the gameIntro div.
-
--   Issue:- Eventlistener not working with the button created using javaScript 
-    Fixed:- Used setattribute method to add onclick event to button.
-
-    var newButton = document.createElement('button');
-    newButton.textContent = 'NEXT';
-    newButton.id = 'btnNext';
-    newButton.classList.add('btnNext');
-    newButton.setAttribute('onclick', "nextQuestion()");
-
--   Issue:- Repeated clicking on the correct answer option of the current question keeps incrementing the score.
-    Fixed:- Disabled focus from all option elements
-
--   Issue:- After the completion of each round the 'Play Again' button kept added and displayed 
-    Fixed:- Deleted play again div from the parent div each time pressed 'Play Again' button
-
--   Issue:- Hover was not working from second question onwards
-    Fixed:- !important added to the background-color 
- 
-    .option:hover {
-        background-color: rgb(199, 149, 75) !important;
-        transition: 0.5s; 
-        cursor: pointer;
-        }
-
--   Issue:- Image was not displaing 'file not found error displayed.  
-    Fixed:- URL (/assets/images.europe4.jpg') was changed to ../images/europe4.jpg'
-
-    .gameIntro {
-        position: relative;
-        display: inline-block;
-        height: 500px; 
-        width: 700px;
-        background-color: white;
-        border-radius: 10px;
-        padding:25px;
-        background-image: url('../images/europe4.jpg');
-    }
-
--   Issue:- Pages were not responsive on different devices
-    Fixed:- More media queries added according to the size of various devices as given below
-
-        @media only screen and (max-width: 320px) 
-        @media only screen and (min-width: 320px)
-        @media only screen and (min-width: 481px)
-        @media only screen and (min-width: 641px)
-        @media only screen and (min-width: 961px)
-        @media only screen and (min-width: 1025px)
-        @media only screen and (min-width: 1281px) 
-
+- On some mobiles a tiny white gap can be seen on the right at the country data section in the home page.
+- On some tablets quiz game pad strethes horizontally.
 
 
 ## Deployment
