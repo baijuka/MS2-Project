@@ -35,26 +35,29 @@ This website focuses mainly two types of users:
 ### User stories
 
 #### First Time Visitor Goals
-     As a First Time Visitor,
-      * I want to easily understand the main purpose of the site.
-      * I want to be able to easily navigate throughout the site to find the content.
-      * I want to learn about various countries.
-      * I want to know how to play the quiz.
-      * I want to offer my suggestions and advice about the game.
-      * I wnat to play the quiz on various devices.
-      * I want to connect with the business throgh their social media links.
+
+As a First Time Visitor,
+- I want to easily understand the main purpose of the site.
+- I want to be able to easily navigate throughout the site to find the content.
+- I want to learn about various countries.
+- I want to know how to play the quiz.
+- I want to offer my suggestions and advice about the game.
+- I wnat to play the quiz on various devices.
+- I want to connect with the business throgh their social media links.
 
 #### Returning Visitor Goals
-     As a Returning Visitor
-      * I want to see more options in the game.
-      * I want more questions on various aspects and areas.
-      * I want information about attractions and opportunities in different countries.
-      * I want to know how to travel to other countries.
+
+As a Returning Visitor
+- I want to see more options in the game.
+- I want more questions on various aspects and areas.
+- I want information about attractions and opportunities in different countries.
+- I want to know how to travel to other countries.
 
 #### Frequent User Goals
-     As a Frequent Visitor
-      * I want to see any new options and games added.
-      * I want to see the other users' feedback and their rating of the site.
+
+As a Frequent Visitor
+- I want to see any new options and games added.
+- I want to see the other users' feedback and their rating of the site.
 
 ### Developer and Business Goals
 
