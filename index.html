@@ -109,7 +109,7 @@
         <div class="container-fluid">
             <div class="row paddin">
                 <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6" >
-                    <select name="countryList" id="countryList" onfocus='this.size=10;' onblur='this.size=1;' onchange ="displayData(this.value); this.size=1; this.blur();"></select>
+                    <select name="countryList" id="countryList" onfocus='this.size=10;' onblur='this.size=1;' onchange ="displayData(this.value), myMap(); this.size=1; this.blur();"></select>
                 </div>
             </div>
         </div>
@@ -269,24 +269,24 @@
             </footer>
         </div>
         <script src="assets/js/script.js"></script>
-
+        <!-- CREDIT: Google Map API - w3schools and Google Maps Platform sample code has been used and modified to display map dynamically  -->
         <script>
-        // Google Map API - Credit:- Google Maps Platform sample code has been used and modified to display map dynamically 
-
-        function initMap() {
-            const myLatLng = { lat: 53, lng: 9 };
-            const map = new google.maps.Map(document.getElementById("map"), {
-            zoom: 4,
-            center: myLatLng,
-            });
-            new google.maps.Marker({
-            position: myLatLng,
-            map,
-            title: "Hello World!",
-            });
-        }
-        </script>
-        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBysis8AzOca7KkOciKyOldQB3cg3c9D_o&callback=initMap&libraries=&v=weekly" async>
-        </script>   
+        function myMap() {
+            const latStr = document.getElementById("c_lat").textContent;
+            latSplit = latStr.split(",");
+            latitude = parseFloat(latSplit[0]);
+            longitude = parseFloat(latSplit[1]);
+            var mapCanvas = document.getElementById("map");
+            var mapOptions = {
+                 center: new google.maps.LatLng(latitude,longitude),
+                 zoom: 6
+             };
+            var map = new google.maps.Map(mapCanvas,mapOptions);
+            var marker = new google.maps.Marker({position: mapOptions.center});
+            marker.setMap(map);
+         } 
+         </script>
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBysis8AzOca7KkOciKyOldQB3cg3c9D_o&callback=myMap&libraries=&v=weekly" async>
+        </script>         
     </body>
 </html>
