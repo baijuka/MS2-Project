@@ -36,25 +36,25 @@ This website focuses mainly two types of users:
 
 #### First Time Visitor Goals
      As a First Time Visitor,
-        ..* I want to easily understand the main purpose of the site.
-        ..* I want to be able to easily navigate throughout the site to find content.
-        ..* I want to learn about countries
-        ..* I want to know how to play the quiz
-        ..* I want to offer my suggestions and advice about the game
-        ..* I wnat to play the quiz on various devices
-        ..* I want to connect with the business throgh their social media links
+        -  I want to easily understand the main purpose of the site.
+        -  I want to be able to easily navigate throughout the site to find the content.
+        -  I want to learn about various countries.
+        -  I want to know how to play the quiz.
+        -  I want to offer my suggestions and advice about the game.
+        -  I wnat to play the quiz on various devices.
+        -  I want to connect with the business throgh their social media links.
 
 #### Returning Visitor Goals
      As a Returning Visitor
-        ..* I want to see more options in the game
-        ..* I want more questions on various aspects and areas
-        ..* I want information about attractions and opportunities in different countries
-        ..* I want to know how to travel to other countries
+        -  I want to see more options in the game.
+        -  I want more questions on various aspects and areas.
+        -  I want information about attractions and opportunities in different countries.
+        -  I want to know how to travel to other countries.
 
 #### Frequent User Goals
      As a Frequent Visitor
-    ..* I want to see any new options or games added
-    ..* I want to see the user feedback and their rating of the site
+    -  I want to see any new options and games added.
+    -  I want to see the other users' feedback and their rating of the site.
 
 ### Developer and Business Goals
 
@@ -99,17 +99,17 @@ dark background to footer.
 -   Interactive elements
 	- Home page:– Logo, navbar, header and footer
 	- Quiz  Page:- Added with a game board where quiz questions, answer options, scores, questions asked, questions remaining,
-	  correct/wrong notification label, next question button, play again button and the final result.
-	- Contact:- This section features with Name text filed, Email field and comment box text area 
-      by which users can communicate with the business. 
+	  correct/wrong notification label, next question button, play again button and the final result were included.
+	- Contact:- This section features with Name text filed, Email field and Message box text area 
+          by which users can communicate with the business. 
 
 ### Features Left to Implement
 
--   To include all countries around the world
--   To include more different questions on various aspects and areas
--   To include more pages about various attractions and opportunities in different countries
--   To include travel information about each country
--   To apply more styles and features
+-   To include all countries around the world.
+-   To include more different questions on various aspects and areas.
+-   To include more pages about various attractions and opportunities in different countries.
+-   To include travel information about each country.
+-   To apply more styles and features.
 
 ## Technologies Used
 
@@ -166,7 +166,7 @@ The W3C Markup Validator and W3C CSS Validator Services were used to validate ev
 -   [W3C Markup Validator](https://validator.w3.org/) - [Results](https://github.com/)
 -   [W3C CSS Validator](https://jigsaw.w3.org/css-validator/#validate_by_input) - [Results](https://github.com/)
 -   The Website was tested on Google Chrome, Internet Explorer, Microsoft Edge, FireFox, Opera and Safari web browsers
--   The website was viewed on a variety of devices such as Desktop, Laptop, Moto G4, iPad Mini, Galaxy S5, Pixel 2, 
+-   The website was tested on a variety of devices such as Desktop, Laptop, Moto G4, iPad Mini, Galaxy S5, Pixel 2, 
     Pixel 2 XL, iPhone 5/SE, iPhone 6/7/8, iPhone 6/7/8 Plus, iPhone X, iPad, iPad Pro, Surface Duo and Galaxy Fold.
 -   A large amount of testing was done to ensure that all pages were linking correctly
 -   Friends, mentor, colleagues and family members were asked to review the site and documentation to point out any bugs and/or user experience issues
@@ -174,28 +174,28 @@ The W3C Markup Validator and W3C CSS Validator Services were used to validate ev
 ### Testing User Stories from User Experience (UX) Section
 
 -   First Time Visitor Goals
-    ..* The Home page greets every user with a warm and attractive carousal with images from different parts of Europe.
-    ..* The Navigation Bar at the top right clearly added with menu items to navigate to different sections and pages.
-    ..* The Logo on the top left corner mentions the name of the business .
-    ..* Country Data and Map section displays the information the selected country in the combo box.
-    ..* About section at the bottom of the home page describes about the nature and purpose of the site.
-    ..* Connect section in the footer embedded with businesse's social media link icons.
-    ..* About Game section in the Quiz page explains about how to play the game and its outcome.
-    ..* Contact page has the feature to send messages to the business. This section is provided with Name field, Email field, Message field and Send button.
-    ..* The site has implemented various media queries to work on numerous devices including mobile phones, tablets and desktops.
+    -  The Home page greets every user with a warm and attractive carousal with images from different parts of Europe.
+    -  The Navigation Bar at the top right clearly added with menu items to navigate to different sections and pages.
+    -  The Logo on the top left corner mentions the name of the business .
+    -  Country Data and Map section displays the information about the selected country in the combo box.
+    -  About section at the bottom of the home page describes about the nature and purpose of the site.
+    -  Connect section in the footer embedded with businesse's social media link icons.
+    -  About the Game section in the Quiz page explains about how to play the game and its rules.
+    -  Contact page has the feature to send messages to the business. This section is provided with Name field, Email field, Message field and Send button.
+    -  The site has implemented various media queries to work on numerous devices including mobile phones, tablets and desktops.
         
 -   Returning Visitor Goals
     
-        ..* More questions, attractions and opportunities in various countries and travel information to be implemented in the next version of the site.
+        -  More questions, attractions and opportunities in various countries and travel information to be implemented in the next version of the site.
 
 -   Frequent User Goals
 
-        ..* To be implemented in the next version of the site.
+        -  To be implemented in the next version of the site.
     
 ### Known Bugs
 
-- On some mobiles a tiny white gap can be seen on the right at the country data section in the home page.
-- On some tablets quiz game pad strethes horizontally.
+- On some mobiles a tiny white gap can be seen on the right side of some sections in the home and quiz page.
+- On some tablets quiz game pad stretches horizontally.
 
 
 ## Deployment
