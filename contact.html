@@ -20,7 +20,7 @@
                 <div class="col-lg-12 bg">
                     <nav class="navbar navbar-expand-md navmain navbar-light bg-light fixed-top">
                         <a class="navbar-brand" href="index.html"><img src="assets/images/logo.png" alt="logo"></a>
-                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                         </button>
                         <div class="collapse navbar-collapse" id="navbarResponsive">
@@ -48,7 +48,7 @@
         </div>   
     </header>
         
-        <div class="jumbotron jumbotron-fluid" id="contact-jumbo"">
+        <div class="jumbotron jumbotron-fluid" id="contact-jumbo">
             <div class="col-12">
                 <h4 style="margin-top: 30px;">Tell us what you think</h4>
             </div>
@@ -56,7 +56,7 @@
         
         <!--Credit: Form layout in this section was created by following Bootstrap Form layout code (https://getbootstrap.com/docs/4.0/components/forms/) and has modified to fit the purpose of the project -->
 
-        <section id="contac-section" class="container">
+        <div id="contac-section" class="container">
             <div class="row">
                 <div class="col">
                     <div class="center-form">
@@ -66,14 +66,14 @@
                             <textarea name="message" id="message" cols="30" rows="6" class="form-control contTxt" placeholder="Your message" required></textarea>
                             <div class="form-row text-center">
                                 <div class="col">
-                                    <input type="submit" value="Send Message" style="margin-top: 20px;">
+                                    <input type="submit" value="Send Message" style="margin-top: 20px; background-color: rgb(245, 178, 77); border: 1px solid rgb(107, 65, 11); border-radius: 6px;">
                                 </div>
                             </div>
                         </form>
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
 
         <!-- Footer section -->  
         <div class="container-fluid">
@@ -101,15 +101,15 @@
         
         <!--Credit: Script for form submission was created by following emailjs guide (https://www.emailjs.com/docs/tutorial/creating-contact-form/) and modified to fit the purpose of the project -->
 
-        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
-        <script type="text/javascript">
+        <script src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+        <script>
             (function() {
                 // https://dashboard.emailjs.com/admin/integration
                  emailjs.init('user_rmGr9ee2uNPlf3SON7x7c');
             })();
         </script>
     
-        <script type="text/javascript">
+        <script>
             window.onload = function() {
                 document.getElementById('contact-form').addEventListener('submit', function(event) {
                     event.preventDefault();
