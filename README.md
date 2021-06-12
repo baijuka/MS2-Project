@@ -36,25 +36,25 @@ This website focuses mainly two types of users:
 
 #### First Time Visitor Goals
      As a First Time Visitor,
-        . I want to easily understand the main purpose of the site.
-        . I want to be able to easily navigate throughout the site to find the content.
-        . I want to learn about various countries.
-        . I want to know how to play the quiz.
-        . I want to offer my suggestions and advice about the game.
-        . I wnat to play the quiz on various devices.
-        . I want to connect with the business throgh their social media links.
+      * I want to easily understand the main purpose of the site.
+      * I want to be able to easily navigate throughout the site to find the content.
+      * I want to learn about various countries.
+      * I want to know how to play the quiz.
+      * I want to offer my suggestions and advice about the game.
+      * I wnat to play the quiz on various devices.
+      * I want to connect with the business throgh their social media links.
 
 #### Returning Visitor Goals
      As a Returning Visitor
-        . I want to see more options in the game.
-        . I want more questions on various aspects and areas.
-        . I want information about attractions and opportunities in different countries.
-        . I want to know how to travel to other countries.
+      * I want to see more options in the game.
+      * I want more questions on various aspects and areas.
+      * I want information about attractions and opportunities in different countries.
+      * I want to know how to travel to other countries.
 
 #### Frequent User Goals
      As a Frequent Visitor
-        . I want to see any new options and games added.
-        . I want to see the other users' feedback and their rating of the site.
+      * I want to see any new options and games added.
+      * I want to see the other users' feedback and their rating of the site.
 
 ### Developer and Business Goals
 
@@ -173,23 +173,23 @@ The W3C Markup Validator and W3C CSS Validator Services were used to validate ev
 
 ### Testing User Stories from User Experience (UX) Section
 
--   First Time Visitor Goals
-    . The Home page greets every user with a warm and attractive carousal with images from different parts of Europe.
-    . The Navigation Bar at the top right clearly added with menu items to navigate to different sections and pages.
-    . The Logo on the top left corner mentions the name of the business .
-    . Country Data and Map section displays the information about the selected country in the combo box.
-    . About section at the bottom of the home page describes about the nature and purpose of the site.
-    . Connect section in the footer embedded with businesse's social media link icons.
-    . About the Game section in the Quiz page explains about how to play the game and its rules.
-    . Contact page has the feature to send messages to the business. This section is provided with Name field, Email field, Message field and Send button.
-    . The site has implemented various media queries to work on numerous devices including mobile phones, tablets and desktops.
+* First Time Visitor Goals
+   * The Home page greets every user with a warm and attractive carousal with images from different parts of Europe.
+   * The Navigation Bar at the top right clearly added with menu items to navigate to different sections and pages.
+   * The Logo on the top left corner mentions the name of the business .
+   * Country Data and Map section displays the information about the selected country in the combo box.
+   * About section at the bottom of the home page describes about the nature and purpose of the site.
+   * Connect section in the footer embedded with businesse's social media link icons.
+   * About the Game section in the Quiz page explains about how to play the game and its rules.
+   * Contact page has the feature to send messages to the business. This section is provided with Name field, Email field, Message field and Send button.
+   * The site has implemented various media queries to work on numerous devices including mobile phones, tablets and desktops.
         
--   Returning Visitor Goals  
-        .  More questions, attractions and opportunities in various countries and travel information to be 
+* Returning Visitor Goals  
+   * More questions, attractions and opportunities in various countries and travel information to be 
     implemented in the next version of the site.
 
--   Frequent User Goals
-        .  To be implemented in the next version of the site.
+* Frequent User Goals
+   * To be implemented in the next version of the site.
     
 ### Known Bugs
 
