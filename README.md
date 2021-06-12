@@ -320,7 +320,7 @@ Following sites were consulted to develop coding strategy for the site:
 - [Code Institute Course Module](https://codeinstitute.net/)
 - [W3Schools](https://www.w3schools.com/)
 - [Google Maps Platform](https://cloud.google.com/blog/products/maps-platform)
-- [EmailJS](Shttps://www.emailjs.com)
+- [EmailJS](https://www.emailjs.com)
 
 
 ### Acknowledgement
