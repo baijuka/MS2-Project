@@ -113,10 +113,11 @@ dark background to footer.
 
 ### Features Left to Implement
 
--  To include all countries around the world
--  To include more different questions on various aspects and areas
--  To include more pages about various attractions and opportunities in different countries
--  To include travel information about each country
+-   To include all countries around the world
+-   To include more different questions on various aspects and areas
+-   To include more pages about various attractions and opportunities in different countries
+-   To include travel information about each country
+-   To apply more styles and features
 
 ## Technologies Used
 
@@ -127,26 +128,34 @@ dark background to footer.
 -  [JavaScript](https://www.javascript.com/)
 -  [JSON](https://www.json.org/json-en.html)
 -  [AJAX](https://www.w3schools.com/xml/ajax_intro.asp)
--  [jQuery](https://jquery.com/)
+
 
 ### Frameworks, Libraries & Programs Used
 
-1. [Bootstrap Framework](https://getbootstrap.com/)
-    -   Bootstrap was used to assist with the responsiveness and styling of the website
-1. [Google Fonts:](https://fonts.google.com/)
-    - Google fonts were used to import 'Roboto' and 'Arimo' fonts into the style.css file which is used on all pages throughout the project
-1. [Font Awesome:](https://fontawesome.com/)
+1.  [Bootstrap Framework](https://getbootstrap.com/)
+        -   Bootstrap was used to assist with the responsiveness and styling of the website
+1.  [jQuery](https://jquery.com/)
+        -   jQuery has been used for HTML DOM/ CSS manipulation
+1.  [EmailJS](https://www.emailjs.com)
+        -   EmailJS was used in contact form to send emails to the business
+1.  [Google Fonts:](https://fonts.google.com/)
+        - Google fonts were used to import 'Roboto' and 'Arimo' fonts into the style.css file which is used on all pages throughout the project
+1.  [Font Awesome:](https://fontawesome.com/)
         - Font Awesome was used on all pages throughout the website to add icons for aesthetic and UX purposes
-1. [Git](https://git-scm.com/)
-    - Git was used for version control by utilizing the Gitpod terminal to commit to Git and Push to GitHub
-1. [GitHub:](https://github.com/)
-    - GitHub is used to store the projects code after being pushed from Git
-1. [Balsamiq:](https://balsamiq.com/)
-    - Balsamiq was used to create the wireframes during the design process
-1. [Gitpod:](https://www.gitpod.io/)
-    - Gitpod was used as a text editor to create and edit files
-1. Google Chrome
-    - Google Chrome was used to browse the pages
+1.  [Git](https://git-scm.com/)
+        - Git was used for version control by utilizing the Gitpod terminal to commit to Git and Push to GitHub
+1.  [GitHub:](https://github.com/)
+        - GitHub is used to store the projects code after being pushed from Git
+1.  [Balsamiq:](https://balsamiq.com/)
+        - Balsamiq was used to create the wireframes during the design process
+1.  [Gitpod:](https://www.gitpod.io/)
+        - Gitpod was used as a text editor to create and edit files
+1.  [Rest Countries](https://restcountries.eu/rest/v2/region/europe) 
+        -   Rest Countires API was used for quiz questions and country data preparation
+1.  [Google Maps Platform](https://cloud.google.com/maps-platform)
+        -   Rendering of the map was done using Google Maps API       
+1.  Google Chrome
+        - Google Chrome was used to browse the pages
 
 ## Wireframes
 
@@ -156,9 +165,7 @@ Wireframes were created using Balsamiq Desktop App.
 -   Contat Page - <a href="./assets/wireframes/contact.pdf" target="_blank" >Contact</a>
 
 ### Mock-ups for Mobile and Tabs
--   <a href="./assets/wireframes/mockup.pdf" target="_blank" >Mock-Up</a>
-
-
+-   <a href="./assets/wireframes/mockup.pdf" target="_blank" >Mock-Ups</a>
 
 
 ## Testing
@@ -170,7 +177,7 @@ The W3C Markup Validator and W3C CSS Validator Services were used to validate ev
 -   The website was viewed on a variety of devices such as Desktop, Laptop, Moto G4, iPad Mini, Galaxy S5, Pixel 2, 
     Pixel 2 XL, iPhone 5/SE, iPhone 6/7/8, iPhone 6/7/8 Plus, iPhone X, iPad, iPad Pro, Surface Duo and Galaxy Fold.
 -   A large amount of testing was done to ensure that all pages were linking correctly
--   Friends, colleagues and family members were asked to review the site and documentation to point out any bugs and/or user experience issues
+-   Friends, mentor, colleagues and family members were asked to review the site and documentation to point out any bugs and/or user experience issues
 
 ### Known Bugs
 
@@ -179,7 +186,7 @@ The W3C Markup Validator and W3C CSS Validator Services were used to validate ev
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
 -   Issue:- GameIntro (Quiz page) div was not fitting inside the parent div playGround, was sticking out at bottom
-    . Fixed:- Removed margin attribute from gameIntro div.
+    . Fixed:- Removed margin attribute from the gameIntro div.
 
 -   Issue:- Eventlistener not working with the button created using javaScript 
     Fixed:- Used setattribute method to add onclick event to button.
@@ -190,14 +197,14 @@ The W3C Markup Validator and W3C CSS Validator Services were used to validate ev
     newButton.classList.add('btnNext');
     newButton.setAttribute('onclick', "nextQuestion()");
 
--   Issue:- Clicking on correct answer option of same question keeps incrementing the score.
+-   Issue:- Repeated clicking on the correct answer option of the current question keeps incrementing the score.
     Fixed:- Disabled focus from all option elements
 
--   Issue:- Play button kept added completion of each game
-    Fixed:- Deleted play again div each time pressed play again button
+-   Issue:- After the completion of each round the 'Play Again' button kept added and displayed 
+    Fixed:- Deleted play again div from the parent div each time pressed 'Play Again' button
 
 -   Issue:- Hover was not working from second question onwards
-    Fixed;- !important added to the background-color 
+    Fixed:- !important added to the background-color 
  
     .option:hover {
         background-color: rgb(199, 149, 75) !important;
@@ -218,6 +225,18 @@ The W3C Markup Validator and W3C CSS Validator Services were used to validate ev
         padding:25px;
         background-image: url('../images/europe4.jpg');
     }
+
+-   Issue:- Pages were not responsive on different devices
+    Fixed:- More media queries added according to the size of various devices as given below
+
+        @media only screen and (max-width: 320px) 
+        @media only screen and (min-width: 320px)
+        @media only screen and (min-width: 481px)
+        @media only screen and (min-width: 641px)
+        @media only screen and (min-width: 961px)
+        @media only screen and (min-width: 1025px)
+        @media only screen and (min-width: 1281px) 
+
 
 
 ## Deployment
