@@ -254,7 +254,6 @@ footer h3, h5 {
 }
 
 #hresult {
-    font-size: 2em;
     color: blue;
     text-align: center;
 }
@@ -387,7 +386,10 @@ div .col-lg-12 {
 #hresult {
     margin-top: 20px;
     display: block;
-    font-size: large;
+}
+
+#sresult {
+    font-size: small;
 }
 
 #countryData {
@@ -556,6 +558,9 @@ div .col-lg-12 {
 #hresult {
     margin-top: 20px;
     display: block;
+}
+
+#sresult {
     font-size: large;
 }
 
@@ -718,6 +723,9 @@ div .col-lg-12 {
 #hresult {
     margin-top: 20px;
     display: block;
+}
+
+#sresult {
     font-size: large;
 }
 
@@ -883,7 +891,10 @@ div .col-lg-12 {
 #hresult {
     margin-top: 20px;
     display: block;
-    font-size: large;
+}
+
+#sresult {
+    font-size: larger;
 }
 
 #countryData {
@@ -1041,8 +1052,12 @@ div .col-lg-12 {
 #hresult {
     margin-top: 20px;
     display: block;
-    font-size: large;
 }
+
+#sresult {
+    font-size: 1.2em;
+}
+
 
 #countryData {
     padding-top: 10px;
@@ -1178,9 +1193,12 @@ p {
 #hresult {
     margin-top: 20px;
     display: block;
-    font-size: x-large;
     }
 
+#sresult {
+        font-size: 1.5em;
+    }
+    
           
 .right img {
     width: 100%;
@@ -1276,7 +1294,10 @@ header {
 #hresult {
     margin-top: 20px;
     display: block;
-    font-size: x-large;
+}
+
+#sresult {
+    font-size: 1.5em;
 }
 
 .option:hover {

@@ -292,8 +292,8 @@ function quizComplete() {
     document.getElementById('option2').textContent = '';
     document.getElementById('option3').textContent = '';
     document.getElementById('option4').textContent = '';
-    document.getElementById('qcount').innerHTML = 0+' /'+0;
-    document.getElementById('score').innerHTML = 0 +' /'+0;
+    document.getElementById('qcount').innerHTML = '';
+    document.getElementById('score').innerHTML = '';
     document.getElementById('sresult').innerHTML = "You scored " + "<span style='color:#d60909'>"+ score + "</span>" + " out of " + "<span style='color:#d60909'>" + qlength + "</span>";
     document.getElementById('sresult').style.color= "blue";
     document.getElementById('btnNext').style.visibility = 'hidden';
