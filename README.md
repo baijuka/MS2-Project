@@ -1,5 +1,7 @@
 <h1 align="center">LatQuix Website</h1>
 
+![LatQuiz](/assets/images/siteimage.jpg)
+
 [View the live project here.](https://baijuka.github.io/MS2-Project/)
 
 People are always curious about knowing about other countries.  To gather knwoledge they approach various mediums and resources.
@@ -71,8 +73,8 @@ This website was designed using user centric approach and for that special atten
 
 ### Fonts
 
--  Primary font: Roboto – simple and allowing letters to be settled into their natural width
--  Secondary font: Lato – The semi-rounded details of the letters give Lato a feeling of warmth, while the strong structure provides 
+-  Primary Font: Roboto – simple and allowing letters to be settled into their natural width
+-  Secondary Font: Lato – The semi-rounded details of the letters give Lato a feeling of warmth, while the strong structure provides 
    stability and seriousness
 
 ### Icons 
@@ -166,8 +168,8 @@ Wireframes were created using Balsamiq Desktop App.
 ## Testing
 
 The W3C Markup Validator and W3C CSS Validator Services were used to validate every page of the project to ensure there were no syntax errors in the project.
--   [W3C Markup Validator](https://validator.w3.org/) - [Results](https://github.com/)
--   [W3C CSS Validator](https://jigsaw.w3.org/css-validator/#validate_by_input) - [Results](https://github.com/)
+-   [W3C Markup Validator](https://validator.w3.org/) - <a href="./assets/wireframes/htmlvalidation.jpg" target="_blank">Result</a>
+-   [W3C CSS Validator](https://jigsaw.w3.org/css-validator/#validate_by_input) - <a href="./assets/wireframes/cssvalidation.jpg" target="_blank">Result</a>
 -   The Website was tested on Google Chrome, Internet Explorer, Microsoft Edge, FireFox, Opera and Safari web browsers
 -   The website was tested on a variety of devices such as Desktop, Laptop, Moto G4, iPad Mini, Galaxy S5, Pixel 2, 
     Pixel 2 XL, iPhone 5/SE, iPhone 6/7/8, iPhone 6/7/8 Plus, iPhone X, iPad, iPad Pro, Surface Duo and Galaxy Fold.

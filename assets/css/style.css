@@ -309,7 +309,7 @@ button:focus {
 }
 
 .contTxt {
-   background-color: lightyellow;
+   background-color: rgb(255, 255, 239);
 }
 
 /* Extra Extra small devices (phones, 600px and down) */
